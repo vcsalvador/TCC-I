@@ -1,0 +1,64 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.3 }
+
+\bibitem[Freitas e Oliveira 2000]{Freitas2000}
+\abntrefinfo{Freitas e Oliveira}{FREITAS; OLIVEIRA}{2000}
+{FREITAS, H.; OLIVEIRA, M. \textbf{O Método de pesquisa Survey}. 2000.
+  105--112~p.
+Dispon{\'\i}vel em:
+  \url{http://www.rausp.usp.br/download.asp?file=3503105.pdf}.}
+
+\bibitem[Geneves et al. 2012]{Geneves2012}
+\abntrefinfo{Geneves et al.}{GENEVES et al.}{2012}
+{GENEVES, P.; LAYAIDA, N.; QUINT, V. On the analysis of cascading style sheets.
+  In:  \textbf{Proceedings of the 21st international conference on World Wide
+  Web - WWW '12}. New York, New York, USA: ACM Press, 2012. p.~809.
+ISBN 9781450312295. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=2187836.2187946}.}
+
+\bibitem[Ieee 1990]{Ieee1990}
+\abntrefinfo{Ieee}{IEEE}{1990}
+{IEEE. \textbf{{IEEE Standard Glossary of Software Engineering Terminology}}.
+  1990. 1~p.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/xpls/abs\\_all.jsp?arnumber=159342}.}
+
+\bibitem[Keller e Nussbaumer 2010]{KellerNuss2010}
+\abntrefinfo{Keller e Nussbaumer}{KELLER; NUSSBAUMER}{2010}
+{KELLER, M.; NUSSBAUMER, M. Css code quality: A metric for abstractness or why
+  humans beat machines in css coding. In:  \textbf{Quality of Information and
+  Communications Technology (QUATIC), 2010 Seventh International Conference on
+  the}. [S.l.]: IEEE, 2010. p. 116--121.
+ISBN 978-1-4244-8539-0.}
+
+\bibitem[Marden e Munson 1999]{Marden1999}
+\abntrefinfo{Marden e Munson}{MARDEN; MUNSON}{1999}
+{MARDEN, P.; MUNSON, E. Today's style sheet standards: the great vision
+  blinded.
+\textbf{Computer}, v.~32, n.~11, p. 123--125, 1999.
+ISSN 00189162.
+Dispon{\'\i}vel em:
+  \url{http://www.researchgate.net/publication/2955166\\_Today's\\_style\\_sheet\\_standards\\_the\\_great\\_vision\\_blinded}.}
+
+\bibitem[Mesbah e Mirshokraie 2012]{Mesbah2012}
+\abntrefinfo{Mesbah e Mirshokraie}{MESBAH; MIRSHOKRAIE}{2012}
+{MESBAH, A.; MIRSHOKRAIE, S. Automated analysis of css rules to support style
+  maintenance. In:  \textbf{Proceedings of the 34th International Conference on
+  Software Engineering}. Piscataway, NJ, USA: IEEE Press, 2012.  (ICSE '12), p.
+  408--418.
+ISBN 978-1-4673-1067-3. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=2337223.2337272}.}
+
+\bibitem[Quint e Vatton 2007]{Quint2007}
+\abntrefinfo{Quint e Vatton}{QUINT; VATTON}{2007}
+{QUINT, V.; VATTON, I. {Editing with style}. In:  \textbf{Proceedings of the
+  2007 ACM symposium on Document engineering - DocEng '07}. New York, New York,
+  USA: ACM Press, 2007. p.~151.
+ISBN 9781595937766. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=1284420.1284460}.}
+
+\end{thebibliography}
