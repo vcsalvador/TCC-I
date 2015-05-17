@@ -1,0 +1,39 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.3 }
+
+\bibitem[Freitas e Oliveira 2000]{Freitas2000}
+\abntrefinfo{Freitas e Oliveira}{FREITAS; OLIVEIRA}{2000}
+{FREITAS, H.; OLIVEIRA, M. \textbf{O Método de pesquisa Survey}. 2000.
+  105--112~p.
+Dispon{\'\i}vel em:
+  \url{http://www.rausp.usp.br/download.asp?file=3503105.pdf}.}
+
+\bibitem[Ieee 1990]{Ieee1990}
+\abntrefinfo{Ieee}{IEEE}{1990}
+{IEEE. \textbf{{IEEE Standard Glossary of Software Engineering Terminology}}.
+  1990. 1~p.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/xpls/abs\\_all.jsp?arnumber=159342}.}
+
+\bibitem[Keller e Nussbaumer 2010]{KellerNuss2010}
+\abntrefinfo{Keller e Nussbaumer}{KELLER; NUSSBAUMER}{2010}
+{KELLER, M.; NUSSBAUMER, M. Css code quality: A metric for abstractness or why
+  humans beat machines in css coding. In:  \textbf{Quality of Information and
+  Communications Technology (QUATIC), 2010 Seventh International Conference on
+  the}. [S.l.]: IEEE, 2010. p. 116--121.
+ISBN 978-1-4244-8539-0.}
+
+\bibitem[Mesbah e Mirshokraie 2012]{Mesbah2012}
+\abntrefinfo{Mesbah e Mirshokraie}{MESBAH; MIRSHOKRAIE}{2012}
+{MESBAH, A.; MIRSHOKRAIE, S. Automated analysis of css rules to support style
+  maintenance. In:  \textbf{Proceedings of the 34th International Conference on
+  Software Engineering}. Piscataway, NJ, USA: IEEE Press, 2012.  (ICSE '12), p.
+  408--418.
+ISBN 978-1-4673-1067-3. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=2337223.2337272}.}
+
+\end{thebibliography}

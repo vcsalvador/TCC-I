@@ -1,0 +1,31 @@
+%
+% Documento: Introdução
+%
+
+\chapter{Introdução}\label{chap:introducao}
+
+Após a criação da Internet por Timothy John Berners-Lee em 1990, foram criados o primeiro navegador e o \textit{Hipertext Markup Language} (HTML), idealizados com a função de marcar textos para apresentação de páginas \textit{web} em navegadores. Então, vários navegadores foram construídos, cada um com uma forma de interpretar os documentos HMTL de uma forma diferente, o que causava falhas de renderização em navegadores diferentes. Neste ponto foi percebido a necessidade de se criar um padrão, para que a escrita dos elementos do HTML fossem renderizados de maneira uniforme, sem que houvessem diferenças entre navegadores diferentes. Tendo em vista esta necessidade,  a W3C (\textit{World Wide Web Consortium}), órgão fundado por Tim Berners-Lee, foi idealizada. Com objetivo de manter a padronização dos documentos HTML, e minimizar as diferenças na renderização dos documentos, a W3C mantem hoje a posição de órgão regulamentador  da \textit{World Wide Web} (www).
+
+Com o aumento da popularidade de páginas \textit{web}, essa tecnologia passou a ser utilizada para criação de páginas mais complexas do que simples documentos, \textit{e.g.}, portais de venda, fóruns, portais de vídeos, entre outros. Percebeu-se então a necessidade de uma apresentação mais complexa e estética para os documentos HTML, várias linguagens para editar esta apresentação foram desenvolvidas, entre elas se destacou o \textit{Cascading Style Sheet} (CSS). A autoria de documento CSS é muitas vezes referida como codificação, uma vez que na maioria das vezes gasta-se mais tempo escrevendo o CSS do que criando o \textit{design}.
+
+Sendo um dos três padrões fundamentais da W3C para desenvolvimento de conteúdo \textit{web}, o CSS se tornou largamente utilizado. A separação do documento de conteúdo da apresentação, foi certamente o principal motivo do CSS se tornar tão popular. Apesar das vantagens dessa separação estrutural, os códigos se tornaram complexos e de manutenibilidade onerosa \cite{Mesbah2012}.
+
+Escrever regras CSS não é uma tarefa trivial, as características da linguagem como herança e especificidade do seletor, colocam os desenvolvedores constantemente em situações nas quais se questionam a efetividade das associações de propriedades escolhidas.
+Essas características podem prejudicar o que \citeonline[p.~116]{KellerNuss2010} definem como efetividade e eficiência:
+
+\begin{citacao}
+	"\textbf{Efetividade do código:} a folha de estilo é efetiva se o documento de conteúdo ao qual ele é aplicado renderiza da forma desejada. [\ldots]
+	
+	\textbf{Eficiência do código:} folhas de estilo que causam o mesmo efeito em um documento de conteúdo ainda pode diferir significativamente no modo em que ela aplica a associação de propriedade. [\ldots] Maximizar a eficiência do código CSS significa aplicar a associação de propriedades de uma forma que o esforço da autoria, manutenção e eventual reutilização seja minimizado." (Tradução nossa.)
+\end{citacao}
+
+Pode-se notar nestes cenários a dificuldade de se manter um código CSS sem falhas durante a construção de uma página \textit{web}, portanto existe a necessidade de se manter um alto grau de manutenibilidade. A manutenibilidade de um sistema é a facilidade com a qual um sistema de \textit{software}, ou componente, pode ser modificado para corrigir falhas, melhorar performance, ou adaptar-se à mudança de ambiente  \cite{Ieee1990}. A partir desta definição podemos identificar uma medida de manutenibilidade para códigos CSS, considerando-se que onde houver alta complexidade haverá a necessidade de se manter o funcionamento, ou adaptação, da apresentação do documento.
+
+Como identificado por \citeonline{Mesbah2012}, analisar código CSS com uma perspectiva de manutenção ainda não foi explorada em nenhum trabalho científico. Portanto a necessidade de se definir a qualidade do código CSS, com objetivo de se manter um nível de manutenibilidade da apresentação de páginas \textit{web}. Uma vez que entende-se a facilidade de leitura do código como uma característica importante para a manutenção. Porém, não será abordado neste trabalho uma medida que vise a melhora no tempo de processamento do CSS, portanto a proposta aqui apresentada se refere à uma medição da facilidade de manutenção da folha de estilo.
+
+
+\section{Objetivos}
+Este trabalho pretende, portanto, desenvolver uma métrica de qualidade visando a manutenibilidade do código, identificando a facilidade de se manter a efetividade das regras CSS. Auxiliando os desenvolvedores e \textit{designers}, direcionando suas autorias de forma a reduzir repetições, possíveis efeitos colaterais, sobrecarga de propriedades, códigos inutilizados e aumentando assim o nível de efetividade das propriedades associadas.
+
+Espera-se que com essa proposta encontre-se uma medida que possua relação com a quantidade de falhas relacionadas ao estilo e à métrica proposta, tentando identificar a razão entre elas e as características intrínsecas da linguagem. Portanto a medida não será baseada em características subjetivas, mas em um método empírico.
+
