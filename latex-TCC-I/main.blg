@@ -3,8 +3,12 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/capa.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/folha-rosto.aux
+A level-1 auxiliary file: ./01-elementos-pre-textuais/resumo-pt.aux
+A level-1 auxiliary file: ./01-elementos-pre-textuais/resumo-en.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/sumario.aux
 A level-1 auxiliary file: ./02-elementos-textuais/introducao.aux
+A level-1 auxiliary file: ./02-elementos-textuais/trab-relacionados.aux
+A level-1 auxiliary file: ./02-elementos-textuais/fund-teorica.aux
 A level-1 auxiliary file: ./02-elementos-textuais/metodologia.aux
 A level-1 auxiliary file: ./02-elementos-textuais/resultados.aux
 A level-1 auxiliary file: ./02-elementos-textuais/conclusao.aux
@@ -36,7 +40,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 11 entries,
             6711 wiz_defined-function locations,
-            1279 strings with 11415 characters,
+            1283 strings with 11582 characters,
 and the built_in function-call counts, 15049 in all, are:
 = -- 1872
 > -- 221
