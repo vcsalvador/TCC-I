@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.3 }
 
+\bibitem[fantasai e Atikns 2015]{CSScascade2015}
+\abntrefinfo{fantasai e Atikns}{FANTASAI; ATIKNS}{2015}
+{FANTASAI; ATIKNS, T. \textbf{CSS Cascading and Inheritance Level 4}. 2015.
+Dispon{\'\i}vel em: \url{http://www.w3.org/TR/2015/WD-css-cascade-4-20150421/}.
+  Acesso em: 27 de maio de 2015.}
+
 \bibitem[Freitas e Oliveira 2000]{Freitas2000}
 \abntrefinfo{Freitas e Oliveira}{FREITAS; OLIVEIRA}{2000}
 {FREITAS, H.; OLIVEIRA, M. \textbf{O Método de pesquisa Survey}. 2000.
@@ -20,9 +26,18 @@ Dispon{\'\i}vel em:
 ISBN 9781450312295. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=2187836.2187946}.}
 
+\bibitem[Hickson et al. 2014]{HTMLspec2014}
+\abntrefinfo{Hickson et al.}{HICKSON et al.}{2014}
+{HICKSON, I.; BERJON, R.; FAULKNER, S.; LEITHEAD, T.; NAVARA, E.~D.; O'CONNOR,
+  E.; PFEIFFER, S. \textbf{HTML5: A vocabulary and associated APIs for HTML and
+  XHTML}. 2014.
+Dispon{\'\i}vel em:
+  \url{http://www.w3.org/TR/html/introduction.html\#a-quick-introduction-to-html}.
+  Acesso em: 24 de maio de 2015.}
+
 \bibitem[Ieee 1990]{Ieee1990}
 \abntrefinfo{Ieee}{IEEE}{1990}
-{IEEE. \textbf{{IEEE Standard Glossary of Software Engineering Terminology}}.
+{IEEE. \textbf{IEEE Standard Glossary of Software Engineering Terminology}.
   1990. 1~p.
 Dispon{\'\i}vel em:
   \url{http://ieeexplore.ieee.org/xpls/abs\\_all.jsp?arnumber=159342}.}
@@ -55,10 +70,30 @@ ISBN 978-1-4673-1067-3. Dispon{\'\i}vel em:
 
 \bibitem[Quint e Vatton 2007]{Quint2007}
 \abntrefinfo{Quint e Vatton}{QUINT; VATTON}{2007}
-{QUINT, V.; VATTON, I. {Editing with style}. In:  \textbf{Proceedings of the
-  2007 ACM symposium on Document engineering - DocEng '07}. New York, New York,
-  USA: ACM Press, 2007. p.~151.
+{QUINT, V.; VATTON, I. Editing with style. In:  \textbf{Proceedings of the 2007
+  ACM symposium on Document engineering - DocEng '07}. New York, New York, USA:
+  ACM Press, 2007. p.~151.
 ISBN 9781595937766. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=1284420.1284460}.}
+
+\bibitem[W3C 2015]{W3Ccss2015}
+\abntrefinfo{W3C}{W3C}{2015a}
+{W3C. \textbf{CSS}. 2015.
+Dispon{\'\i}vel em: \url{http://www.w3.org/Style/CSS}. Acesso em: 21 de maio de
+  2015.}
+
+\bibitem[W3C 2015]{W3Chtml2015}
+\abntrefinfo{W3C}{W3C}{2015b}
+{W3C. \textbf{HTML}. 2015.
+Dispon{\'\i}vel em: \url{http://www.w3.org/html/}. Acesso em: 24 de maio de
+  2015.}
+
+\bibitem[Çelik et al. 2009]{CSSspec2009}
+\abntrefinfo{Çelik et al.}{ÇELIK et al.}{2009}
+{ÇELIK, T.; ETEMAD, E.~J.; GLAZMAN, D.; HICKSON, I.; LINSS, P.; WILLIAMS, J.
+  \textbf{Selectors Level 3}. 2009.
+Dispon{\'\i}vel em:
+  \url{http://www.w3.org/TR/2009/PR-css3-selectors-20091215/}. Acesso em: 24 de
+  maio de 2015.}
 
 \end{thebibliography}

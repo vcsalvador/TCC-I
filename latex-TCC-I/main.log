@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.25)  18 MAY 2015 23:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.25)  27 MAY 2015 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1181,8 +1181,13 @@ l.52 \end{folhaderosto}
 
 
 (./02-elementos-textuais/introducao.tex
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 17.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
  [1
 
 
@@ -1200,23 +1205,38 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 \openout2 = `./02-elementos-textuais/fund-teorica.aux'.
 
 
-(./02-elementos-textuais/fund-teorica.tex) [4
+(./02-elementos-textuais/fund-teorica.tex
+<./04-figuras/DOMsnippet.pdf, id=117, 254.9525pt x 411.5375pt>
+File: ./04-figuras/DOMsnippet.pdf Graphic file (type pdf)
+
+<use ./04-figuras/DOMsnippet.pdf>
+Package pdftex.def Info: ./04-figuras/DOMsnippet.pdf used on input line 17.
+(pdftex.def)             Requested size: 136.50139pt x 220.34308pt.
+ [4
 
 
 
-]
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 \chapter
+             {CSS} <./04-figuras/DOMsnippet.pdf>] [5
+
+]) [6]
 \openout2 = `./02-elementos-textuais/metodologia.aux'.
 
 
-(./02-elementos-textuais/metodologia.tex [5
+(./02-elementos-textuais/metodologia.tex [7
 
 
 
-]) [6]
+]) [8]
 \openout2 = `./02-elementos-textuais/resultados.aux'.
 
 
-(./02-elementos-textuais/resultados.tex) [7
+(./02-elementos-textuais/resultados.tex) [9
 
 
 
@@ -1224,7 +1244,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 \openout2 = `./02-elementos-textuais/conclusao.aux'.
 
 
-(./02-elementos-textuais/conclusao.tex) [8
+(./02-elementos-textuais/conclusao.tex) [10
 
 
 
@@ -1238,7 +1258,19 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 
 
 bibitemlist
-)) [9
+
+Underfull \hbox (badness 3657) in paragraph at lines 37--37
+[]\T1/ptm/m/n/12 (+20) HICKSON, I.; BER-JON, R.; FAULK-NER, S.; LEITHEAD, T.; N
+A-VARA, E. D.;
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 37--37
+\T1/ptm/m/n/12 (+20) O'CONNOR, E.; PFEIF-FER, S. \T1/ptm/b/n/12 HTML5: A vo-ca-
+bu-lary and as-so-ci-a-ted APIs for
+ []
+
+)) [11
 
 
 
@@ -1262,7 +1294,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 26364D8B843D18688071968C34C53E99;773.
+(rerunfilecheck)             Checksum: ED54515D20092CBB20BA2B9BB64FA3E6;946.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1270,21 +1302,24 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 15186 strings out of 493304
- 223457 string characters out of 6139871
- 411231 words of memory out of 5000000
- 18117 multiletter control sequences out of 15000+600000
- 77316 words of font info for 187 fonts, out of 8000000 for 9000
+ 15271 strings out of 493304
+ 224644 string characters out of 6139871
+ 417226 words of memory out of 5000000
+ 18170 multiletter control sequences out of 15000+600000
+ 66634 words of font info for 185 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,12n,35p,830b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,13n,35p,892b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on main.pdf (14 pages, 74253 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (16 pages, 132888 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 37006 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 320 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 35499 words of extra memory for PDF output out of 35830 (max. 10000000)
 
