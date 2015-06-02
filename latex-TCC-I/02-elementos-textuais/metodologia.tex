@@ -4,17 +4,17 @@
 
 \chapter{Metodologia}
 
-O primeiro passo da execução do trabalho consistirá na consolidação do conceito de manutenibilidade em código CSS. Pretendemos alcançar este objetivo por meio de referências bibliográficas e de uma pesquisa do tipo \textit{survey} com desenvolvedores profissionais, com níveis de experiência variados. Esta pesquisa pretende identificar as propriedades da linguagem e as situações mais comuns que dificultam, ou facilitam, a manutenção de códigos CSS.
+O primeiro passo da execução do trabalho consistirá na consolidação do conceito de manutenibilidade em código CSS. Pretende-se alcançar este objetivo por meio de referências bibliográficas e de uma pesquisa do tipo \textit{survey} com desenvolvedores profissionais, com níveis de experiência variados. Essa pesquisa pretende identificar as propriedades da linguagem e as situações mais comuns que dificultam, ou facilitam, a manutenção de código CSS.
 
-Após executada a pesquisa, as métricas serão consolidadas, propondo valores individuais para as características da linguagem e definindo um índice de qualidade a partir de um agrupamento destes valores. Dessa forma serão obtidas informações suficientes para construir uma ferramenta para validar as métricas definidas.
+Após executada a pesquisa, as métricas serão consolidadas, propondo valores individuais para as características da linguagem e definindo um índice de qualidade a partir de um agrupamento desses valores. Dessa forma, serão obtidas informações suficientes para construir uma ferramenta que calcule a métrica de um código CSS.
 
-Utilizando de ferramentas automatizadas, serão identificadas as relações entre índice proposto e a quantidade de falhas identificadas em sistemas \textit{web} de código aberto. Analisando estes projetos, iremos fazer a referência cruzada, entre a pontuação alcançada pelo código CSS e o número de problemas reportados relacionados ao mesmo.
+Utilizando de ferramentas automatizadas, serão identificadas as relações entre o índice proposto e a quantidade de falhas identificadas em sistemas \textit{web} de código aberto. Utilizando bases de projetos de software de código aberto, iremos analisar e fazer a referência cruzada, entre a pontuação alcançada pelo código CSS e o número de problemas reportados relacionados ao projeto do mesmo.
 
 \section{Questionário}
 
 A pesquisa \textit{survey} (questionário) é uma forma de obtenção de dados ou informações sobre características, ações ou opiniões de um determinado conjunto de pessoas, indicado como representante de uma população-alvo, por meio de um instrumento de pesquisa, normalmente um questionário \cite{Freitas2000}. 
 
-O interesse de uma pesquisa desse tipo é produzir descrições quantitativas de uma população. No caso deste trabalho, o objetivo é identificar, de forma quantitativa, as características identificadas pelos desenvolvedores como sendo as que classificam a legibilidade do código. Para tanto, será executado um questionário exploratório, com o objetivo de identificar os conceitos do CSS que são centrais para a associação de qualidade do código.
+O interesse de uma pesquisa desse tipo é produzir descrições quantitativas de uma população. No caso deste trabalho, o objetivo é identificar, de forma quantitativa, as características identificadas pelos desenvolvedores como sendo as que classificam a qualidade do código. Para tanto, será executado um questionário exploratório, com o objetivo de identificar os conceitos do CSS que são centrais para a associação de qualidade do código.
 
 \section{Proposta das Métricas}
 
@@ -22,6 +22,6 @@ As métricas são identificadores numéricos baseados em características da lin
 
 \section{Avaliação dos resultados}
 
-A partir da métrica proposta será desenvolvida uma ferramenta de validação automática. O programa irá ler o arquivo CSS, identificará as regras definidas e, a partir da definição proposta, será calculado para cada arquivo uma métrica. Se necessário, os arquivos HTML também serão considerados no cálculo da métrica.
+A partir da métrica proposta, será desenvolvida uma ferramenta automática de calculo da métrica. O programa irá ler o arquivo CSS, identificar as regras definidas e, a partir da definição proposta,calcular para cada arquivo. Se for necessário para o calculo da métrica, os arquivos HTML também serão considerados no cálculo da métrica.
 
-Com as métricas calculadas, será testada a aderência da métrica a projetos \textit{open source}, utilizando o número de problemas relacionados a CSS como parâmetro de triangulação. Dessa forma será construída uma base de dados para as análises estatísticas, que confrontaram os resultados esperados deste trabalho.
+Com as métricas calculadas, será testada a aderência da métrica a projetos \textit{open source}, utilizando o número de problemas relacionados a CSS --- como \textit{bugs} identificados nas bases de código aberto pelos colaboradores ---  como parâmetro de triangulação. Dessa forma, será construída uma base de dados para as análises estatísticas, que confrontarão os resultados esperados deste trabalho.

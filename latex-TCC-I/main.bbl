@@ -5,6 +5,23 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.3 }
 
+\bibitem[Bieman e Ott 1994]{Bieman1994}
+\abntrefinfo{Bieman e Ott}{BIEMAN; OTT}{1994}
+{BIEMAN, J.; OTT, L. Measuring functional cohesion.
+\textbf{IEEE Transactions on Software Engineering}, IEEE, v.~20, n.~8, p.
+  644--657, 1994.
+ISSN 00985589.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/articleDetails.jsp?arnumber=310673}.}
+
+\bibitem[Dhama 1995]{Dhama:1995}
+\abntrefinfo{Dhama}{DHAMA}{1995}
+{DHAMA, H. Quantitative models of cohesion and coupling in software.
+\textbf{J. Syst. Softw.}, Elsevier Science Inc., New York, NY, USA, v.~29,
+  n.~1, p. 65--74, abr. 1995.
+ISSN 0164-1212.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0164-1212(94)00128-A}.}
+
 \bibitem[fantasai e Atikns 2015]{CSScascade2015}
 \abntrefinfo{fantasai e Atikns}{FANTASAI; ATIKNS}{2015}
 {FANTASAI; ATIKNS, T. \textbf{CSS Cascading and Inheritance Level 4}. 2015.
@@ -59,6 +76,14 @@ ISSN 00189162.
 Dispon{\'\i}vel em:
   \url{http://www.researchgate.net/publication/2955166\\_Today's\\_style\\_sheet\\_standards\\_the\\_great\\_vision\\_blinded}.}
 
+\bibitem[McCabe e Butler 1989]{McCabe:1989}
+\abntrefinfo{McCabe e Butler}{MCCABE; BUTLER}{1989}
+{MCCABE, T.~J.; BUTLER, C.~W. Design complexity measurement and testing.
+\textbf{Commun. ACM}, ACM, New York, NY, USA, v.~32, n.~12, p. 1415--1425, dez.
+  1989.
+ISSN 0001-0782.
+Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/76380.76382}.}
+
 \bibitem[Mesbah e Mirshokraie 2012]{Mesbah2012}
 \abntrefinfo{Mesbah e Mirshokraie}{MESBAH; MIRSHOKRAIE}{2012}
 {MESBAH, A.; MIRSHOKRAIE, S. Automated analysis of css rules to support style
@@ -68,6 +93,19 @@ Dispon{\'\i}vel em:
 ISBN 978-1-4673-1067-3. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=2337223.2337272}.}
 
+\bibitem[Park e Saxena 2013]{Park2013}
+\abntrefinfo{Park e Saxena}{PARK; SAXENA}{2013}
+{PARK, T.; SAXENA, A. {Towards a Taxonomy of Errors in HTML and CSS}.
+\textbf{Proceedings of the \ldots}, p.~75, 2013.
+Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?doid=2493394.2493405$\backslash$nhttp://dl.acm.org/citation.cfm?id=2493405}.}
+
+\bibitem[Pressman 2010]{Pressman:2010}
+\abntrefinfo{Pressman}{PRESSMAN}{2010}
+{PRESSMAN, R.~S. \textbf{Engenharia de Software}. 6. ed. Porto Alegre: AMGH
+  Editora Ltda., 2010.
+ISBN 978-85-63308-00-9.}
+
 \bibitem[Quint e Vatton 2007]{Quint2007}
 \abntrefinfo{Quint e Vatton}{QUINT; VATTON}{2007}
 {QUINT, V.; VATTON, I. Editing with style. In:  \textbf{Proceedings of the 2007
@@ -75,6 +113,16 @@ ISBN 978-1-4673-1067-3. Dispon{\'\i}vel em:
   ACM Press, 2007. p.~151.
 ISBN 9781595937766. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=1284420.1284460}.}
+
+\bibitem[Riaz et al. 2009]{Riaz:2009}
+\abntrefinfo{Riaz et al.}{RIAZ et al.}{2009}
+{RIAZ, M.; MENDES, E.; TEMPERO, E. A systematic review of software
+  maintainability prediction and metrics. In:  \textbf{Proceedings of the 2009
+  3rd International Symposium on Empirical Software Engineering and
+  Measurement}. Washington, DC, USA: IEEE Computer Society, 2009.  (ESEM '09),
+  p. 367--377.
+ISBN 978-1-4244-4842-5. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.1109/ESEM.2009.5314233}.}
 
 \bibitem[W3C 2015]{W3Ccss2015}
 \abntrefinfo{W3C}{W3C}{2015a}
@@ -87,6 +135,24 @@ Dispon{\'\i}vel em: \url{http://www.w3.org/Style/CSS}. Acesso em: 21 de maio de
 {W3C. \textbf{HTML}. 2015.
 Dispon{\'\i}vel em: \url{http://www.w3.org/html/}. Acesso em: 24 de maio de
   2015.}
+
+\bibitem[Whitmire 1997]{Whitmire:1997}
+\abntrefinfo{Whitmire}{WHITMIRE}{1997}
+{WHITMIRE, S.~A. \textbf{Object Oriented Design Measurement}. 1st. ed. New
+  York, NY, USA: John Wiley \& Sons, Inc., 1997.
+ISBN 0471134171.}
+
+\bibitem[Zuse 1991]{Zuse:1991}
+\abntrefinfo{Zuse}{ZUSE}{1991}
+{ZUSE, H. \textbf{Software Complexity: Measures and Methods}. Hawthorne, NJ,
+  USA: Walter de Gruyter \& Co., 1991.
+ISBN 0-89925-640-6.}
+
+\bibitem[Zuse 1997]{Zuse:1997}
+\abntrefinfo{Zuse}{ZUSE}{1997}
+{ZUSE, H. \textbf{A Framework of Software Measurement}. Hawthorne, NJ, USA:
+  Walter de Gruyter \& Co., 1997.
+ISBN 3110155877.}
 
 \bibitem[Çelik et al. 2009]{CSSspec2009}
 \abntrefinfo{Çelik et al.}{ÇELIK et al.}{2009}

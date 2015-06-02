@@ -4,10 +4,22 @@
 
 \chapter{Trabalhos Relacionados}
 
-Existem poucos trabalhos que tratem de qualidade de código CSS na literatura, e como \citeonline{Mesbah2012} identificou, não existem trabalhos que analisem o código em função da manutenibilidade.
+\section{Qualidade de Código Clássica}
 
-Existem trabalhos como o de \citeonline{KellerNuss2010}, que analisa a qualidade de código CSS em uma perspectiva de avaliar a diferença em códigos de autoria humana e os auto gerados. Enquanto \citeonline{Mesbah2012} propõem uma ferramenta para auxiliar na manutenção de código encontrando regras inefetivas e removendo-as do código.
+A norma ISO 9126 define seis atributos-chave de qualidade de software de computador, um dos atributos é a manutenibilidade \cite{Pressman:2010}. E a \citeonline{Ieee1990} define métrica como uma medida quantitativa do grau em que um sistema, componente ou processo possui um determinado atributo. Pode-se definir a medida quantitativa do grau de manutenibilidade de um código fonte como uma métrica.
 
-\citeonline{KellerNuss2010} propõem uma medida de qualidade do código CSS baseando-se na abstração do seletor. Esse trabalho é baseado no argumento de que o objetivo do código CSS é a reutilização de suas regras, a abstração do seletor é então definida pela sua utilização no escopo geral do HTML, considerando que seletores com id são os menos abstratos possíveis. Este trabalho não conseguiu encontrar uma relação forte com a complexidade de código CSS e o nível de abstração, de forma que os autores a consideraram uma medida fraca, se utilizada de forma exclusiva, deixando em aberto a proposta de métricas que a corroborem, ou cooperem com ela na medida de qualidade do código CSS.
+Existem vários trabalhos na área de medição de software, enquanto \citeonline{Whitmire:1997} discute os atributos chave que definem a qualidade de um sistema de \textit{software}, trabalhos como os de \citeonline{McCabe:1989,,Zuse:1991,Bieman1994,Dhama:1995,Zuse:1997} exploram as medições de coesão, acoplamento e complexidade que compõem os nove atributos chave.
 
-Em \citeonline{Quint2007} ferramentas de auxílio na autoria de CSS são avaliadas, e a forma de avaliação do código, como estrutura de dados e método de avaliação do código. Esse trabalho propõe uma ferramenta didática, que auxiliará na criação de folhas de estilo, auxiliando o entendimento da aplicação das propriedades e regras. Neste trabalho são também identificados fatores que tornam a tarefa de autoria de código CSS não trivial.
+\citeonline{Riaz:2009} discutem os trabalhos relacionados à métricas e previsão de manutenibilidade de código fonte. Através de uma revisão bibliográfica, concluem que os modelos de previsão de manutenibilidade mais utilizados se baseiam em técnicas algorítmicas, sem encontrar distinção de qual modelo deve ser utilizado para cada sub característica ou tipo de manutenção.
+
+\section{Qualidade de Código CSS}
+
+Existem poucos trabalhos que abordam a qualidade de código CSS na literatura e, como \citeonline{Mesbah2012} identificaram, não existem trabalhos que analisem o código em função da sua manutenibilidade.
+
+Existem trabalhos como o de \citeonline{KellerNuss2010}, que analisam a qualidade de código CSS em uma perspectiva de avaliar a diferença em códigos de autoria humana e os gerados de forma automática, enquanto \citeonline{Mesbah2012} propõem uma ferramenta para auxiliar na manutenção de código encontrando regras inefetivas e removendo-as do código.
+
+\citeonline{KellerNuss2010} propõem uma medida de qualidade do código CSS baseando-se na abstração do seletor. Esse trabalho é baseado no argumento de que o objetivo do código CSS é a reutilização de suas regras. A abstração do seletor é então definida pela sua utilização no escopo geral do HTML, considerando que seletores com id são os menos abstratos possíveis. Este trabalho não conseguiu encontrar uma relação forte com a complexidade de código CSS e o nível de abstração, de forma que os autores a consideraram uma medida fraca, se utilizada de forma exclusiva, deixando em aberto a proposta de métricas que a corroborem, ou cooperem com ela na medida de qualidade do código CSS.
+
+\citeonline{Quint2007} analisam os requisitos necessários para construir uma ferramenta de manipulação de estilos, baseando-se nas estruturas principais da linguagem CSS. Discutindo os métodos e técnicas que podem atender a esses requisitos, auxiliando os autores \textit{web} de forma eficiente. Este trabalho discute a necessidade do estilo em documentos \textit{web} de uma forma geral, mas opta por focar no CSS por ser mais utilizado e ter uma estrutura mais simples que o XSL, por exemplo, que também possui alguns estudos de mesma natureza.
+
+\citeonline{Park2013} investigam os erros cometidos pelas pessoas ao codificar HTML e CSS. Aplicando um método de análise, foi possível dividir, a partir de gravações de vídeos, em seguimentos as dificuldades enfrentadas e os erros cometidos pelos participantes da pesquisa. Os resultados encontrados demonstraram que é possível utilizar o \textit{framework skills-rules-knowledge} para analise de erros nos códigos, enquanto proveem uma compreensão da origem destes erros, e sugerem formas de se aprimorar ferramentas de desenvolvimento \textit{web} para o suporte ao aprendizado de HTML e CSS.

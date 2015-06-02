@@ -3,15 +3,12 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/capa.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/folha-rosto.aux
-A level-1 auxiliary file: ./01-elementos-pre-textuais/resumo-pt.aux
-A level-1 auxiliary file: ./01-elementos-pre-textuais/resumo-en.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/sumario.aux
 A level-1 auxiliary file: ./02-elementos-textuais/introducao.aux
-A level-1 auxiliary file: ./02-elementos-textuais/trab-relacionados.aux
 A level-1 auxiliary file: ./02-elementos-textuais/fund-teorica.aux
+A level-1 auxiliary file: ./02-elementos-textuais/trab-relacionados.aux
 A level-1 auxiliary file: ./02-elementos-textuais/metodologia.aux
 A level-1 auxiliary file: ./02-elementos-textuais/resultados.aux
-A level-1 auxiliary file: ./02-elementos-textuais/conclusao.aux
 A level-1 auxiliary file: ./03-elementos-pos-textuais/referencias.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -25,10 +22,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: ./refbase.bib
-Repeated entry---line 126 of file ./refbase.bib
- : @inproceedings{Geneves2012
- :                           ,
-I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -38,45 +32,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 16 entries,
+You've used 25 entries,
             6711 wiz_defined-function locations,
-            1313 strings with 12378 characters,
-and the built_in function-call counts, 23481 in all, are:
-= -- 2856
-> -- 401
-< -- 619
-+ -- 811
-- -- 123
-* -- 1438
-:= -- 2833
-add.period$ -- 67
-call.type$ -- 17
-change.case$ -- 143
-chr.to.int$ -- 27
-cite$ -- 12
-duplicate$ -- 2280
-empty$ -- 989
-format.name$ -- 597
-if$ -- 4787
+            1390 strings with 13862 characters,
+and the built_in function-call counts, 36221 in all, are:
+= -- 4306
+> -- 619
+< -- 933
++ -- 1188
+- -- 190
+* -- 2237
+:= -- 4391
+add.period$ -- 111
+call.type$ -- 26
+change.case$ -- 223
+chr.to.int$ -- 51
+cite$ -- 21
+duplicate$ -- 3560
+empty$ -- 1548
+format.name$ -- 914
+if$ -- 7380
 int.to.chr$ -- 4
 int.to.str$ -- 3
-missing$ -- 258
-newline$ -- 70
-num.names$ -- 60
-pop$ -- 319
+missing$ -- 427
+newline$ -- 122
+num.names$ -- 105
+pop$ -- 503
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 92
 quote$ -- 0
-skip$ -- 2554
+skip$ -- 3799
 stack$ -- 1
-substring$ -- 981
-swap$ -- 849
-text.length$ -- 18
+substring$ -- 1547
+swap$ -- 1352
+text.length$ -- 34
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 5
 warning$ -- 0
-while$ -- 95
+while$ -- 165
 width$ -- 0
-write$ -- 204
-(There was 1 error message)
+write$ -- 363
+(There was 1 warning)
