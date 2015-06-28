@@ -6,7 +6,7 @@
 \label{chap:fund-teor}
 \section{HTML}
 \label{sec:html}
-HTML é a linguagem principal para criação de documentos, e aplicações, na \textit{Web}, para o uso de todos, em qualquer lugar \cite{W3Chtml2015}.
+HTML é a linguagem principal para criação de documentos e aplicações na \textit{Web} para o uso de todos, em qualquer lugar \cite{W3Chtml2015}.
 
 O documento HTML consiste em uma árvore de elementos e texto. Cada elemento é representado por uma \textit{tag} de abertura e uma de fechamento. As \textit{tags} têm de estar todas aninhadas completamente, sem haver sobreposição. Os elementos podem ter atributos que controlam o seu comportamento \cite{HTMLspec2014}. Na \autoref{fig:simpleHTML} está representada a estrutura básica de um documento HTML.
 
@@ -18,9 +18,19 @@ O documento HTML consiste em uma árvore de elementos e texto. Cada elemento é 
 	\label{fig:simpleHTML}
 \end{figure}
 
-Pode-se notar na \autoref{fig:simpleHTML} a utilização dos atributos \textit{id}, \textit{title} e \textit{style}, que representam a identificação única do elemento, uma meta informação identificando a sua utilidade e o estilo aplicado a ele, respectivamente. Esses atributos tem a função de organizar os elementos do HTML e podem ser utilizados para definir o estilo deles também.
+\begin{figure}[!htb]
+	\centering
+	\caption{Estrutura de uma \textit{tag}.}
+	\includegraphics[width=1\textwidth]{./04-figuras/tag_element_attr_marked}
+	\fonte{próprio autor}
+	\label{fig:tagStruct}
+\end{figure}
 
-Dentro do documento HTML pode-se utilizar as \textit{tags} <style/> e <script/>, que definem escopos de estilo e linguagens de \textit{script}, como pode-se observar na \autoref{fig:styleScript}. Mais comumente são utilizados o CSS e o javascript, uma vez que os três formam a tríade padrão da W3C.
+Uma \textit{tag} HTML, pode possuir atributos que podem definir uma meta informação, com o objetivo de organizar o arquivo HTML, ou definir seu estilo. Esses atributos devem sempre ser definidos na \textit{tag} de abertura, e são representados por um par chave/valor. Podemos ver na \autoref{fig:tagStruct} uma estrutura simples de um \textit{tag} com os atributos \textit{id}, \textit{class} e \textit{style} definidos.
+
+Pode-se notar na \autoref{fig:simpleHTML} a utilização dos atributos \textit{id}, \textit{title} e \textit{style}, que representam a identificação única do elemento, uma meta informação identificando a sua utilidade e o estilo aplicado a ele, respectivamente.
+
+Dentro do documento HTML pode-se utilizar as \textit{tags} <style/> e <script/>, que definem escopos de estilo e linguagens de \textit{script}, como pode-se observar na \autoref{fig:styleScript}.
 
 \begin{figure}[!htb]
 	\centering
@@ -30,9 +40,9 @@ Dentro do documento HTML pode-se utilizar as \textit{tags} <style/> e <script/>,
 	\label{fig:styleScript}
 \end{figure}
 
-É uma boa prática de desenvolvimento \textit{web} manter as estruturas em arquivos diferentes, evitando ao máximo a utilização das \textit{tags} de escopo. Essa separação mantém uma organização do código, facilitando sua leitura. Porém, esta prática aumenta a dificuldade de se encontrar erros, dificulta a organização de elementos de controle e, se mal gerenciado, dificulta o reuso de seus componentes.
+É uma boa prática de desenvolvimento \textit{web} manter as estruturas em arquivos diferentes, evitando ao máximo a utilização das \textit{tags} de escopo. Essa separação mantém uma organização do código, possibilita o reuso em outras páginas, ou até mesmo em outros sistemas, e também melhoram o desempenho, pois podem ser mantidos em cache, diminuindo a carga de dados necessária para renderização de um página \textit{web}. Porém, esta prática é difícil de gerenciar, dificultando a identificação de erros e o reuso de seus componentes.
 
-Os navegadores \textit{web} (\textit{Browsers}) traduzem esse formato em uma árvore DOM (\textit{Document Object Model}). Uma árvore DOM é uma representação em memória de um documento, que possui vários nós, cada nó agrupando alguns elementos do documento.
+Os navegadores \textit{web} (\textit{Browsers}) traduzem esse formato em uma árvore DOM (\textit{Document Object Model}). Uma árvore DOM é uma representação em memória de um documento, que possui vários nós, sendo que cada nó contém um elemento ou trecho de texto do documento.
 
 \begin{figure}[!htb]
 	\centering
@@ -42,8 +52,9 @@ Os navegadores \textit{web} (\textit{Browsers}) traduzem esse formato em uma ár
 	\label{fig:domtree}
 \end{figure}
 
-Na \autoref{fig:domtree} vê-se que o elemento raiz da árvore é o html, já que este é o tipo do documento interpretado. Cada elemento do HTML é representado por um nó, todos os elementos que se encontram no nível abaixo deste são denominados descendentes (\textit{descendant}), os nós que se encontram exatamente um nível abaixo são os filhos (\textit{child}), e os elementos que se encontram no mesmo nível são chamados de irmãos (\textit{sinbling}). Os nós denominados de \textit{text} são os que encapsulam os textos inseridos dentro dos elementos HTML, então estes serão os nós que existiram em maior número no DOM. 
-Esta árvore DOM é utilizada para localização dos nós do HTML, o que significa que as linguagens que precisam localizar os elementos para efetuar operações sobre eles, como o caso do CSS e do jQuery (uma biblioteca javascript que utiliza seletores CSS para localizar os documentos), efetuam uma busca em árvore.
+Na \autoref{fig:domtree}, vê-se que o elemento raiz da árvore é o html, que é sempre o primeiro elemento de um documento e que contém todos os outros. Cada elemento do HTML é representado por um nó, onde todos os nós que se encontram nos níveis abaixo deste são denominados descendentes (\textit{descendant}). Dentro da árvore DOM, os nós que se encontram exatamente um nível abaixo são os filhos (\textit{child}) e os nós que se encontram no mesmo nível são chamados de irmãos (\textit{sinbling}). Os nós denominados de \textit{text} são os que encapsulam os textos inseridos dentro dos elementos HTML, então estes serão os nós que existem em maior número no DOM.
+
+A árvore DOM é utilizada para localização dos nós do HTML, as linguagens  CSS e javascript, utilizam da estrutura do DOM para encontrar os elementos e identificar quais são os elementos afetados por suas diretivas. O navegador determina a partir dos nós selecionados pelos seletores CSS, quais serão os elementos afetados pela regra.
 
 \section{CSS}
 \label{sec:CSS}
@@ -63,14 +74,14 @@ A \autoref{fig:cssExample} ilustra uma folha de estilo, com as regras representa
 
 \subsection{Seletores}
 \label{subsec:seletores}
-Um seletor é uma cadeia de uma, ou mais, sequências de seletores simples, separados por combinadores. Os seletores simples são cadeias de caracteres que representam um elemento do html: o seletor universal, representado pelo simbolo \(\ast\), indica que a regra será aplicada a todos os elementos que estejam no DOM. O seletor de elementos HTML, representado pelo nome da \textit{tag} de um elemento, por exemplo \(h1\). O seletor de classe, que seleciona todos os elementos que possuam o atributo \(class\) especificado pelo seletor, é utilizado escrevendo-se o nome da classe, precedido pelo simbolo \(\#\). O seletor de \(id\), seleciona o elemento do html que possua aquele \(id\), é utilizado escrevendo-se o identificador precedido de um ponto final (\(.\)). 
-Simplificando, sem perder generalidade, podemos considerar que regras são feitas de seletores únicos que definem uma única propriedade por vez. Os seletores \(S_i\), chamados de padrões na especificação do CSS \cite{CSSspec2009}, definem uma função booleana na forma:
+Um seletor é uma cadeia de uma, ou mais, sequências de seletores simples, separados por combinadores. Os seletores simples são cadeias de caracteres que representam um elemento do html: o seletor universal, representado pelo simbolo \(\ast\), indica que a regra será aplicada a todos os elementos que estejam no DOM. O seletor de elementos HTML é representado pelo nome da \textit{tag} de um elemento, por exemplo \(h1\). O seletor de classe, que seleciona todos os elementos que possuam o atributo \(class\) especificado pelo seletor, é utilizado escrevendo-se o nome da classe,  precedido de um ponto final (\(.\)). O seletor de \(id\), que seleciona o elemento do html que possua aquele \(id\), é utilizado escrevendo-se o identificador precedido pelo simbolo \(\#\). 
+Simplificando, sem perder generalidade, pode-se considerar que regras são feitas de seletores únicos que definem uma única propriedade por vez. Os seletores \(S_i\), chamados de padrões na especificação do CSS \cite{CSSspec2009}, definem uma função booleana na forma:
 \begin{equation}
 	expression * element \rightarrow boolean
 \end{equation}
 que define se um elemento é, ou não, selecionado pela expressão do seletor.
 
-Os combinadores são propriedades que definem relações entre os elementos de um documento. Existem três formas de combinadores: descendentes, filhos e irmãos. O combinador de descendente descreve qualquer elemento que esteja um nível abaixo na árvore DOM, e são representados pelo espaço em branco, \textit{e.g.} "$body\ p$". O combinador de filho descreve os elementos que estão exatamente um nível abaixo do nó, este combinador é representado pelo sinal de maior ($>$), \textit{e.g.} "$body > p$". O combinador de irmãos descreve os elementos que estão no mesmo nível da árvore, existem duas variações, uma para o próximo irmão adjacente ($+$) e um para todos os irmãos ($\tilde{~}$).
+Os combinadores são propriedades que definem relações entre os elementos de um documento. Existem três formas de combinadores: descendentes, filhos e irmãos. O combinador de descendente descreve qualquer elemento que esteja um nível abaixo na árvore DOM, e são representados pelo espaço em branco, \textit{e.g.} "$body\ p$". O combinador de filho descreve os elementos que estão exatamente um nível abaixo do nó, este combinador é representado pelo sinal de maior ($>$), \textit{e.g.} "$body > p$". O combinador de irmãos descreve os elementos que estão no mesmo nível da árvore, existem duas variações, uma para o próximo irmão adjacente ($+$) e um para todos os irmãos (\char`~).
 
 Uma pseudo classe, é um elemento de seleção que especifica estado ou localização do elemento. Por exemplo, a pseudo classe ":nth-first-child(n)" identifica o n-ésimo elemento filho contando a partir do primeiro, podendo assim ser classificado como uma pseudo classe de localização. A pseudo classe ":hover" identifica um elemento que esteja sob o cursor do apontador (\textit{mouse}), sendo assim uma pseudo classe de estado. Ainda existem os seletores de atributos, que selecionam elementos que possuam determinados atributos, permitindo a utilização de expressões para seleções parciais, \textit{i.e.}, atributos que comecem, possuam ou terminem com uma cadeia de caracteres específicos.
 
@@ -79,11 +90,11 @@ Regras simples como as demonstradas na \autoref{fig:cssExample} são fáceis de 
 \subsection{Efeito Cascata}
 \label{subsec:cascade}
 
-O efeito cascata do CSS se dá devido à ordem de precedência dos valores de propriedades definidas para cada elemento. O mecanismo recebe uma lista desordenada destas propriedades, e as organiza pela precedência das declarações delas. Essa ordem é definida de acordo com os critérios listados a seguir, em ordem decrescente de prioridade \cite{CSScascade2015}.
+O efeito cascata do CSS se dá devido à ordem de precedência dos valores de propriedades definidas para cada elemento. O mecanismo de renderização do navegador recebe uma lista desordenada dessas propriedades, e as organiza pela precedência das declarações delas. Essa ordem é definida de acordo com os critérios listados a seguir, em ordem decrescente de prioridade \cite{CSScascade2015}.
 
 \begin{itemize}
 	\item \textbf{Origem e Importância:} 
-	Cada regra de estilo possui uma origem, que define onde ela estará na cascada, e a importância se refere à utilização, ou não, de um atributo que a explicita.
+	Cada regra de estilo possui uma origem, que define onde ela estará na cascata, e a importância se refere à utilização, ou não, de um atributo que a explicita.
 	\item \textbf{Escopo:}
 	Uma declaração pode ter uma subárvore do DOM como escopo, afetando somente os elementos pertencentes a esta subárvore. Para declarações normais, o escopo mais interno tem prioridade, para as regras definidas como importantes as do escopo mais externo sobrescreverão.
 	\item \textbf{Especificidade:}
@@ -92,15 +103,15 @@ O efeito cascata do CSS se dá devido à ordem de precedência dos valores de pr
 	A última declaração no documento tem a maior prioridade. Isto significa que a localidade será levada em conta, para isso, considera-se que as folhas de estilo são concatenadas ao documento na ordem em que são declaradas.
 \end{itemize}
 
-Uma propriedade pode ter sua importância declarada explicitamente através do valor \textbf{!important}, esse valor então sobrescreverá todas as propriedades que possuirem maior prioridade. Se duas propriedades possuírem o valor \textbf{!important}, as outras especificações de prioridade terão efeito.
+Uma propriedade pode ter sua importância declarada explicitamente através do valor \textbf{!important}, que sobrescreverá todas as propriedades que possuírem maior prioridade. Se duas propriedades possuírem o valor \textbf{!important}, as outras especificações de prioridade terão efeito.
 
-Outra propriedade do CSS que determina o funcionamento em cascata da aplicação de estilo é a herança. Cada propriedade de estilo possui um valor padrão de herança, que indica se aquela propriedade é propagada para seus filhos, essa herança pode ser definida explicitamente, a partir da propriedade \textbf{inherit}. 
+Outra propriedade do CSS que determina o funcionamento em cascata da aplicação de estilo é a herança. Cada propriedade de estilo possui um valor padrão de herança, que indica se aquela propriedade é propagada para seus filhos, essa herança pode ser definida explicitamente, a partir do valor da propriedade \textbf{inherit}. 
 
 \section{Qualidade de \textit{Software}}
 
 Com a finalidade de propor uma métrica, será necessário criar um arcabouço teórico sobre as técnicas e medições de qualidade de \textit{software} e código fonte.
 
-A qualidade de \textit{software} faz um estudo sobre o produto do código fonte, considerando fatores produtivos e algumas vezes subjetivos. Em \citeonline{Pressman:2010}, destacam-se os fatores de qualidade de \textit{software}, definidos pela ISO 9126, a seguir:
+A qualidade de \textit{software} faz um estudo sobre o produto do código fonte, considerando fatores produtivos e algumas vezes subjetivos. Em \citeonline{Pressman:2010}, destacam-se os fatores de qualidade de \textit{software}, definidos pela ISO 9126, apresentados a seguir:
 
 \begin{itemize}
 	\item \textbf{Funcionalidade}. Grau em que o \textit{software} satisfaz as necessidade declaradas.
@@ -111,16 +122,16 @@ A qualidade de \textit{software} faz um estudo sobre o produto do código fonte,
 	\item \textbf{Portabilidade}. Facilidade com a qual o \textit{software} pode ser transposto de um ambiente para outro.
 \end{itemize}
 
-Essas seis características chave apresentam a qualidade do produto de \textit{software}, que são difíceis de se medir quantitativamente e dependem da análise subjetiva de um especialista. Essa subjetividade torna as métricas difíceis de se reproduzir, portanto é quase impossível determinar uma relação entre estados diferentes do produto.
+Essas seis características chave apresentam a qualidade do produto de \textit{software}, que são difíceis de se medir quantitativamente e dependem da análise subjetiva de um especialista. Essa subjetividade torna as métricas difíceis de se reproduzir, portanto, é quase impossível determinar uma relação entre estados diferentes do produto.
 
-\citeonline{Whitmire:1997} define a qualidade de \textit{software} orientado à objetos (OO), a partir de nove características distintas e mensuráveis de projetos OO:
+\citeonline{Whitmire:1997} define a qualidade de \textit{software} orientado à objetos (OO) a partir de nove características distintas e mensuráveis de projetos OO:
 
 \begin{itemize}
-	\item \textbf{Tamanho}, definido em termos de quatro perspectivas: população, volume, comprimento e funcionalidade. População é medida pela contagem estática das entidades OO, tais como classes ou operações. Medidas de volume são medidas de população coletadas dinamicamente em função de um determinado instante de tempo. Comprimento é a medida de uma cadeia de elementos de projeto interconectadas, \textit{e.g}, a profundidade de uma árvore de herança é uma medida de comprimento. Métricas de funcionalidade fornecem uma indicação indireta do valor entregue ao cliente por uma aplicação OO.
+	\item \textbf{Tamanho}, definido em termos de quatro perspectivas: população, volume, comprimento e funcionalidade. População é medida pela contagem estática das entidades OO, tais como classes ou operações. Medidas de volume são medidas de população coletadas dinamicamente em função de um determinado instante de tempo. Comprimento é a medida de uma cadeia de elementos de projeto interconectadas, \textit{e.g}, a profundidade de uma árvore de herança. Métricas de funcionalidade fornecem uma indicação indireta do valor entregue ao cliente.
 	\item \textbf{Complexidade} é determinada pela forma com a qual as classes OO de um projeto se inter-relacionam umas com as outras.
 	\item \textbf{Acoplamento}, é definido pelas conexões físicas entre elementos de um projeto OO, \textit{e.g}, o número de colaborações entre as classes ou o número de mensagens passadas entre objetos.
 	\item \textbf{Suficiência} é o grau das características exigidas de uma abstração ou o grau das características que um componente de projeto possui na sua abstração, do ponto de vista da aplicação corrente. Ou seja, um componente de \textit{software} é suficiente se reflete plenamente todas as propriedades do objeto de domínio de aplicação que representa.
-	\item \textbf{Completeza} se diferencia de suficiência pelo conjunto de características com o qual comparamos a abstração ou o componente de projeto. A completeza considera múltiplos pontos de vista da aplicação corrente. Como este critério considera diferentes pontos de vista, tem implicação direta no grau de reusabilidade da abstração.
+	\item \textbf{Completeza} se diferencia de suficiência pelo conjunto de características com o qual se compara a abstração ou o componente de projeto. A completeza considera múltiplos pontos de vista da aplicação corrente. Como este critério considera diferentes pontos de vista, tem implicação direta no grau de reusabilidade da abstração.
 	\item \textbf{Coesão} é determinada pelo grau em que o conjunto de propriedades que a abstração possui é parte do problema ou do domínio do projeto.
 	\item \textbf{Primitividade} é o grau em que uma operação é atômica --- \textit{i.e.}, a operação não pode ser construída a partir de uma sequência de outras operações contidas na classe.
 	\item \textbf{Similaridade} é o grau em que duas ou mais classes são semelhantes, em termos de sua estrutura, função ou finalidade.
@@ -142,7 +153,7 @@ Segundo \citeonline{Pressman:2010}, as métricas de qualidade de código-fonte t
 \end{itemize}
 
 As métricas de coesão definidas por \citeonline{Bieman1994} são de três tipos, coesão funcional forte (\textit{strong functional cohesion} --- SFC), coesão funcional fraca (\textit{weak function cohesion} --- WFC) e adesividade (\textit{adhesiveness}). 
-Todas essas métricas de coesão variam de 0 a 1. Têm valor 0 quando um procedimento tem mais de uma saída e não exibe nenhum dos atributos de coesão indicados por uma métrica particular. Quando não há \textit{superglue tokens}, nenhuma ficha é comum a todos os \textit{data slices}, tem coesão funcional forte igual a zero. Quando não \textit{data tokens} comuns a mais de um \textit{data slice}, e o procedimento possui mais de um \textit{data slice}, exibe coesão funcional fraca zero e adesividade zero.
+Todas essas métricas de coesão variam de 0 a 1. Têm valor 0 quando um procedimento tem mais de uma saída e não exibe nenhum dos atributos de coesão indicados por uma métrica particular. Quando não há \textit{superglue tokens}, nenhuma ficha é comum a todos os \textit{data slices}, tem coesão funcional forte igual a zero. Quando não existem \textit{data tokens} comuns a mais de um \textit{data slice}, e o procedimento possui mais de um \textit{data slice}, exibe coesão funcional fraca zero e adesividade zero.
 
 \subsection{Métricas de acoplamento}
 
