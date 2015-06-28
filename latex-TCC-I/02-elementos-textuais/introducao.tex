@@ -1,31 +1,34 @@
-%
-% Documento: Introdução
-%
+\chapter{Introdução}
+\label{chap:Intr}
+A \textit{world wide web}, originalmente proposta como um meio para compartilhamento de
+documentos por Tim Berners-Lee, torna-se cada vez mais popular, tendo passado a ser usada para a criação de páginas mais complexas e até mesmo de sistemas de informação, como comércio eletrônico, fóruns, clientes de email, portais de compartilhamento de vídeo etc.
 
-\chapter{Introdução}\label{chap:introducao}
-\label{chap:intro}
+Inicialmente proposto por Håkon Wium Lie e Bert Bos, a linguagem \textit{Cascading Style Sheet} (CSS) propunha a separação do documento de conteúdo --- o arquivo HTML --- da apresentação das páginas \textit{web}. Sendo um dos três padrões fundamentais da W3C\footnote{World Wide Web Consortium - http://www.w3.org/} para desenvolvimento de conteúdo \textit{web}.
 
-A \textit{world wide web}, originalmente proposta como um meio para compartilhamento de documentos por Tim Berners-Lee, torna-se cada vez mais popular, tendo passado a ser usada para a criação de páginas mais complexas e até mesmo de sistemas de informação, como comércio eletrônico, fóruns, clientes de email, portais de compartilhamento de vídeo etc.
-
-Inicialmente proposto  por Håkon Wium Lie e Bert Bos, o \textit{Cascading Style Sheet} (CSS) propunha a separação do documento de conteúdo da apresentação das páginas \textit{web}. Sendo um dos três padrões fundamentais da W3C para desenvolvimento de conteúdo \textit{web}, juntamente com o HTML e o Javascript, o CSS se tornou largamente utilizado. Apesar das vantagens da separação estrutural, os códigos se tornaram complexos e de manutenibilidade onerosa \cite{Mesbah2012}. Escrever regras CSS não é uma tarefa trivial, as características da linguagem como herança e especificidade de seletores colocam os desenvolvedores constantemente em situações nas quais se questionam a efetividade das associações de propriedades escolhidas. Essas características podem prejudicar o que \citeonline{KellerNuss2010} definem como efetividade e eficiência de código CSS:
-
+Juntamente com o HTML e o Javascript, o CSS se tornou largamente utilizado. Apesar das vantagens da separação estrutural, os códigos se tornaram complexos e de manutenibilidade onerosa \cite{Mesbah2012}. Escrever regras CSS não é uma tarefa trivial, as características da linguagem como herança e especificidade de seletores colocam os desenvolvedores constantemente em situações nas quais se questionam a efetividade das associações de propriedades escolhidas. Essas características podem prejudicar o que \citeonline{KellerNuss2010} definem como efetividade e eficiência de código CSS:
 \begin{itemize}
 	\item\textbf{Efetividade do código:} a folha de estilo é efetiva se o documento de conteúdo ao qual ele é aplicado renderiza da forma desejada.
 	
 	\item\textbf{Eficiência do código:} folhas de estilo que causam o mesmo efeito em um documento de conteúdo ainda pode diferir significativamente no modo em que ela aplica a associação de propriedade. Maximizar a eficiência do código CSS significa aplicar a associação de propriedades de uma forma que o esforço da autoria, manutenção e eventual reutilização seja minimizado.
 \end{itemize}
 
-
 \section{Justificativa}
-Alguns cuidados têm de ser tomados ao se alterar um código CSS, muitas vezes propriedades podem sobrescrever outras, tornando parte do código inefetiva. Alterações de dimensão, ou alterações de visibilidade dos elementos podem causar defeitos na renderização de elementos vizinhos, parentes ou filhos. Estes efeitos colaterais são muito comuns em edição de páginas onde a definição de estilo está distribuída em vários arquivos.
 
-Pode-se notar, então, a dificuldade de se manter um código CSS sem falhas durante a construção de uma página \textit{web}. Portanto, existe a necessidade de se manter um alto grau de manutenibilidade. A manutenibilidade de um sistema é definida como a facilidade com a qual um \textit{software}, ou componente, pode ser modificado para corrigir falhas, melhorar performance, ou adaptar-se à mudança de ambiente \cite{Ieee1990}. A partir desta definição, pode-se identificar uma medida de manutenibilidade para códigos CSS, considerando-se que onde houver alta complexidade haverá a necessidade de se manter o funcionamento, ou adaptação, da apresentação do documento.
+Alguns cuidados têm de ser tomados ao se alterar um código CSS, muitas vezes propriedades
+podem sobrescrever outras, tornando parte do código inefetiva. Alterações de dimensão,
+ou alterações de visibilidade dos elementos podem causar defeitos na renderização de elementos vizinhos, parentes ou filhos. Estes efeitos colaterais são muito comuns em edição de páginas onde a definição de estilo está distribuída em vários arquivos.
 
-As linguagens de folha de estilo, como o CSS, são muito pouco documentadas \cite{Marden1999,Geneves2012,Quint2007} e, como identificado por \citeonline{Mesbah2012}, analisar código CSS com uma perspectiva de manutenção ainda não foi explorada em nenhum trabalho científico. Portanto, há necessidade de se definir a qualidade do código CSS, com objetivo de se manter um nível de manutenibilidade da apresentação de páginas \textit{web}. Para medir este nível, será feita neste trabalho, uma proposta de métrica de qualidade de código CSS, focando a manutenção do código.
+Pode-se notar, então, a dificuldade de se manter um código CSS sem falhas durante a construção de uma página web. Portanto, existe a necessidade de se manter um alto grau de manutenibilidade. A manutenibilidade de um sistema é definida como a facilidade com a qual um software, ou componente, pode ser modificado para corrigir falhas, melhorar performance, ou adaptar-se à mudança de ambiente \cite{Ieee1990}. A partir desta definição, pode-se identificar uma medida de manutenibilidade para códigos CSS, considerando-se que onde houver alta complexidade haverá a necessidade de se manter o funcionamento, ou adaptação, da apresentação do documento.
+
+A manutenção e modificação de software são etapas essenciais para o seu tempo de vida,
+e isso não é diferente para aplicações web. Sendo uma tarefa essencial, e complexa, entende-se que seja necessário encontrar uma forma de mitigar os possíveis impactos na modificação, ou evolução, das folhas de estilo dos projetos web.
+
+As linguagens de folha de estilo, como o CSS, são muito pouco documentadas \cite{Marden1999;Quint2007;Geneves2012;} e, como identificado por \citeonline{Mesbah2012}, analisar código CSS com uma perspectiva de manutenção ainda não foi explorada em nenhum trabalho científico. Portanto, há necessidade de se definir a qualidade do código CSS, com objetivo de se manter um nível de manutenibilidade da apresentação de páginas web. Para medir este nível, será feita neste trabalho, uma proposta de métrica de qualidade de código CSS, focando a manutenção do código.
 
 \section{Objetivos}
-\label{sec:obj}
+//TODO
 
-A manutenção e modificação de \textit{software} são etapas essenciais para o seu tempo de vida, e isso não é diferente para aplicações \textit{web}. Sendo uma tarefa essencial, e complexa, entende-se que seja necessário encontrar uma forma de mitigar os possíveis impactos na modificação, ou evolução, das folhas de estilo dos projetos \textit{web}.
-
-Este trabalho tem por objetivo propor métricas de qualidade de código fonte relacionadas à manutenibilidade do código. Para tanto, será feito um levantamento das propriedades da linguagem que modificam a facilidade da manutenção de seu produto, considerando a visão do autor e os aspectos funcionais. 
+Este trabalho tem por objetivo propor métricas de qualidade de código fonte relacionadas
+à manutenibilidade do código. Para tanto, será feito um levantamento das propriedades da
+linguagem que modificam a facilidade da manutenção de seu produto, considerando a visão do
+autor e os aspectos funcionais. 

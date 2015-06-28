@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.25)  2 JUN 2015 00:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.25)  28 JUN 2015 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,185 +1163,1437 @@ l.52 \end{folhaderosto}
 \openout2 = `./02-elementos-textuais/introducao.aux'.
 
  (./02-elementos-textuais/introducao.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 13.
 
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 
+      ^^^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 
+        ^^^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 
+          ^^^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 
+            ^^^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^
+               3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8:¬ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^3ÎK¬
+                     ^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^3ÎK¬^^_
+                        ÖFsQ^^A÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^3ÎK¬^^_ÖFsQ^^A
+                                ÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8:÷ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^3ÎK¬^^_ÖFsQ^^A÷
+                                  ^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^3ÎK¬^^_ÖFsQ^^A÷^^?
+                                     ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn0...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^T
+                                             L¾"¯ÀµxéØ^^Fuª'Nn0...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^T
+                                               L¾"¯ÀµxéØ^^Fuª'Nn0...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:¾ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ^^^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾
+                                                  "¯ÀµxéØ^^Fuª'Nn0...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:¯ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...^^^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯
+                                                  ÀµxéØ^^Fuª'Nn0|<6...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:µ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...^3ÎK¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯Àµ
+                                                  xéØ^^Fuª'Nn0|<6ñÕ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�K¬^^_ÖFsQ^^A÷^^?ØBº^^TL¾"¯Àµx
+                                                  éØ^^Fuª'Nn0|<6ñÕm...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ÖFsQ^^A÷^^?ØBº^^TL¾"¯ÀµxéØ^^F
+                                                  uª'Nn0|<6ñÕm¤Ô^^C...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...÷^^?ØBº^^TL¾"¯ÀµxéØ^^Fuª'Nn
+                                                  0|<6ñÕm¤Ô^^C>Hg§^...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...^TL¾"¯ÀµxéØ^^Fuª'Nn0|<6ñÕm
+                                                  ¤Ô^^C>Hg§^^ShC^^E^^C(...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:¤ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...L¾"¯ÀµxéØ^^Fuª'Nn0|<6ñÕm¤
+                                                  Ô^^C>Hg§^^ShC^^E^^C(ì...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ..."¯ÀµxéØ^^Fuª'Nn0|<6ñÕm¤Ô^^C
+                                                  >Hg§^^ShC^^E^^C(ì^^Hz�...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ÀµxéØ^^Fuª'Nn0|<6ñÕm¤Ô^^C>
+                                                  Hg§^^ShC^^E^^C(ì^^Hz»§...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...éØ^^Fuª'Nn0|<6ñÕm¤Ô^^C>Hg§^^S
+                                                  hC^^E^^C(ì^^Hz»§â^^DFL...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...^Fuª'Nn0|<6ñÕm¤Ô^^C>Hg§^^ShC^^E
+                                                  ^^C(ì^^Hz»§â^^DFLM3 F...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ª'Nn0|<6ñÕm¤Ô^^C>Hg§^^ShC^^E^^C
+                                                  (ì^^Hz»§â^^DFLM3 F^^G...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�0|<6ñÕm¤Ô^^C>Hg§^^ShC^^E^^C(ì^^H
+                                                  z»§â^^DFLM3 F^^G^^PY^^...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...¤Ô^^C>Hg§^^ShC^^E^^C(ì^^Hz»§â^^D
+                                                  FLM3 F^^G^^PY^^UwýÛti...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...^^C>Hg§^^ShC^^E^^C(ì^^Hz»§â^^DFLM3 
+                                                  F^^G^^PY^^UwýÛtieã^^U...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...Hg§^^ShC^^E^^C(ì^^Hz»§â^^DFLM3 F^^G
+                                                  ^^PY^^UwýÛtieã^^UôO�...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...g§^^ShC^^E^^C(ì^^Hz»§â^^DFLM3 F^^G^^P
+                                                  Y^^UwýÛtieã^^UôOç+Z...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...^ShC^^E^^C(ì^^Hz»§â^^DFLM3 F^^G^^PY^^U
+                                                  wýÛtieã^^UôOç+ZÕú...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...^^C(ì^^Hz»§â^^DFLM3 F^^G^^PY^^UwýÛ
+                                                  tieã^^UôOç+ZÕú%Û...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...Hz»§â^^DFLM3 F^^G^^PY^^UwýÛtieã^^U
+                                                  ôOç+ZÕú%Ûôæ}�...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...M3 F^^G^^PY^^UwýÛtieã^^UôOç+ZÕú
+                                                  %Ûôæ}×ÖUi^^TTÅ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 O¡¸7
+            ";^^_.?À^^Zs^´É8K:Rä
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 O¡¸7";
+                ^^_.?À^^Zs^´É8K:Rä
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 O¡¸7";^^_
+                   .?À^^Zs^´É8K:Rä
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 O¡¸7";^^_.?À^^Z
+                          s^´É8K:Rä
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2 O¡¸7";^^_.?À^^Zs^
+                            ´É8K:Rä
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.2 O¡¸7";^^_.?À^^Zs^
+                              ´É8K:Rä
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 O¡¸7";^^_.?À^^Zs^
+                              ´É8K:Rä
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:´ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 O¡¸7";^^_.?À^^Zs^´
+                                É8K:Rä
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 2.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 2.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 J1 E
+          ¹^^ZÒ}¼Á Þþæ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:¹ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 J1 E¹
+            ^^ZÒ}¼Á Þþæ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 J1 E¹^^Z
+               Ò}¼Á Þþæ
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 3.
+
+
+! Package inputenc Error: Unicode char \u8:¼ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 J1 E¹^^ZÒ}¼
+                    Á Þþæ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 J1 E¹^^ZÒ}¼
+                      Á Þþæ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 3.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 J1 E¹^^ZÒ}¼Á
+                           Þþæ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 J1 E¹^^ZÒ}¼Á
+                             Þþæ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \TH invalid in math mode on input line 3.
+
+
+LaTeX Warning: Command \th invalid in math mode on input line 3.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 J1 E¹^^ZÒ}¼Á Þþ
+                                   æ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \ae invalid in math mode on input line 3.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 4.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 4.
+
+
+LaTeX Warning: Command \textcopyright invalid in math mode on input line 4.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 4.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 4.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
 
 
+LaTeX Warning: Command \textcircled invalid in math mode on input line 4.
 
 
-]) [2]
-\openout2 = `./02-elementos-textuais/fund-teorica.aux'.
+LaTeX Warning: Command \^ invalid in math mode on input line 4.
 
 
-(./02-elementos-textuais/fund-teorica.tex
-<./04-figuras/html_simples.pdf, id=103, 711.65875pt x 374.39874pt>
-File: ./04-figuras/html_simples.pdf Graphic file (type pdf)
+! Package inputenc Error: Unicode char \u8:÷ not set up for use with LaTeX.
 
-<use ./04-figuras/html_simples.pdf>
-Package pdftex.def Info: ./04-figuras/html_simples.pdf used on input line 16.
-(pdftex.def)             Requested size: 455.0pt x 239.36871pt.
-
-<./04-figuras/style_script.pdf, id=106, 636.3775pt x 236.885pt>
-File: ./04-figuras/style_script.pdf Graphic file (type pdf)
-
-<use ./04-figuras/style_script.pdf>
-Package pdftex.def Info: ./04-figuras/style_script.pdf used on input line 28.
-(pdftex.def)             Requested size: 455.0pt x 169.36787pt.
- [3
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 çJÜ©â÷
+               gÚiÞc\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.34 
-      <./04-figuras/html_simples.pdf>]
-<./04-figuras/DOMsnippet.pdf, id=122, 254.9525pt x 411.5375pt>
-File: ./04-figuras/DOMsnippet.pdf Graphic file (type pdf)
-
-<use ./04-figuras/DOMsnippet.pdf>
-Package pdftex.def Info: ./04-figuras/DOMsnippet.pdf used on input line 40.
-(pdftex.def)             Requested size: 136.50139pt x 220.34308pt.
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.47 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.47 
-      <./04-figuras/style_script.pdf> <./04-figuras/DOMsnippet.pdf
-
-pdfTeX warning: pdflatex (file ./04-figuras/DOMsnippet.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
->] <./04-figuras/css_example.pdf, id=150, 225.84375pt x 360.34625pt>
-File: ./04-figuras/css_example.pdf Graphic file (type pdf)
-
-<use ./04-figuras/css_example.pdf>
-Package pdftex.def Info: ./04-figuras/css_example.pdf used on input line 59.
-(pdftex.def)             Requested size: 136.50139pt x 217.80946pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.68 \begin{equation}
-                      <./04-figuras/css_example.pdf>] [6] [7] [8]
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 137.
- [9] [10])
-[11]
-\openout2 = `./02-elementos-textuais/trab-relacionados.aux'.
-
- (./02-elementos-textuais/trab-relacionados.tex
-
-LaTeX Warning: Citation `' on page 12 undefined on input line 11.
-
-[12
+LaTeX Warning: Command \' invalid in math mode on input line 4.
 
 
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
 
-]) [13]
-\openout2 = `./02-elementos-textuais/metodologia.aux'.
-
- (./02-elementos-textuais/metodologia.tex [14
-
-
-
-]) [15]
-\openout2 = `./02-elementos-textuais/resultados.aux'.
-
-
-(./02-elementos-textuais/resultados.tex) [16
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 çJÜ©â÷gÚ
+                    iÞc\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-
-]
-\openout2 = `./03-elementos-pos-textuais/referencias.aux'.
+LaTeX Warning: Command \TH invalid in math mode on input line 4.
 
 
-(./03-elementos-pos-textuais/referencias.tex (./main.bbl (./main.brf)
-\tf@brf=\write5
-\openout5 = `main.brf'.
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 çJÜ©â÷gÚiÞc
+                          \
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.4 çJÜ©â÷gÚiÞc\�
+                            �
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-bibitemlist
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
 
-Underfull \hbox (badness 3657) in paragraph at lines 54--54
-[]\T1/ptm/m/n/12 (+20) HICKSON, I.; BER-JON, R.; FAULK-NER, S.; LEITHEAD, T.; N
-A-VARA, E. D.;
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 54--54
-\T1/ptm/m/n/12 (+20) O'CONNOR, E.; PFEIF-FER, S. \T1/ptm/b/n/12 HTML5: A vo-ca-
-bu-lary and as-so-ci-a-ted APIs for
- []
-
-[17
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 çJÜ©â÷gÚiÞc\
+                             
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
 
 
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
 
-])) [18]
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
- (./main.aux (./01-elementos-pre-textuais/capa.aux)
-(./01-elementos-pre-textuais/folha-rosto.aux)
-(./01-elementos-pre-textuais/sumario.aux)
-(./02-elementos-textuais/introducao.aux)
-(./02-elementos-textuais/fund-teorica.aux)
-(./02-elementos-textuais/trab-relacionados.aux)
-(./02-elementos-textuais/metodologia.aux)
-(./02-elementos-textuais/resultados.aux)
-(./03-elementos-pos-textuais/referencias.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
-Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: D5F6F4F04DDC528D188E116E4A901E90;2217.
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 çJÜ©â÷gÚiÞc\
+                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Warning: There were undefined references.
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W
+        G^^Y .¹qX1a$´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
- ) 
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W 
+         G^^Y .¹qX1a$´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G
+            ^^Y .¹qX1a$´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y
+                .¹qX1a$´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8:¹ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y .¹
+                   qX1a$´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y .¹qX1
+                        a$´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y .¹qX1a
+                           $´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no � in font cmr8!
+Missing character: There is no � in font cmr8!
+Missing character: There is no � in font cmr8!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+
+! Package inputenc Error: Unicode char \u8:´ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y .¹qX1a$´
+                              àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y .¹qX1a$´àÔ
+                                    Þ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y .¹qX1a$´àÔÞ¡Ñ
+                                            ¤Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:¤ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y .¹qX1a$´àÔÞ¡Ñ¤
+                                              Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^W G^^Y .¹qX1a$´àÔÞ¡Ñ¤
+                                                Øt=¥cD^^Gwõ^^S-»^^[N(Ö�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:¥ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...�^^Y .¹qX1a$´àÔÞ¡Ñ¤Øt=¥
+                                                  cD^^Gwõ^^S-»^^[N(Öøc...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ....¹qX1a$´àÔÞ¡Ñ¤Øt=¥cD^^G
+                                                  wõ^^S-»^^[N(Öøckêb�...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...a$´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S
+                                                  -»^^[N(ÖøckêbÂÞ6º...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...´àÔÞ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[
+                                                  N(ÖøckêbÂÞ6ºÊ]o{...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...Þ¡Ñ¤Øt=¥cD^^Gwõ^^S-»^^[N(Öø
+                                                  ckêbÂÞ6ºÊ]o{*Ý±|...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...¥cD^^Gwõ^^S-»^^[N(ÖøckêbÂÞ6ºÊ]
+                                                  o{*Ý±|î9Q8ì)V	Î9�...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...^Gwõ^^S-»^^[N(ÖøckêbÂÞ6ºÊ]o{*
+                                                  Ý±|î9Q8ì)V	Î9ÚlÓ�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:± not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...�^^S-»^^[N(ÖøckêbÂÞ6ºÊ]o{*Ý±
+                                                  |î9Q8ì)V	Î9ÚlÓq^^...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...(ÖøckêbÂÞ6ºÊ]o{*Ý±|î9Q8ì)
+                                                  V	Î9ÚlÓq^^Z^^Z^^\9D...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...ÂÞ6ºÊ]o{*Ý±|î9Q8ì)V	Î9ÚlÓ
+                                                  q^^Z^^Z^^\9DB;¹ÁI0E�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...6ºÊ]o{*Ý±|î9Q8ì)V	Î9ÚlÓq^^Z
+                                                  ^^Z^^\9DB;¹ÁI0EÆ±�...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...Ê]o{*Ý±|î9Q8ì)V	Î9ÚlÓq^^Z^^Z
+                                                  ^^\9DB;¹ÁI0EÆ±ý4...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...]o{*Ý±|î9Q8ì)V	Î9ÚlÓq^^Z^^Z
+                                                  ^^\9DB;¹ÁI0EÆ±ý4...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...{*Ý±|î9Q8ì)V	Î9ÚlÓq^^Z^^Z^^\
+                                                  9DB;¹ÁI0EÆ±ý4N...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...�±|î9Q8ì)V	Î9ÚlÓq^^Z^^Z^^\9DB
+                                                  ;¹ÁI0EÆ±ý4N5ñ^^...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:¹ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...|î9Q8ì)V	Î9ÚlÓq^^Z^^Z^^\9DB;¹
+                                                  ÁI0EÆ±ý4N5ñ^^[®<
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:± not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...V	Î9ÚlÓq^^Z^^Z^^\9DB;¹ÁI0EÆ±
+                                                  ý4N5ñ^^[®<
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...	Î9ÚlÓq^^Z^^Z^^\9DB;¹ÁI0EÆ±ý
+                                                  4N5ñ^^[®<
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...9ÚlÓq^^Z^^Z^^\9DB;¹ÁI0EÆ±ý4
+                                                  N5ñ^^[®<
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...�lÓq^^Z^^Z^^\9DB;¹ÁI0EÆ±ý4
+                                                  N5ñ^^[®<
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...^^Z^^Z^^\9DB;¹ÁI0EÆ±ý4N5ñ^^[
+                                                  ®<
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8:µ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ïìµ
+          iû:¢$}%¨üËm¸^^Qy^^^0ó+^^W^^?^^Nhoª\Å.r9E�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ïìµiû
+               :¢$}%¨üËm¸^^Qy^^^0ó+^^W^^?^^Nhoª\Å.r9E�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ïìµiû
+                 :¢$}%¨üËm¸^^Qy^^^0ó+^^W^^?^^Nhoª\Å.r9E�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:¢ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ïìµiû:¢
+                    $}%¨üËm¸^^Qy^^^0ó+^^W^^?^^Nhoª\Å.r9E�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ïìµiû:¢$
+                       }%¨üËm¸^^Qy^^^0ó+^^W^^?^^Nhoª\Å.r9E�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra }, or forgotten $.
+l.6 ïìµiû:¢$}
+                        %¨üËm¸^^Qy^^^0ó+^^W^^?^^Nhoª\Å.r9E�...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \TH invalid in math mode on input line 7.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 7.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 Þ Â^^S
+            L)_m1gxÈ´8 ~[^^?º{¡^^ZÊU8HÍ^^VÐÅÊ¦ë·Ùz@...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 Þ Â^^S
+              L)_m1gxÈ´8 ~[^^?º{¡^^ZÊU8HÍ^^VÐÅÊ¦ë·Ùz@...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 Þ Â^^S
+                L)_m1gxÈ´8 ~[^^?º{¡^^ZÊU8HÍ^^VÐÅÊ¦ë·Ùz@...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 Þ Â^^SL
+                   )_m1gxÈ´8 ~[^^?º{¡^^ZÊU8HÍ^^VÐÅÊ¦ë·Ùz@...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 7.
+
+
+! Package inputenc Error: Unicode char \u8:´ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 Þ Â^^SL)_m1gxÈ´
+                             8 ~[^^?º{¡^^ZÊU8HÍ^^VÐÅÊ¦ë·Ùz@...
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 15425 strings out of 493304
- 226328 string characters out of 6139871
- 420989 words of memory out of 5000000
- 18291 multiletter control sequences out of 15000+600000
- 74275 words of font info for 207 fonts, out of 8000000 for 9000
+ 14958 strings out of 493304
+ 219303 string characters out of 6139871
+ 407668 words of memory out of 5000000
+ 18105 multiletter control sequences out of 15000+600000
+ 52546 words of font info for 76 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,13n,35p,995b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (21 pages, 243138 bytes).
-PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 421 compressed objects within 5 object streams
- 76 named destinations out of 1000 (max. 500000)
- 36562 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 45i,11n,35p,773b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+!  ==> Fatal error occurred, no output PDF file produced!
