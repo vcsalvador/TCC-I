@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.3 }
 
+\bibitem[Berners-Lee e Fischetti 2000]{Berners-Lee:2000:WWO:556560}
+\abntrefinfo{Berners-Lee e Fischetti}{BERNERS-LEE; FISCHETTI}{2000}
+{BERNERS-LEE, T.; FISCHETTI, M. \textbf{Weaving the Web: The Original Design
+  and Ultimate Destiny of the World Wide Web by Its Inventor}. [S.l.]:
+  HarperInformation, 2000.
+ISBN 006251587X.}
+
 \bibitem[Bieman e Ott 1994]{Bieman1994}
 \abntrefinfo{Bieman e Ott}{BIEMAN; OTT}{1994}
 {BIEMAN, J.; OTT, L. Measuring functional cohesion.
@@ -66,6 +73,12 @@ Dispon{\'\i}vel em:
   Communications Technology (QUATIC), 2010 Seventh International Conference on
   the}. [S.l.]: IEEE, 2010. p. 116--121.
 ISBN 978-1-4244-8539-0.}
+
+\bibitem[Lie 2005]{Hakon:2005}
+\abntrefinfo{Lie}{LIE}{2005}
+{LIE, H.~W.
+\textbf{{Cascading Style Sheets}}.
+Tese (Doutorado) --- University of Oslo, mar. 2005.}
 
 \bibitem[Marden e Munson 1999]{Marden1999}
 \abntrefinfo{Marden e Munson}{MARDEN; MUNSON}{1999}

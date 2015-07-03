@@ -21,12 +21,12 @@ O documento HTML consiste em uma árvore de elementos e texto. Cada elemento é 
 \begin{figure}[!htb]
 	\centering
 	\caption{Estrutura de uma \textit{tag}.}
-	\includegraphics[width=.5\textwidth]{./04-figuras/tag_element_attr_marked}
+	\includegraphics[width=0.7\textwidth]{./04-figuras/tag_element_attr_marked}
 	\fonte{próprio autor}
 	\label{fig:tagStruct}
 \end{figure}
 
-Uma \textit{tag} HTML, pode possuir atributos que podem definir uma meta informação, com o objetivo de organizar o arquivo HTML, ou definir seu estilo. Esses atributos devem sempre ser definidos na \textit{tag} de abertura, e são representados por um par chave/valor. Podemos ver na \autoref{fig:tagStruct} uma estrutura simples de um \textit{tag} com os atributos \textit{id}, \textit{class} e \textit{style} definidos.
+Esses atributos de controle dos elementos tem o objetivo de organizar o arquivo HTML, ou definir seu estilo. Esses atributos devem sempre ser definidos na \textit{tag} de abertura, e são representados por um par chave/valor. Pode ser visto na \autoref{fig:tagStruct} uma estrutura simples de uma \textit{tag} com os atributos \textit{id}, \textit{class} e \textit{style} definidos.
 
 Pode-se notar na \autoref{fig:simpleHTML} a utilização dos atributos \textit{id}, \textit{title} e \textit{style}, que representam a identificação única do elemento, uma meta informação identificando a sua utilidade e o estilo aplicado a ele, respectivamente.
 
@@ -40,34 +40,32 @@ Dentro do documento HTML pode-se utilizar as \textit{tags} <style/> e <script/>,
 	\label{fig:styleScript}
 \end{figure}
 
-É uma boa prática de desenvolvimento \textit{web} manter as estruturas em arquivos diferentes, evitando ao máximo a utilização das \textit{tags} de escopo. Essa separação mantém uma organização do código, possibilita o reuso em outras páginas, ou até mesmo em outros sistemas, e também melhoram o desempenho, pois podem ser mantidos em cache, diminuindo a carga de dados necessária para renderização de um página \textit{web}. Porém, esta prática é difícil de gerenciar, dificultando a identificação de erros e o reuso de seus componentes.
+É uma boa prática de desenvolvimento \textit{web} manter as regras CSS em arquivos separados, evitando ao máximo a utilização das \textit{tags} de definição de escopo, vistas na \autoref{fig:styleScript}. Essa separação mantém uma organização do código, possibilita o reuso em outras páginas, ou até mesmo em outros sistemas, e também melhora o desempenho, pois os arquivos podem ser mantidos em \textit{cache}, diminuindo a carga de dados necessária para renderização de um página \textit{web}. Essa separação deve ser feita com cuidado, uma vez que a identificação das causas de possíveis erros se torna mais complexa.
 
-Os navegadores \textit{web} (\textit{Browsers}) traduzem esse formato em uma árvore DOM (\textit{Document Object Model}). Uma árvore DOM é uma representação em memória de um documento, que possui vários nós, sendo que cada nó contém um elemento ou trecho de texto do documento.
+Os navegadores \textit{web} traduzem o arquivo HTML em uma árvore DOM (\textit{Document Object Model}). Uma árvore DOM é uma representação em memória de um documento, que possui vários nós, sendo que cada nó contém um elemento ou trecho de texto do documento \cite{HTMLspec2014}.
 
 \begin{figure}[!htb]
 	\centering
 	\caption{Exemplo de estrutura da árvore do DOM}
-	\includegraphics[width=0.3\textwidth]{./04-figuras/DOMsnippet}
+	\includegraphics[width=0.43\textwidth]{./04-figuras/DOMsnippet}
 	\fonte{\citeonline{HTMLspec2014}}
 	\label{fig:domtree}
 \end{figure}
 
-Na \autoref{fig:domtree}, vê-se que o elemento raiz da árvore é o "html", que é sempre o primeiro elemento de um documento e que contém todos os outros. Cada elemento do HTML é representado por um nó, onde todos os nós que se encontram nos níveis abaixo deste são denominados descendentes (\textit{descendant}). Dentro da árvore DOM, os nós que se encontram exatamente um nível abaixo são os filhos (\textit{child}) e os nós que se encontram no mesmo nível são chamados de irmãos (\textit{sinbling}). Os nós denominados de \textit{text} são os que encapsulam os textos inseridos dentro dos elementos HTML, então estes serão os nós que existem em maior número no DOM.
+Na \autoref{fig:domtree}, vê-se que o elemento raiz da árvore é o "html", que é sempre o primeiro elemento de um documento e que contém todos os outros. Cada elemento do HTML é representado por um nó, em que todos os nós que se encontram nos níveis abaixo deste são denominados descendentes (\textit{descendants}). Dentro da árvore DOM, os nós que se encontram exatamente um nível abaixo são os filhos (\textit{childs}) e os nós que se encontram no mesmo nível são chamados de irmãos (\textit{siblings}). Os nós denominados de \textit{text} são os que encapsulam os textos inseridos dentro dos elementos HTML.
 
-A árvore DOM é utilizada para localização dos nós do HTML, as linguagens  CSS e javascript, utilizam da estrutura do DOM para encontrar os elementos e identificar quais são os elementos afetados por suas diretivas. O navegador determina a partir dos nós selecionados pelos seletores CSS, quais serão os elementos afetados pela regra.
+A árvore DOM é utilizada para localização dos nós do HTML, as linguagens  CSS e Javascript, utilizam da estrutura do DOM para encontrar os elementos e identificar quais são os elementos afetados por suas diretivas. O navegador determina quais serão os elementos afetados por uma regra CSS, a partir dos nós selecionados pelos seletores da mesma.
 
 \section{CSS}
 \label{sec:CSS}
 CSS é um mecanismo simples para adicionar estilo (\textit{e.g.}, fontes, cores, espaçamento) em documentos \textit{Web} \cite{W3Ccss2015}.
 
-Uma folha de estilo \(C\) pode ser vista como um conjunto de regras \(R\), composto por regras simples \(R_i\), cada uma composta por um seletor \(S_i\) e um conjunto de pares: propriedade \(P_i\) e seus valores \(V_i\). Os seletores definem a quais elementos de um documento, serão aplicadas as propriedades definidas pela regra à qual elas pertencem \cite{Geneves2012}.
-
-A \autoref{fig:cssExample} ilustra uma folha de estilo, com as regras representadas pelo conjunto de seletores, que precedem as chaves, e os pares "propriedade/valor" que as compões, dentro das chaves.
+Como pode ser visualizado na \autoref{fig:cssExample}, uma folha de estilo \(C\) pode ser vista como um conjunto de regras \(R\), composto por regras simples \(R_i\), cada uma composta por um seletor \(S_i\) e um conjunto de pares: propriedade \(P_i\) e seus valores \(V_i\). Os seletores definem a quais elementos de um documento serão aplicadas as propriedades definidas pela regra à qual elas pertencem \cite{Geneves2012}.
 
 \begin{figure}[!htb]
 	\centering
 	\caption{Exemplo de uma folha de estilo $C$.}
-	\includegraphics[width=0.3\textwidth]{./04-figuras/css_example_marked}
+	\includegraphics[width=0.45\textwidth]{./04-figuras/css_example_marked}
 	\fonte{próprio autor}
 	\label{fig:cssExample}
 \end{figure}
