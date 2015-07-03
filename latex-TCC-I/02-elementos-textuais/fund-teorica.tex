@@ -21,7 +21,7 @@ O documento HTML consiste em uma árvore de elementos e texto. Cada elemento é 
 \begin{figure}[!htb]
 	\centering
 	\caption{Estrutura de uma \textit{tag}.}
-	\includegraphics[width=1\textwidth]{./04-figuras/tag_element_attr_marked}
+	\includegraphics[width=.5\textwidth]{./04-figuras/tag_element_attr_marked}
 	\fonte{próprio autor}
 	\label{fig:tagStruct}
 \end{figure}
@@ -52,7 +52,7 @@ Os navegadores \textit{web} (\textit{Browsers}) traduzem esse formato em uma ár
 	\label{fig:domtree}
 \end{figure}
 
-Na \autoref{fig:domtree}, vê-se que o elemento raiz da árvore é o html, que é sempre o primeiro elemento de um documento e que contém todos os outros. Cada elemento do HTML é representado por um nó, onde todos os nós que se encontram nos níveis abaixo deste são denominados descendentes (\textit{descendant}). Dentro da árvore DOM, os nós que se encontram exatamente um nível abaixo são os filhos (\textit{child}) e os nós que se encontram no mesmo nível são chamados de irmãos (\textit{sinbling}). Os nós denominados de \textit{text} são os que encapsulam os textos inseridos dentro dos elementos HTML, então estes serão os nós que existem em maior número no DOM.
+Na \autoref{fig:domtree}, vê-se que o elemento raiz da árvore é o "html", que é sempre o primeiro elemento de um documento e que contém todos os outros. Cada elemento do HTML é representado por um nó, onde todos os nós que se encontram nos níveis abaixo deste são denominados descendentes (\textit{descendant}). Dentro da árvore DOM, os nós que se encontram exatamente um nível abaixo são os filhos (\textit{child}) e os nós que se encontram no mesmo nível são chamados de irmãos (\textit{sinbling}). Os nós denominados de \textit{text} são os que encapsulam os textos inseridos dentro dos elementos HTML, então estes serão os nós que existem em maior número no DOM.
 
 A árvore DOM é utilizada para localização dos nós do HTML, as linguagens  CSS e javascript, utilizam da estrutura do DOM para encontrar os elementos e identificar quais são os elementos afetados por suas diretivas. O navegador determina a partir dos nós selecionados pelos seletores CSS, quais serão os elementos afetados pela regra.
 
@@ -66,7 +66,7 @@ A \autoref{fig:cssExample} ilustra uma folha de estilo, com as regras representa
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Exemplo de uma folha de estilo \(C\).}
+	\caption{Exemplo de uma folha de estilo $C$.}
 	\includegraphics[width=0.3\textwidth]{./04-figuras/css_example_marked}
 	\fonte{próprio autor}
 	\label{fig:cssExample}
@@ -74,7 +74,7 @@ A \autoref{fig:cssExample} ilustra uma folha de estilo, com as regras representa
 
 \subsection{Seletores}
 \label{subsec:seletores}
-Um seletor é uma cadeia de uma, ou mais, sequências de seletores simples, separados por combinadores. Os seletores simples são cadeias de caracteres que representam um elemento do html: o seletor universal, representado pelo simbolo \(\ast\), indica que a regra será aplicada a todos os elementos que estejam no DOM. O seletor de elementos HTML é representado pelo nome da \textit{tag} de um elemento, por exemplo \(h1\). O seletor de classe, que seleciona todos os elementos que possuam o atributo \(class\) especificado pelo seletor, é utilizado escrevendo-se o nome da classe,  precedido de um ponto final (\(.\)). O seletor de \(id\), que seleciona o elemento do html que possua aquele \(id\), é utilizado escrevendo-se o identificador precedido pelo simbolo \(\#\). 
+Um seletor é uma cadeia de uma, ou mais, sequências de seletores simples, separados por combinadores. Os seletores simples são cadeias de caracteres que representam um elemento do HTML: o seletor universal, representado pelo simbolo \(\ast\), indica que a regra será aplicada a todos os elementos que estejam no DOM. O seletor de elementos HTML é representado pelo nome da \textit{tag} de um elemento, por exemplo \(h1\). O seletor de classe, que seleciona todos os elementos que possuam o atributo \(class\) especificado pelo seletor, é utilizado escrevendo-se o nome da classe,  precedido de um ponto final (\(.\)). O seletor de \(id\), que seleciona o elemento do HTML que possua aquele \(id\), é utilizado escrevendo-se o identificador precedido pelo simbolo \(\#\). 
 Simplificando, sem perder generalidade, pode-se considerar que regras são feitas de seletores únicos que definem uma única propriedade por vez. Os seletores \(S_i\), chamados de padrões na especificação do CSS \cite{CSSspec2009}, definem uma função booleana na forma:
 \begin{equation}
 	expression * element \rightarrow boolean
@@ -177,21 +177,7 @@ Para acoplamento ambiental,
 	\item$r$ = número de módulos que chamam o módulo sendo considerado (\textit{fan-in})
 \end{description}
 
-Usando essas medidas, um indicador de acoplamento de módulo, $m_c$, é definido do seguinte modo:
-\begin{equation}
-	m_c = \frac{k}{M}
-\end{equation}
-em que $k$ é uma constante de proporcionalidade e
-\begin{equation}
-\label{eq:eqGrande}
-	M = d_i + (a \times c_i) + d_o + (b \times c_o) + g_d + (c \times g_c) + w + r
-\end{equation}
-Os valores para $k$, $a$, $b$ e $c$ devem ser derivados empiricamente.
-À medida que o valor de $m_c$, aumenta, o acoplamento global do módulo diminui. A fim de ter a métrica de acoplamento aumentando conforme o grau de acoplamento aumenta, uma métrica de acoplamento revisada pode ser definida como
-\begin{equation}
-	C = 1 - m_c
-\end{equation}
-em que o grau de acoplamento aumenta à medida que as medidas da \autoref{eq:eqGrande} aumentam.
+Usando essas medidas, pode-se indicar um acoplamento de módulo, $m_c$. À medida que o valor de $m_c$, aumenta, o acoplamento global do módulo diminui.
 
 \subsection{Métricas de complexidade}
 
