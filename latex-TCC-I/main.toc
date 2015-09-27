@@ -21,10 +21,10 @@
 \contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o dos resultados}{15}{section.4.3}
 \contentsline {chapter}{\chapternumberline {5}Resultados Preliminares}{16}{chapter.5}
 \contentsline {section}{\numberline {5.1}Construindo o question\IeC {\'a}rio}{16}{section.5.1}
-\contentsline {chapter}{\chapternumberline {6}Conclus\IeC {\~a}o}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}Pr\IeC {\'o}ximos passos}{17}{section.6.1}
-\contentsline {chapter}{Refer\^encias}{18}{section*.6}
+\contentsline {chapter}{\chapternumberline {6}Conclus\IeC {\~a}o}{18}{chapter.6}
+\contentsline {section}{\numberline {6.1}Pr\IeC {\'o}ximos passos}{18}{section.6.1}
+\contentsline {chapter}{Refer\^encias}{19}{section*.6}
 \vspace {\cftbeforepartskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{20}{section*.7}
-\contentsline {appendix}{\chapternumberline {A}Question\IeC {\'a}rio}{21}{appendix.A}
+\contentsline {part}{Ap\^endices}{21}{section*.7}
+\contentsline {appendix}{\chapternumberline {A}Question\IeC {\'a}rio}{22}{appendix.A}
