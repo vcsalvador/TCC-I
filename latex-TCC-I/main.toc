@@ -21,10 +21,15 @@
 \contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o dos resultados}{15}{section.4.3}
 \contentsline {chapter}{\chapternumberline {5}Resultados Preliminares}{16}{chapter.5}
 \contentsline {section}{\numberline {5.1}Construindo o question\IeC {\'a}rio}{16}{section.5.1}
-\contentsline {chapter}{\chapternumberline {6}Conclus\IeC {\~a}o}{18}{chapter.6}
-\contentsline {section}{\numberline {6.1}Pr\IeC {\'o}ximos passos}{18}{section.6.1}
-\contentsline {chapter}{Refer\^encias}{19}{section*.6}
+\contentsline {section}{\numberline {5.2}Resultados do Question\IeC {\'a}rio}{17}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}N\IeC {\'\i }vel de profici\IeC {\^e}ncia}{17}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Vis\IeC {\~a}o Geral}{18}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Quest\IeC {\~o}es Explorat\IeC {\'o}rias}{19}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}C\IeC {\'a}lculo dos pesos}{20}{subsection.5.2.4}
+\contentsline {chapter}{\chapternumberline {6}Conclus\IeC {\~a}o}{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}Pr\IeC {\'o}ximos passos}{23}{section.6.1}
+\contentsline {chapter}{Refer\^encias}{24}{section*.8}
 \vspace {\cftbeforepartskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{21}{section*.7}
-\contentsline {appendix}{\chapternumberline {A}Question\IeC {\'a}rio}{22}{appendix.A}
+\contentsline {part}{Ap\^endices}{26}{section*.9}
+\contentsline {appendix}{\chapternumberline {A}Question\IeC {\'a}rio}{27}{appendix.A}
