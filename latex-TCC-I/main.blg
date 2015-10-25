@@ -3,7 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/capa.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/folha-rosto.aux
+A level-1 auxiliary file: ./01-elementos-pre-textuais/epigrafe.aux
+A level-1 auxiliary file: ./01-elementos-pre-textuais/resumo-pt.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/lista-figuras.aux
+A level-1 auxiliary file: ./01-elementos-pre-textuais/lista-quadros.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/lista-siglas.aux
 A level-1 auxiliary file: ./01-elementos-pre-textuais/sumario.aux
 A level-1 auxiliary file: ./02-elementos-textuais/introducao.aux
@@ -26,6 +29,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: ./refbase.bib
+Warning--I didn't find a database entry for "QuickLeft:CSS"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -35,44 +39,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 28 entries,
+You've used 29 entries,
             6714 wiz_defined-function locations,
-            1414 strings with 14465 characters,
-and the built_in function-call counts, 39194 in all, are:
-= -- 4617
-> -- 681
-< -- 987
-+ -- 1264
-- -- 210
-* -- 2418
-:= -- 4778
-add.period$ -- 123
-call.type$ -- 29
-change.case$ -- 245
-chr.to.int$ -- 54
-cite$ -- 24
-duplicate$ -- 3818
-empty$ -- 1724
-format.name$ -- 1007
-if$ -- 8014
+            1424 strings with 14746 characters,
+and the built_in function-call counts, 40414 in all, are:
+= -- 4761
+> -- 696
+< -- 1020
++ -- 1302
+- -- 215
+* -- 2488
+:= -- 4934
+add.period$ -- 128
+call.type$ -- 30
+change.case$ -- 251
+chr.to.int$ -- 55
+cite$ -- 25
+duplicate$ -- 3942
+empty$ -- 1782
+format.name$ -- 1030
+if$ -- 8259
 int.to.chr$ -- 4
 int.to.str$ -- 3
-missing$ -- 479
-newline$ -- 138
-num.names$ -- 120
-pop$ -- 567
+missing$ -- 495
+newline$ -- 143
+num.names$ -- 125
+pop$ -- 586
 preamble$ -- 1
-purify$ -- 102
+purify$ -- 105
 quote$ -- 0
-skip$ -- 4068
+skip$ -- 4198
 stack$ -- 1
-substring$ -- 1640
-swap$ -- 1445
-text.length$ -- 35
+substring$ -- 1690
+swap$ -- 1489
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 7
 warning$ -- 0
-while$ -- 183
+while$ -- 190
 width$ -- 0
-write$ -- 408
+write$ -- 423
+(There was 1 warning)

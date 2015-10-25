@@ -9,7 +9,7 @@ Neste capítulo será explorado os conceitos de HTML, CSS e Qualidade de código
 
 \section{HTML}
 \label{sec:html}
-HTML é a linguagem principal para criação de documentos e aplicações na \textit{Web} para o uso de todos, em qualquer lugar \cite{W3Chtml2015}.
+HTML é a linguagem principal para criação de documentos e aplicações na \textit{web} para o uso de todos, em qualquer lugar \cite{W3Chtml2015}.
 
 O documento HTML consiste em uma árvore de elementos e texto. Cada elemento é representado por uma \textit{tag} de abertura e uma de fechamento. As \textit{tags} têm de estar todas aninhadas completamente, sem haver sobreposição. Os elementos podem ter atributos que controlam o seu comportamento \cite{HTMLspec2014}. Na \autoref{fig:simpleHTML} está representada a estrutura básica de um documento HTML.
 
@@ -143,48 +143,48 @@ Essas seis características chave apresentam a qualidade do produto de \textit{s
 
 Segundo \citeonline{Pressman:2010}, as métricas de qualidade de código-fonte também podem ser analisadas em nível de componente. Essas métricas são a de coesão, acoplamento e complexidade.
 
-\subsection{Métricas de coesão}
+%\subsection{Métricas de coesão}
 
-\citeonline{Bieman1994} definem uma coleção de métricas que fornecem indicação da coesão de um módulo. As métricas são definidas especificando cinco conceitos e medidas.
+%\citeonline{Bieman1994} definem uma coleção de métricas que fornecem indicação da coesão de um módulo. As métricas são definidas especificando cinco conceitos e medidas.
 
-\begin{itemize}
-	\item\textbf{Fatia de dados (\textit{data slice})} é um caminho retroativo ao longo de um módulo, que procura valores de dados que afetam a posição no módulo em que o caminho teve inicio.
-	\item\textbf{Fichas de dados (\textit{data tokens})} são as variáveis especificadas para um módulo.
-	\item\textbf{Fichas aglutinadas (\textit{glue tokens})} um conjunto de \textit{data tokens} que está contido em um, ou mais, \textit{data slices}.
-	\item\textbf{Fichas superaglutinadas (\textit{superglue tokens})} são os \textit{data tokens} que estão contidos em todos os \textit{data slices}.
-	\item A \textbf{aglutinação (\textit{stickiness})} relativa de uma ficha aglutinante é diretamente proporcional ao número de \textit{data slices} que ela aglutina.
-\end{itemize}
+%\begin{itemize}
+	%\item\textbf{Fatia de dados (\textit{data slice})} é um caminho retroativo ao longo de um módulo, que procura valores de dados que afetam a posição no módulo em que o caminho teve inicio.
+	%\item\textbf{Fichas de dados (\textit{data tokens})} são as variáveis especificadas para um módulo.
+	%\item\textbf{Fichas aglutinadas (\textit{glue tokens})} um conjunto de \textit{data tokens} que está contido em um, ou mais, %\textit{data slices}.
+	%\item\textbf{Fichas superaglutinadas (\textit{superglue tokens})} são os \textit{data tokens} que estão contidos em todos os %\textit{data slices}.
+	%\item A \textbf{aglutinação (\textit{stickiness})} relativa de uma ficha aglutinante é diretamente proporcional ao número de %\textit{data slices} que ela aglutina.
+%\end{itemize}
 
-As métricas de coesão definidas por \citeonline{Bieman1994} são de três tipos, coesão funcional forte (\textit{strong functional cohesion} --- SFC), coesão funcional fraca (\textit{weak function cohesion} --- WFC) e adesividade (\textit{adhesiveness}). 
-Todas essas métricas de coesão variam de 0 a 1. Têm valor 0 quando um procedimento tem mais de uma saída e não exibe nenhum dos atributos de coesão indicados por uma métrica particular. Quando não há \textit{superglue tokens}, nenhuma ficha é comum a todos os \textit{data slices}, tem coesão funcional forte igual a zero. Quando não existem \textit{data tokens} comuns a mais de um \textit{data slice}, e o procedimento possui mais de um \textit{data slice}, exibe coesão funcional fraca zero e adesividade zero.
+%As métricas de coesão definidas por \citeonline{Bieman1994} são de três tipos, coesão funcional forte (\textit{strong functional cohesion} --- SFC), coesão funcional fraca (\textit{weak function cohesion} --- WFC) e adesividade (\textit{adhesiveness}). 
+%Todas essas métricas de coesão variam de 0 a 1. Têm valor 0 quando um procedimento tem mais de uma saída e não exibe nenhum dos atributos de coesão indicados por uma métrica particular. Quando não há \textit{superglue tokens}, nenhuma ficha é comum a todos os \textit{data slices}, tem coesão funcional forte igual a zero. Quando não existem \textit{data tokens} comuns a mais de um \textit{data slice}, e o procedimento possui mais de um \textit{data slice}, exibe coesão funcional fraca zero e adesividade zero.
 
-\subsection{Métricas de acoplamento}
+%\subsection{Métricas de acoplamento}
 
-O acoplamento de módulos fornece a indicação da conectividade de um módulo a outros módulos, dados globais e ambiente exterior.
-A métrica para acoplamento de módulos proposta por \citeonline{Dhama:1995} que engloba acoplamento de dados e de fluxo de controle, acoplamento global e acoplamento ambiental. As medidas necessária para calcular acoplamento de módulos são definidas em termos de cada um dos três tipos de acoplamento mencionados.
-Para acoplamento de dados e de fluxo de controle,
-\begin{description}
-	\item$d_i$ = número de parâmetros de dados de entrada
-	\item$c_i$ = número de parâmetros de controle de entrada
-	\item$d_o$ = número de parâmetros de dados de saída
-	\item$c_o$ = número de parâmetros de controle de saída
-\end{description}
-Para acoplamento global,
-\begin{description}
-	\item$g_d$ = número de variáveis globais usadas como dados
-	\item$g_c$ = número de variáveis globais usadas como controle
-\end{description}
-Para acoplamento ambiental,
-\begin{description}
-	\item$w$ = número de módulos chamados (\textit{fan-out})
-	\item$r$ = número de módulos que chamam o módulo sendo considerado (\textit{fan-in})
-\end{description}
+%O acoplamento de módulos fornece a indicação da conectividade de um módulo a outros módulos, dados globais e ambiente exterior.
+%A métrica para acoplamento de módulos proposta por \citeonline{Dhama:1995} que engloba acoplamento de dados e de fluxo de controle, acoplamento global e acoplamento ambiental. As medidas necessária para calcular acoplamento de módulos são definidas em termos de cada um dos três tipos de acoplamento mencionados.
+%Para acoplamento de dados e de fluxo de controle,
+%\begin{description}
+%	\item$d_i$ = número de parâmetros de dados de entrada
+%	\item$c_i$ = número de parâmetros de controle de entrada
+%	\item$d_o$ = número de parâmetros de dados de saída
+%	\item$c_o$ = número de parâmetros de controle de saída
+%\end{description}
+%Para acoplamento global,
+%\begin{description}
+%	\item$g_d$ = número de variáveis globais usadas como dados
+%	\item$g_c$ = número de variáveis globais usadas como controle
+%\end{description}
+%Para acoplamento ambiental,
+%\begin{description}
+%	\item$w$ = número de módulos chamados (\textit{fan-out})
+%	\item$r$ = número de módulos que chamam o módulo sendo considerado (\textit{fan-in})
+%\end{description}
 
-Usando essas medidas, pode-se indicar um acoplamento de módulo, $m_c$. À medida que o valor de $m_c$, aumenta, o acoplamento global do módulo diminui.
+%Usando essas medidas, pode-se indicar um acoplamento de módulo, $m_c$. À medida que o valor de $m_c$, aumenta, o acoplamento global do módulo diminui.
 
-\subsection{Métricas de complexidade}
+%\subsection{Métricas de complexidade}
 
-Diversas métricas de \textit{software} podem ser calculadas para determinar a complexidade do fluxo de controle do programa. Muitas delas são baseadas no diagrama de fluxo.
-As métricas de qualidade podem ser usadas para prever informação crítica sobre confiabilidade e manutenibilidade de sistemas de \textit{software} a partir da análise automática do código-fonte, ou informação do projeto procedimental. Métricas de complexidade também fornecem realimentação durante o projeto de \textit{software} para ajudar a controlar a atividade de projeto \cite{Pressman:2010}. Fornecendo informações detalhadas sobre os módulos de \textit{software}, durante o teste e manutenção, ajudando a localizar áreas de potencial instabilidade.
+%Diversas métricas de \textit{software} podem ser calculadas para determinar a complexidade do fluxo de controle do programa. Muitas delas são baseadas no diagrama de fluxo.
+%As métricas de qualidade podem ser usadas para prever informação crítica sobre confiabilidade e manutenibilidade de sistemas de \textit{software} a partir da análise automática do código-fonte, ou informação do projeto procedimental. Métricas de complexidade também fornecem realimentação durante o projeto de \textit{software} para ajudar a controlar a atividade de projeto \cite{Pressman:2010}. Fornecendo informações detalhadas sobre os módulos de \textit{software}, durante o teste e manutenção, ajudando a localizar áreas de potencial instabilidade.
 
-A métrica de complexidade mais amplamente usada (e debatida) para \textit{software} de computador é a complexidade ciclomática, desenvolvida por \citeonline{McCabe:1989}.
+%A métrica de complexidade mais amplamente usada (e debatida) para \textit{software} de computador é a complexidade ciclomática, desenvolvida por \citeonline{McCabe:1989}.

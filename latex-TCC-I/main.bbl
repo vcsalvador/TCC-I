@@ -77,7 +77,7 @@ ISBN 978-1-4244-8539-0.}
 \bibitem[Lie 2005]{Hakon:2005}
 \abntrefinfo{Lie}{LIE}{2005}
 {LIE, H.~W.
-\textbf{{Cascading Style Sheets}}.
+\textbf{Cascading Style Sheets}.
 Tese (Doutorado) --- University of Oslo, mar. 2005.}
 
 \bibitem[Marden e Munson 1999]{Marden1999}
@@ -96,6 +96,12 @@ Dispon{\'\i}vel em:
   1989.
 ISSN 0001-0782.
 Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/76380.76382}.}
+
+\bibitem[McPherson 2014]{McPherson:2014}
+\abntrefinfo{McPherson}{MCPHERSON}{2014}
+{MCPHERSON, A. \textbf{Quick Left Reports on Internet Performance}. 2014.
+Dispon{\'\i}vel em: \url{http://reports.quickleft.com/css}. Acesso em: 21 de
+  agosto de 2015.}
 
 \bibitem[Mesbah e Mirshokraie 2012]{Mesbah2012}
 \abntrefinfo{Mesbah e Mirshokraie}{MESBAH; MIRSHOKRAIE}{2012}
