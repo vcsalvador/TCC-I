@@ -30,9 +30,8 @@
 \backcite {McCabe:1989,Zuse:1991,Bieman1994,Dhama:1995,Zuse:1997}{{10}{3.1}{section.3.1}}
 \backcite {Riaz:2009}{{10}{3.1}{section.3.1}}
 \backcite {Mesbah2012}{{10}{3.2}{section.3.2}}
-\backcite {KellerNuss2010}{{10}{3.2}{section.3.2}}
 \backcite {Mesbah2012}{{10}{3.2}{section.3.2}}
-\backcite {KellerNuss2010}{{11}{3.2}{section.3.2}}
+\backcite {KellerNuss2010}{{10}{3.2}{section.3.2}}
 \backcite {Quint2007}{{11}{3.2}{section.3.2}}
 \backcite {Park2013}{{11}{3.2}{section.3.2}}
 \backcite {Park2013}{{11}{3.2}{section.3.2}}
@@ -40,6 +39,6 @@
 \backcite {Mesbah2012}{{11}{3.2}{section.3.2}}
 \backcite {Walton:2015}{{11}{3.2}{section.3.2}}
 \backcite {Freitas2000}{{12}{4.1}{section.4.1}}
-\backcite {McPherson:2014}{{20}{5.3}{section.5.3}}
+\backcite {McPherson:2014}{{20}{5.3}{table.5.1}}
 \backcite {McPherson:2014}{{21}{11}{figure.5.11}}
-\backcite {QuickLeft:CSS}{{22}{5.3}{figure.5.11}}
+\backcite {McPherson:2014}{{21}{5.3}{figure.5.11}}

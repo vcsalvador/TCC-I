@@ -6,9 +6,9 @@
 
 O primeiro passo da execução do trabalho consiste na conceituação de manutenibilidade em código CSS. Pretende-se alcançar este objetivo por meio de referências bibliográficas e de uma pesquisa do tipo \textit{survey} aplicada a pessoas que escrevem código CSS em seu dia a dia, com níveis de experiência variados. Essa pesquisa pretende identificar as propriedades da linguagem e as situações mais comuns que dificultam, ou facilitam, a manutenção de código CSS.
 
-A partir dos resultados do questionário, pretende-se identificar os critérios de avaliação que impactam na qualidade do código CSS. Com a análise e os resultados obtidos para os critérios, de acordo com as hipóteses levantadas pelo autor, serão determinados os pesos de cada critério, para o execução dos testes individuais das folhas de estilo. Nesta etapa será obtido um resultado numérico, representando o cálculo dos pesos para os critérios encontrados no código CSS.
+A partir dos resultados do questionário, pretende-se identificar os critérios de avaliação que impactam na qualidade do código CSS. Com a análise e os resultados obtidos para os critérios, de acordo com as hipóteses levantadas pelo autor, serão determinados os pesos de cada critério, para o execução dos testes individuais das folhas de estilo. Nesta etapa, será obtido um resultado numérico representando o cálculo dos pesos para os critérios encontrados no código CSS.
 
-Utilizando de ferramentas automatizadas, serão identificadas as relações entre o índice proposto e a quantidade de falhas identificadas em sistemas \textit{web} de código aberto. Utilizando bases de projetos de \textit{software} de código aberto, será feita uma analise e a referência cruzada, entre o valor obtido pela métrica do código CSS e o número de problemas reportados relacionados ao projeto do mesmo.
+Utilizando de ferramentas automatizadas, serão identificadas as relações entre o índice proposto e a quantidade de falhas identificadas em sistemas \textit{web} de código aberto. Utilizando bases de projetos de \textit{software} de código aberto, será feita uma análise e a referência cruzada, entre o valor obtido pela métrica do código CSS e o número de problemas reportados relacionados ao projeto.
 
 \section{Questionário}
 
@@ -18,10 +18,10 @@ O interesse de uma pesquisa desse tipo é produzir descrições quantitativas de
 
 \section{Proposta das Métricas}
 
-As métricas são identificadores numéricos baseados em características da linguagem. No caso do CSS, estas características serão definidas a partir dos resultados obtidos no questionário.
+As métricas são identificadores numéricos baseados em características da linguagem. No caso do CSS, essas características serão definidas a partir dos resultados obtidos no questionário.
 
 \section{Avaliação dos resultados}
 
-A partir da métrica proposta, será desenvolvida uma ferramenta automática de cálculo da métrica. O programa irá ler o arquivo CSS, identificar as regras definidas e, a partir da definição proposta, calcular o valor obtido por cada arquivo. Se for necessário para o calculo da métrica, os arquivos HTML também serão considerados no cálculo.
+A partir da métrica proposta, será desenvolvida uma ferramenta automática de cálculo da métrica. O programa irá ler o arquivo CSS, identificar as regras definidas e, a partir da definição proposta, calcular o valor obtido por cada arquivo. Se for necessário para o cálculo da métrica, os arquivos HTML também serão considerados.
 
-Com as métricas calculadas, será testada a aderência da métrica a alguns projetos de código aberto, utilizando a taxa de modificações no código CSS pelo total de modificações no projeto como parâmetro de triangulação. Dessa forma, será construída uma base de dados para as análises estatísticas, que confrontarão os resultados esperados deste trabalho.
+Com as métricas calculadas, será testada a aderência da métrica a alguns projetos de código aberto, utilizando um dos indicadores de manutenibilidade disponível para o projeto, \textit{e.g.}, número de defeitos, tempo gasto em correções, quantidade de modificações no código, etc. Dessa forma, será construída uma base de dados para as análises estatísticas, que confrontarão os resultados esperados deste trabalho.

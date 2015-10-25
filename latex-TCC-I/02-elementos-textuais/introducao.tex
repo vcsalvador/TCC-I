@@ -11,20 +11,20 @@ Essas inconsistências arquiteturais podem prejudicar o que \citeonline{KellerNu
 \begin{itemize}
 	\item\textbf{Efetividade do código:} As propriedades de estilo, definidas no documento CSS, são efetivas se aplicadas aos elementos de conteúdo da forma desejada pelo desenvolvedor.
 	
-	\item\textbf{Eficiência do código:} Existem várias formas de se aplicar estilos aos elementos de conteúdo. Portanto, os códigos de CSS que podem ter o mesmo resultado, ainda podem diferir significativamente. A eficiência de um código CSS significa implementar a atribuição de propriedades de forma a minimizar o esforço de codificar, manter e eventualmente reutilizar o código.
+	\item\textbf{Eficiência do código:} Existem várias formas de se aplicar estilos aos elementos de conteúdo. Portanto, os códigos de CSS que podem ter o mesmo resultado ainda podem diferir significativamente. A eficiência de um código CSS significa implementar a atribuição de propriedades de forma a minimizar o esforço de codificar, manter e eventualmente reutilizar o código.
 \end{itemize}
 
-Efeito colateral descreve o fenômeno onde um agente que foi desenvolvido para afetar somente um escopo bem limitado, acaba afetando um escopo muito maior. Folhas de estilo CSS têm escopo global, e toda regra pode afetar partes desconexas do site, por isso efeitos colaterais são muito comuns. Uma vez que a folha de estilo, usualmente consiste em uma coleção de regras altamente acopladas, totalmente dependentes na presença, ordem e especificidade de outras regras, até mesmos a menor mudança pode afetar a efetividade do código \cite{Walton:2015}.
+O efeito colateral descreve o fenômeno onde um agente que foi desenvolvido para afetar somente um escopo bem limitado acaba afetando um escopo muito maior. Folhas de estilo CSS têm escopo global, e toda regra pode afetar partes desconexas do site, por isso efeitos colaterais são muito comuns. Uma vez que a folha de estilo, usualmente consiste em uma coleção de regras altamente acopladas, totalmente dependentes na presença, ordem e especificidade de outras regras, até mesmos a menor mudança pode afetar a efetividade do código \cite{Walton:2015}.
 
 \section{Justificativa}
 
 Devido às características da linguagem, podemos identificar uma série de fatores que dificultam a construção, manutenção e evolução do código CSS. 
 
-A manutenibilidade de um sistema é definida como a facilidade com a qual um software, ou componente, pode ser modificado para corrigir falhas, melhorar performance, ou adaptar-se à mudança de ambiente \cite{Ieee1990}. Pretende-se identificar então, uma medida de manutenibilidade para códigos CSS.
+A manutenibilidade de um sistema é definida como a facilidade com a qual um \textit{software}, ou componente, pode ser modificado para corrigir falhas, melhorar performance, ou adaptar-se à mudança de ambiente \cite{Ieee1990}. Pretende-se identificar então, uma medida de manutenibilidade para códigos CSS.
 
 A manutenção e modificação de \textit{software} são etapas essenciais para o seu tempo de vida, e isso não é diferente para aplicações \textit{web}. Sendo uma tarefa essencial, e complexa, entende-se que seja necessário encontrar uma forma de mitigar os possíveis impactos na modificação, ou evolução, das folhas de estilo dos projetos \textit{web}.
 
-As linguagens de folha de estilo, como o CSS, são muito pouco documentadas e pesquisadas \cite{Marden1999,Quint2007,Geneves2012} e, como identificado por \citeonline{Mesbah2012}, analisar código CSS com uma perspectiva de manutenção ainda não foi explorado em nenhum trabalho científico. Portanto, há necessidade de se definir a qualidade do código CSS, com objetivo de se manter um nível de manutenibilidade da apresentação de páginas \textit{web}. Para medir esse nível, foi feita neste trabalho, uma proposta de métrica de qualidade de código CSS, focando a manutenção do código.
+As linguagens de folha de estilo, como o CSS, são muito pouco documentadas e pesquisadas \cite{Marden1999,Quint2007,Geneves2012}. E como identificado por \citeonline{Mesbah2012}, analisar código CSS com uma perspectiva de manutenção ainda não foi explorado em nenhum trabalho científico. Portanto, há necessidade de se definir a qualidade do código CSS, com objetivo de se manter um nível de manutenibilidade da apresentação de páginas \textit{web}. Para medir esse nível, foi feita neste trabalho, uma proposta de métrica de qualidade de código CSS, focando a manutenção do código.
 
 \section{Objetivos}
 Esta pesquisa possui os seguintes objetivos:
@@ -35,7 +35,7 @@ Esta pesquisa possui os seguintes objetivos:
 	\item Fazer uma análise e avaliar a relevância da métrica proposta a outros indicativos de manutenibilidade de código.
 \end{itemize}
 
-A partir desses objetivos, pretende-se propor uma métrica de manutenibilidade para códigos CSS, colaborando com a medição de folhas de estilo, auxiliando nos processos de produção de para a plataforma \textit{web}.
+A partir desses objetivos, pretende-se propor uma métrica de manutenibilidade para códigos CSS, colaborando com a medição de folhas de estilo e auxiliando nos processos de produção para a plataforma \textit{web}.
 
 %Esta pesquisa tem por objetivo propor uma métrica de manutenibilidade de código CSS. Para tanto, será feito um levantamento das propriedades da linguagem que modificam a facilidade da manutenção de seu produto, considerando a visão do autor e os aspectos funcionais.
 
