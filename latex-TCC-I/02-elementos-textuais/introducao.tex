@@ -2,7 +2,7 @@
 \label{chap:Intr}
 A \textit{world wide web}, originalmente proposta como um meio para compartilhamento de documentos por Tim Berners-Lee, torna-se cada vez mais popular, tendo passado a ser usada para a criação de páginas mais complexas e até mesmo de sistemas de informação, como comércio eletrônico, fóruns, clientes de email, portais de compartilhamento de vídeo etc \cite{Berners-Lee:2000:WWO:556560}.
 
-Inicialmente proposta por Håkon Wium Lie e Bert Bos, a linguagem \textit{Cascading Style Sheet} (CSS) propunha a separação em um documento de conteúdo --- o arquivo HTML --- e um documento com a definição da aparência --- o documento CSS --- para a página \textit{web} \cite{Hakon:2005}. Sendo um dos três padrões fundamentais da W3C\footnote{World Wide Web Consortium - http://www.w3.org/} para desenvolvimento de conteúdo \textit{web}, juntamente com o HTML e o Javascript, o CSS se tornou largamente utilizado para definir a aparência e até mesmo certos comportamentos interativos em páginas \textit{web}. 
+Inicialmente proposta por Håkon Wium Lie e Bert Bos, a linguagem \textit{Cascading Style Sheet} (CSS) propunha a separação em um documento de conteúdo --- o arquivo HTML --- e um documento com a definição da aparência --- o documento CSS --- para as páginas \textit{web} \cite{Hakon:2005}. Sendo um dos três padrões fundamentais da W3C\footnote{World Wide Web Consortium - http://www.w3.org/} para desenvolvimento de conteúdo \textit{web}, juntamente com o HTML e o Javascript, o CSS se tornou largamente utilizado para definir a aparência e até mesmo certos comportamentos interativos em páginas \textit{web}. 
 
 Apesar das vantagens trazidas pela separação de responsabilidades, passou-se a gerar código CSS mais complexo e em maior quantidade, fazendo com que a sua manutenibilidade se tornasse mais onerosa quando de alterações corretivas ou evolutivas \cite{Mesbah2012}.
 Escrever código CSS não é uma tarefa trivial, visto que algumas características da linguagem, como herança e especificidade de seletores, constantemente causam inconsistências arquiteturais que podem resultar em efeitos colaterais \cite{Walton:2015}.
@@ -18,11 +18,11 @@ O efeito colateral descreve o fenômeno onde um agente que foi desenvolvido para
 
 \section{Justificativa}
 
-Devido às características da linguagem, podemos identificar uma série de fatores que dificultam a construção, manutenção e evolução do código CSS. 
+Devido às características da linguagem, pode-se identificar uma série de fatores que dificultam a construção, manutenção e evolução do código CSS. 
 
 A manutenibilidade de um sistema é definida como a facilidade com a qual um \textit{software}, ou componente, pode ser modificado para corrigir falhas, melhorar performance, ou adaptar-se à mudança de ambiente \cite{Ieee1990}. Pretende-se identificar então, uma medida de manutenibilidade para códigos CSS.
 
-A manutenção e modificação de \textit{software} são etapas essenciais para o seu tempo de vida, e isso não é diferente para aplicações \textit{web}. Sendo uma tarefa essencial, e complexa, entende-se que seja necessário encontrar uma forma de mitigar os possíveis impactos na modificação, ou evolução, das folhas de estilo dos projetos \textit{web}.
+A manutenção e modificação de um \textit{software} são etapas essenciais para o seu tempo de vida, e isso não é diferente para aplicações \textit{web}. Sendo uma tarefa essencial, e complexa, entende-se que seja necessário encontrar uma forma de mitigar os possíveis impactos na modificação, ou evolução, das folhas de estilo dos projetos \textit{web}.
 
 As linguagens de folha de estilo, como o CSS, são muito pouco documentadas e pesquisadas \cite{Marden1999,Quint2007,Geneves2012}. E como identificado por \citeonline{Mesbah2012}, analisar código CSS com uma perspectiva de manutenção ainda não foi explorado em nenhum trabalho científico. Portanto, há necessidade de se definir a qualidade do código CSS, com objetivo de se manter um nível de manutenibilidade da apresentação de páginas \textit{web}. Para medir esse nível, foi feita neste trabalho, uma proposta de métrica de qualidade de código CSS, focando a manutenção do código.
 
