@@ -1,7 +1,7 @@
 \select@language {brazil}
 \contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de arquivo HTML v\IeC {\'a}lido.}}{3}{figure.2.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Estrutura de uma \textit {tag}.}}{4}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Exemplo de arquivo HTML v\IeC {\'a}lido.}}{4}{figure.2.3}
+\contentsline {figure}{\numberline {3}{\ignorespaces Exemplo de utiliza\IeC {\c c}\IeC {\~a}o das \textit {tags} \texttt {<style>} e \texttt {<script>}.}}{4}{figure.2.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de estrutura da \IeC {\'a}rvore do DOM.}}{5}{figure.2.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Exemplo de uma folha de estilo.}}{6}{figure.2.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Exemplo de quest\IeC {\~a}o aplicada no question\IeC {\'a}rio.}}{14}{figure.5.6}
@@ -9,9 +9,9 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Resultado da quest\IeC {\~a}o 3 do question\IeC {\'a}rio \autoref {chap:apendiceA}.}}{18}{figure.5.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Resultado da quest\IeC {\~a}o 9 do question\IeC {\'a}rio \autoref {chap:apendiceA}.}}{18}{figure.5.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces M\IeC {\'e}dia de dificuldade por n\IeC {\'\i }vel de profici\IeC {\^e}ncia em cada uma das quest\IeC {\~o}es de escala.}}{20}{figure.5.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Distribui\IeC {\c c}\IeC {\~a}o de tamanho dos seletores}}{21}{figure.5.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de resultado da excu\IeC {\c c}\IeC {\~a}o do \textit {script} de c\IeC {\'a}lculo da m\IeC {\'e}trica.}}{22}{figure.5.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Gr\IeC {\'a}fico de frequ\IeC {\^e}ncia de codifica\IeC {\c c}\IeC {\~a}o do Jenkins.}}{24}{figure.6.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do resultado total da m\IeC {\'e}trica em rela\IeC {\c c}\IeC {\~a}o ao n\IeC {\'u}mero de tarefas criadas.}}{26}{figure.6.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do resultado da m\IeC {\'e}trica do \texttt {style.css} em rela\IeC {\c c}\IeC {\~a}o ao n\IeC {\'u}mero de tarefas criadas.}}{28}{figure.6.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Composi\IeC {\c c}\IeC {\~a}o do valor da m\IeC {\'e}trica por cada crit\IeC {\'e}rio.}}{29}{figure.6.16}
+\contentsline {figure}{\numberline {11}{\ignorespaces Distribui\IeC {\c c}\IeC {\~a}o de tamanho dos seletores}}{24}{figure.5.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de resultado da execu\IeC {\c c}\IeC {\~a}o do \textit {script} de c\IeC {\'a}lculo da m\IeC {\'e}trica.}}{26}{figure.5.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Gr\IeC {\'a}fico de frequ\IeC {\^e}ncia de codifica\IeC {\c c}\IeC {\~a}o do Jenkins.}}{28}{figure.6.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do resultado total da m\IeC {\'e}trica em rela\IeC {\c c}\IeC {\~a}o ao n\IeC {\'u}mero de defeitos criados.}}{30}{figure.6.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do resultado da m\IeC {\'e}trica do \texttt {style.css} em rela\IeC {\c c}\IeC {\~a}o ao n\IeC {\'u}mero de defeitos criados.}}{32}{figure.6.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Composi\IeC {\c c}\IeC {\~a}o do valor da m\IeC {\'e}trica por cada crit\IeC {\'e}rio.}}{33}{figure.6.16}

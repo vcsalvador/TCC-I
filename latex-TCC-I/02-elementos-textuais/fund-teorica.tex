@@ -5,7 +5,7 @@
 \chapter{Fundamentação Teórica}
 \label{chap:fund-teor}
 
-Neste capítulo será explorado os conceitos de HTML, CSS e Qualidade de código, com o objetivo de tornar claro os termos utilizados no desenvolvimento deste trabalho.
+Neste capítulo serão apresentados os conceitos de HTML, CSS e Qualidade de código, com o objetivo de tornar claro os termos utilizados no desenvolvimento deste trabalho.
 
 \section{HTML}
 \label{sec:html}
@@ -31,19 +31,20 @@ O documento HTML consiste em uma árvore de elementos e texto. Cada elemento é 
 
 Os atributos dos elementos têm o objetivo de organizar o arquivo HTML, ou definir seu estilo. Eles devem sempre ser definidos na \textit{tag} de abertura, e são representados por um par chave/valor. Pode ser vista na \autoref{fig:tagStruct} uma estrutura simples de uma \textit{tag} com os atributos \texttt{id}, \texttt{class} e \texttt{style} definidos.
 
-Pode-se notar na \autoref{fig:simpleHTML} a utilização dos atributos \texttt{id}, \texttt{title} e \texttt{style}, que representam a identificação única do elemento, uma meta informação identificando a sua utilidade e o estilo --- escrito na linguagem CSS --- aplicado a ele, respectivamente.
+Pode-se notar na \autoref{fig:simpleHTML} a utilização dos atributos \texttt{id}, \texttt{title} e \texttt{style}, que representam a identificação única do elemento, uma meta informação identificando a sua utilidade e algumas regras de estilo --- escrito na linguagem CSS --- aplicado a ele, respectivamente.
 
-Dentro do documento HTML pode-se utilizar as \textit{tags} \texttt{<style/>} e \texttt{<script/>}, que definem escopos de código de estilo e linguagens de \textit{script} de forma embarcada (\texttt{embedded}), como pode-se observar na \autoref{fig:styleScript}.
+Dentro do documento HTML, pode-se utilizar as \textit{tags} \texttt{<style>} e \texttt{<script>}, que definem escopos de código de estilo e linguagens de \textit{script} de forma embarcada (\texttt{embedded}), como pode-se observar na \autoref{fig:styleScript}.
 
+%modificar figura, tirar declaração de mime type
 \begin{figure}[!htb]
 	\centering
-	\caption{Exemplo de arquivo HTML válido.}
+	\caption{Exemplo de utilização das \textit{tags} \texttt{<style>} e \texttt{<script>}.}
 	\includegraphics[width=1\textwidth]{./04-figuras/style_script}
 	\fonte{Próprio autor}
 	\label{fig:styleScript}
 \end{figure}
 
-Além da definição \textit{embedded}, pode-se definir estilos em CSS de outras duas formas, utilizando declarações \textit{inline}, através do atributo \texttt{style} da \textit{tag} HTML, ou referenciando a partir de um arquivo externo (\textit{linked}), através do atributo \texttt{href} do elemento \texttt{<link>}. 
+Além da definição \textit{embedded}, pode-se definir estilos em CSS de outras duas formas: utilizando declarações \textit{inline}, através do atributo \texttt{style} da \textit{tag} HTML, ou referenciando a partir de um arquivo externo (\textit{linked}), através do atributo \texttt{href} do elemento \texttt{<link>}. 
 
 É uma boa prática de desenvolvimento \textit{web} manter as regras CSS em arquivos separados, evitando ao máximo a utilização das \textit{tags} de definição de escopo, vistas na \autoref{fig:styleScript}. Essa separação mantém uma organização do código, possibilita o reuso em outras páginas, ou até mesmo em outros sistemas, e também melhora o desempenho, pois os arquivos podem ser mantidos em \textit{cache}, diminuindo a carga de dados necessária para renderização de uma página \textit{web}. Essa separação deve ser feita com cuidado, uma vez que a identificação das causas de possíveis erros se torna mais complexa.
 
@@ -57,7 +58,7 @@ Os navegadores \textit{web} traduzem o arquivo HTML em uma árvore DOM (\textit{
 	\label{fig:domtree}
 \end{figure}
 
-Na \autoref{fig:domtree}, vê-se que o elemento raiz da árvore é o "\texttt{html}", que é sempre o primeiro elemento de um documento e que contém todos os outros. Cada elemento do HTML é representado por um nó, em que todos os nós que se encontram nos níveis abaixo deste são denominados descendentes (\textit{descendants}). Dentro da árvore DOM, os nós que se encontram exatamente um nível abaixo são os filhos (\textit{childs}) e os nós que se encontram no mesmo nível são chamados de irmãos (\textit{siblings}). Os nós denominados de \texttt{text} são os que encapsulam os textos inseridos dentro dos elementos HTML.
+Na \autoref{fig:domtree}, vê-se que o elemento raiz da árvore é o "\texttt{html}", que é sempre o primeiro elemento de um documento e que contém todos os outros. Cada elemento do HTML é representado por um nó e todos os nós que se encontram nos níveis abaixo deste são denominados descendentes (\textit{descendants}). Dentro da árvore DOM, os nós que se encontram exatamente um nível abaixo são os filhos (\textit{children}) e os nós que se encontram no mesmo nível são chamados de irmãos (\textit{siblings}). Os nós denominados \texttt{text} são os que encapsulam os textos inseridos dentro dos elementos HTML.
 
 A árvore DOM é utilizada para localização dos nós do HTML. As linguagens  CSS e Javascript utilizam da estrutura do DOM para encontrar os elementos e identificar quais serão afetados.
 
@@ -78,23 +79,23 @@ Como pode ser visualizado na \autoref{fig:cssExample}, uma folha de estilo pode 
 \subsection{Seletores}
 \label{subsec:seletores}
 
-Um seletor é uma cadeia de uma, ou mais, sequências de seletores simples, separados por combinadores. Os seletores simples são cadeias de caracteres que representam um elemento do HTML: o seletor universal, representado pelo simbolo \(\ast\), indica que a regra será aplicada a todos os elementos que estejam no DOM. O seletor de elementos HTML é representado pelo nome da \textit{tag} de um elemento, por exemplo \texttt{h1}. O seletor de classe, que seleciona todos os elementos que possuam o atributo \texttt{class} especificado pelo seletor, é utilizado escrevendo-se o nome da classe,  precedido de um ponto final (\texttt{.}). O seletor de \texttt{id}, que seleciona o elemento do HTML que possua aquele \texttt{id}, é utilizado escrevendo-se o identificador precedido pelo simbolo \texttt{\#}. 
+Um seletor é uma cadeia de uma, ou mais, sequências de seletores simples, separados por combinadores. Os seletores simples são cadeias de caracteres que representam um elemento do HTML: o seletor universal, representado pelo simbolo \(\ast\), indica que a regra será aplicada a todos os elementos do DOM. O seletor de elementos HTML é representado pelo nome da \textit{tag} de um elemento, por exemplo \texttt{h1}. O seletor de classe, que seleciona todos os elementos que possuam o atributo \texttt{class} especificado pelo seletor, é utilizado escrevendo-se o nome da classe,  precedido de um ponto final (\texttt{.}). O seletor de \texttt{id}, que seleciona o elemento do HTML que possua aquele \texttt{id}, é utilizado escrevendo-se o identificador precedido pelo símbolo \texttt{\#}. 
 Simplificando, sem perder generalidade, pode-se considerar que regras são feitas de seletores únicos que definem uma única propriedade por vez. Os seletores \(S_i\), chamados de padrões na especificação do CSS \cite{CSSspec2009}, definem uma função booleana na forma:
 \begin{equation}
 	expression * element \rightarrow boolean
 \end{equation}
 que define se um elemento é, ou não, selecionado pela expressão do seletor.
 
-Os combinadores são propriedades que definem relações entre os elementos de um documento. Existem três formas de combinadores: descendentes, filhos e irmãos. O combinador de descendente descreve qualquer elemento que esteja um nível abaixo na árvore DOM, e são representados pelo espaço em branco, \textit{e.g.} "\texttt{body p}". O combinador de filho descreve os elementos que estão exatamente um nível abaixo do nó, sendo este representado pelo sinal de maior (\texttt{>}), \textit{e.g.} "\texttt{body > p}". Já o combinador de irmãos descreve os elementos que estão no mesmo nível da árvore, sendo eles representados em duas variações, uma para o próximo irmão adjacente (\texttt{+}) e um para todos os irmãos (\char`~).
+Os combinadores são propriedades que definem relações entre os elementos de um documento. Existem três formas de combinadores: descendentes, filhos e irmãos. O combinador de descendente descreve qualquer elemento que esteja um nível abaixo na árvore DOM, e são representados pelo espaço em branco, \textit{e.g.} "\texttt{body p}". O combinador de filho descreve os elementos que estão exatamente um nível abaixo do nó, sendo este representado pelo sinal de maior (\texttt{>}), \textit{e.g.} "\texttt{body > p}". Já o combinador de irmãos, descreve os elementos que estão no mesmo nível da árvore, sendo eles representados em duas variações, uma para o próximo irmão adjacente (\texttt{+}) e um para todos os irmãos (\char`~) \cite{CSSspec2009}.
 
-Uma pseudo classe é um elemento de seleção que especifica estado ou localização do elemento. Por exemplo, a pseudo classe "\texttt{:nth-first-child(n)}" identifica o n-ésimo elemento filho contando a partir do primeiro, podendo assim ser classificado como uma pseudo classe de localização. A pseudo classe "\texttt{:hover}" identifica um elemento que esteja sob o cursor do apontador (\textit{mouse}), sendo assim uma pseudo classe de estado.  Existem também os seletores de atributos, que selecionam elementos que possuam determinados atributos, permitindo a utilização de expressões para seleções parciais, \textit{i.e.}, atributos cujos valores comecem, possuam ou terminem com uma cadeia de caracteres específicos.
+Uma pseudo classe é um elemento de seleção que especifica estado ou localização do elemento. Por exemplo, a pseudo classe "\texttt{:nth-first-child(n)}" identifica o n-ésimo elemento filho contando a partir do primeiro, podendo assim ser classificado como uma pseudo classe de localização. A pseudo classe "\texttt{:hover}" identifica um elemento que esteja sob o cursor do apontador (\textit{mouse}), sendo assim uma pseudo classe de estado.  Existem também os seletores de atributos, que selecionam elementos que possuam determinados atributos, permitindo a utilização de expressões para seleções parciais, \textit{i.e.}, atributos cujos valores comecem, possuam ou terminem com uma cadeia de caracteres específicos \cite{CSSspec2009}.
 
 Regras simples, como as demonstradas na \autoref{fig:cssExample}, são fáceis de se criar, mas quando utilizados combinadores e pseudo classes, a complexidade da autoria aumenta. Além da complexidade dos seletores, pode-se apontar o efeito cascata, gerado pelo mecanismo de precedência e aplicação das propriedades aos elementos HTML, cujo funcionamento será descrito a seguir.
 
 \subsection{Efeito Cascata}
 \label{subsec:cascade}
 
-A cascata em CSS se dá à atribuição de pesos a cada regra de estilo. Quando houverem várias regras candidatas a se aplicar, a de maior valor será escolhida. O efeito cascata do CSS se dá devido à ordem de precedência dos valores de propriedades definidas para cada elemento. O mecanismo de renderização do navegador recebe uma lista desordenada dessas propriedades, e as organiza pela precedência das declarações delas. Essa ordem é definida de acordo com os critérios listados a seguir, em ordem decrescente de prioridade \cite{CSScascade2015}.
+A cascata em CSS se dá à atribuição de pesos a cada regra de estilo. Quando houverem várias regras candidatas a se aplicar, a de maior valor será escolhida. O efeito cascata do CSS se dá devido à ordem de precedência dos valores de propriedades definidas para cada elemento. O mecanismo de renderização do navegador recebe uma lista desordenada dessas propriedades, e as organiza pela precedência das declarações delas. Essa ordem é definida de acordo com os critérios listados a seguir, em ordem decrescente de prioridade \cite{CSScascade2015}:
 
 \begin{itemize}
 	\item \textbf{Origem e Importância:} 
@@ -102,9 +103,9 @@ A cascata em CSS se dá à atribuição de pesos a cada regra de estilo. Quando 
 	\item \textbf{Escopo:}
 	Uma regra pode ter uma subárvore do DOM como escopo, afetando somente os elementos pertencentes a esta subárvore. Para regras normais, o escopo mais interno tem prioridade, para as regras definidas como importantes as do escopo mais externo sobrescreverão.
 	\item \textbf{Especificidade:}
-	O cálculo de especificidade conta a ocorrência de seletores de \texttt{id}, classe e tipo (\textit{tags} e \textit{pseudo-elements}) e faz-se uma soma ponderada dessas ocorrências. A declaração com maior especificidade tem prioridade.
+	O cálculo de especificidade conta a ocorrência de seletores de \texttt{id}, classe e tipo (\textit{tags} e pseudo-elementos) e faz-se uma soma ponderada dessas ocorrências. A declaração com maior especificidade tem prioridade.
 	\item \textbf{Ordem de aparição:}
-	A última declaração no documento tem a maior prioridade. Isto significa que a localidade é levada em conta, para isso, considera-se que as folhas de estilo são concatenadas ao documento na ordem em que são declaradas.
+	A última declaração no documento tem a maior prioridade. Isto significa que a localidade é levada em conta. Para isso, considera-se que as folhas de estilo são concatenadas ao documento na ordem em que são declaradas.
 \end{itemize}
 
 Uma propriedade pode ter sua importância declarada explicitamente através do valor \texttt{!important}, que sobrescreverá todas as propriedades que possuírem maior prioridade. Se duas propriedades possuírem o valor \texttt{!important}, a ordem de precedência de renderização normal será aplicada.

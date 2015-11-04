@@ -3,7 +3,7 @@
 \backcite {Mesbah2012}{{1}{1}{chapter.1}}
 \backcite {Walton:2015}{{1}{1}{chapter.1}}
 \backcite {KellerNuss2010}{{1}{1}{chapter.1}}
-\backcite {Walton:2015}{{1}{1}{chapter.1}}
+\backcite {Walton:2015}{{2}{1}{chapter.1}}
 \backcite {Ieee1990}{{2}{1.1}{section.1.1}}
 \backcite {Marden1999,Quint2007,Geneves2012}{{2}{1.1}{section.1.1}}
 \backcite {Marden1999,Quint2007,Geneves2012}{{2}{1.1}{section.1.1}}
@@ -16,6 +16,8 @@
 \backcite {W3Ccss2015}{{5}{2.2}{section.2.2}}
 \backcite {Geneves2012}{{6}{2.2}{section.2.2}}
 \backcite {CSSspec2009}{{6}{2.2.1}{subsection.2.2.1}}
+\backcite {CSSspec2009}{{7}{2.2.1}{equation.2.2.1}}
+\backcite {CSSspec2009}{{7}{2.2.1}{equation.2.2.1}}
 \backcite {CSScascade2015}{{7}{2.2.2}{subsection.2.2.2}}
 \backcite {Pressman:2010}{{8}{2.3}{section.2.3}}
 \backcite {Whitmire:1997}{{8}{2.3}{section.2.3}}
@@ -39,6 +41,5 @@
 \backcite {Mesbah2012}{{11}{3.2}{section.3.2}}
 \backcite {Walton:2015}{{11}{3.2}{section.3.2}}
 \backcite {Freitas2000}{{12}{4.1}{section.4.1}}
-\backcite {McPherson:2014}{{20}{5.3}{table.5.1}}
-\backcite {McPherson:2014}{{21}{11}{figure.5.11}}
-\backcite {McPherson:2014}{{21}{5.3}{figure.5.11}}
+\backcite {McPherson:2014}{{24}{5.3.1.6}{subsubsection.5.3.1.6}}
+\backcite {McPherson:2014}{{24}{11}{figure.5.11}}
