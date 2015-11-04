@@ -6,13 +6,22 @@
 
 A qualidade de código CSS é uma área de conhecimento inexplorada. A partir dos resultados encontrados nesta pesquisa, é possível identificar um caminho a ser traçado para encontrar uma métrica definitiva.
 
+A codificação de folhas de estilo CSS não é uma tarefa trivial e para se chegar ao resultado desejado é necessário um certo esforço de tempo. Apesar de aparentar simplicidade, a linguagem CSS contém algumas armadilhas para os desenvolvedores, como o efeito cascata, herança de propriedades e especificidade.
+
+Devido a essa complexidade na codificação de CSS, a manutenção desse código se torna onerosa e é preciso identificar uma boa prática para organização do código, melhor utilização das propriedades e aspectos inerentes à linguagem.
+
+Pode-se dizer que uma métrica de avaliação do código CSS será de grande valor para os desenvolvedores, auxiliando na identificação de possível causadores de erros, revisão de código e futuras otimizações nos processos produtivos. Esse valor somado à escassez de trabalhos de qualidade de código CSS, formam uma corrente em direção à pesquisa e desenvolvimento de uma métrica de qualidade, com a proposta de avaliar a manutenibilidade do código.
+
+Este trabalho identificou critérios de avaliação e pontos de interesse, em direção à uma métrica de qualidade que viabilize o estudo sobre a etapa de manutenção de códigos CSS. Permitindo que próximas pesquisas apliquem testes para validar e ajustar os parâmetros aqui identificados.
 %resumir o contexto, meu objetivo, metodologia, desenvolvimento e resultados
 
-O questionário permitiu a identificação das características que compõem a qualidade de código CSS e as dificuldades encontradas durante a etapa de manutenção deste. Pode-se notar que a legibilidade e os efeitos colaterais são aspectos que exercem influência para a qualidade geral do código CSS. 
+A partir de uma pesquisa exploratória foram identificados alguns aspectos da linguagem CSS que compõem a qualidade de código, do ponto de vista de desenvolvedores que codificam CSS em seu dia a dia. A partir desses aspectos foi proposta uma métrica de qualidade para medir a manutenibilidade do código. Foi construído, então, um calculador automático, para avaliar o valor da métrica do código CSS de qualquer página \textit{web}.
 
-Os doze critérios de avaliação identificados, a partir do questionário, permitiram calcular o nível de manutenibilidade do código CSS da aplicação Jenkins, escolhida como objeto de estudo para validação da métrica, ao longo do tempo. A comparação dos resultados obtidos com o número de defeitos cadastrados no JIRA para cada versão do Jenkins testada, mostrou que o aumento do valor da métrica está relacionado com o aumento dos defeitos. Este fato demonstra que os parâmetros avaliados pelos critérios desenvolvidos estão relacionados com a qualidade geral do código.
+O calculador foi desenvolvido a partir de 12 critérios, identificados na pesquisa exploratória, e foi desenvolvido um \textit{script} em JavaScript, para poder ser executado diretamente do navegador. Com o \textit{script} pronto, foram feitos testes para ajustá-lo e prepará-lo para os testes no Jenkins.
 
-A partir de uma análise do histórico de \textit{commits} dos arquivos CSS utilizados pela aplicação, foi feita a identificação do comportamento da qualidade em função das modificações feitas pela equipe no código. Foi então identificado que o arquivo CSS que mais sofreu alterações ao longo do tempo exibia o mesmo perfil de evolução da métrica, o que leva a entender que a participação da equipe de desenvolvimento teve impacto direto na qualidade do código CSS. %explicar isso aqui direito seu burro
+Utilizando o \textit{script}, foram feitos alguns testes na página principal da aplicação Jenkins. Esses testes foram feitos de para verificar a evolução do código CSS da aplicação ao longo do tempo, confrontando os resultados com o número de defeitos gerados, com o intuito de validar o resultado da métrica.
+
+A partir da análise do histórico de \textit{commits} dos arquivos CSS utilizados pela aplicação, foi feita a identificação do comportamento da qualidade em função das modificações feitas pela equipe no código. Foi então identificado que o arquivo CSS que mais sofreu alterações ao longo do tempo exibia o mesmo perfil de evolução da métrica total. Pode-se entender que o comportamento dos defeitos está relacionado às modificações feitas no código CSS, uma vez que somente uma folha de estilo sofreu um grande número de alterações ao longo do tempo.
 
 Após as análises de impacto na qualidade dos resultados da métrica, identificou-se o perfil de composição dos critérios para o resultado final. Estas análises mostraram que as modificações ao longo do tempo impactaram no perfil de complexidade do código, indicados pelo surgimento de novos critérios de avaliação, ou aumento da participação total de outros.
 

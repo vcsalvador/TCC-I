@@ -135,13 +135,13 @@ Como pode ser visto no \autoref{quad:questionXfunc}, as funcionalidades abordada
 
 \input{./06-quadros/questionXfunc}
 
-A partir dessas funcionalidades foram identificados qual o método de avaliação caberia a cada um deles. Esses métodos foram denominados critérios, que para o \textit{script} de cálculo representa um padrão a ser identificado, contado e calculado. Desta forma foram definidos e construídos os critérios listados na \autoref{tab:tabelaPesos}.
+A partir dessas funcionalidades foram identificados quais os métodos de avaliação caberiam a cada um deles. Esses métodos foram denominados critérios, que, para o \textit{script} de cálculo, representam um padrão a ser identificado, contado e calculado. Desta forma foram definidos e construídos os critérios listados na \autoref{tab:tabelaPesos}.
 
-Cada um dos critérios criados representa um impacto na qualidade, esse impacto foi definido como sendo o peso do critério avaliado. Dessa forma o \textit{script} avalia a presença ou não de cada critério nas regras definidas na folha de estilo CSS e, então, para cada ocorrência soma-se o peso do critério ao total da métrica. Pode-se considerar como sendo o caso geral o que se define na \autoref{math:criteria}
+Cada um dos critérios criados representa um impacto na qualidade, esse impacto foi definido como sendo o peso do critério avaliado. Dessa forma o \textit{script} avalia a presença ou não de cada critério nas regras definidas na folha de estilo CSS e, então, para cada ocorrência soma-se o peso do critério ao total da métrica. Pode-se considerar como sendo a forma geral o que se define na \autoref{math:criteria}
 
 \begin{equation}
 \label{math:criteria}
-	critério(regra) \rightarrow \# ocorrências * peso
+	crit\acute{e}rio(regra) \rightarrow \# ocorr\hat{e}ncias * peso
 \end{equation}
 
 Em seguida foi definido como cada critério impacta na manutenibilidade, explicando em detalhe o funcionamento de cada um.
@@ -158,7 +158,7 @@ Devido ao limite identificado, foi utilizada uma função que mapeia o valor do 
 
 \begin{equation}
 \label{math:groupCriteria}
-	critério(regra) \rightarrow arctg\left(\frac{\#ocorrências}{20}\right)	
+	crit\acute{e}rio(regra) \rightarrow arctg\left(\frac{\#ocorr\hat{e}ncias}{20}\right)	
 \end{equation}
 
 \subsubsection{Seletores Aninhados}
@@ -167,7 +167,15 @@ Este critério foi desenvolvido para avaliar a profundidade dos seletores. Para 
 Para o cálculo de impacto deste seletor também foi utilizada a \autoref{math:groupCriteria}, considerando-se que existe um limite de impacto para a profundidade de um seletor. Após o cálculo individual de cada seletor, foi feita a soma de ocorrências durante a folha de estilo.
 
 \subsubsection{Propriedades Simplificadas}
-A simplificação das propriedades CSS são um atalho, que permitem que o desenvolvedor aplique todos os possíveis atributos a uma propriedade sem ter que declarar todos. Como podemos ver no exemplo da \autoref{fig:shortHand}, não há uma sequência lógica fácil de se identificar para a declaração dos valores dessas propriedades, o que pode dificultar na manutenção desse tipo de regra.
+A simplificação das propriedades CSS são um atalho, que permitem que o desenvolvedor aplique todos os possíveis atributos a uma propriedade sem ter que declarar todos. Como podemos ver no exemplo da \autoref{fig:shorthand}, não há uma sequência lógica fácil de se identificar para a declaração dos valores dessas propriedades, o que pode dificultar na manutenção desse tipo de regra.
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Exemplo de propriedades simplificadas.}
+	\includegraphics[width=1\textwidth]{./04-figuras/shorthand_prop}
+	\fonte{Próprio autor}
+	\label{fig:shorthand}
+\end{figure}
 
 Para calcular este critério foi identificadas as propriedades que possuíam valores atribuídos separados por espaço. Para cada propriedade contou-se o número de ocorrências e somou-se ao final. Seguindo o mesmo cálculo da \autoref{math:criteria}.
 
@@ -214,11 +222,11 @@ Essa inversão lógica pode causar um aumento na complexidade e deve ser, portan
 Esse critério calcula o número de ocorrências da cláusula \texttt{:not}, utilizando a forma geral e somando ao resultado final da métrica.
 
 \subsubsection{Complexidade do Seletor}
-Esse critério foi calculado de forma diferente, ele identifica uma combinação de seletores e calcula, a partir da presença dos símbolos \texttt{+}, \texttt{\char`~} e do identificador de propriedade (\texttt{[attr=value]}), o valor da contribuição do critério como sendo o peso na \autoref{tab:tabelaPesos} potencializado pela quantidade de vezes que estes elementos aparecem.
+Esse critério foi calculado de forma diferente, ele identifica uma combinação de seletores e calcula, a partir da presença dos símbolos \texttt{+}, \texttt{\char`~} e do identificador de propriedades \texttt{[attr=value]}, o valor da contribuição do critério como sendo o peso na \autoref{tab:tabelaPesos} potencializado pela quantidade de vezes que estes elementos aparecem.
 
 \begin{equation}
 \label{math:complexity}
-	critério(regra) \rightarrow Peso^\#ocorrências
+	crit\acute{e}rio(regra) \rightarrow peso^{\#ocorr\hat{e}ncias}
 \end{equation}
 
 Como pode ser visto na \autoref{math:complexity}, o critério de complexidade tem crescimento exponencial, fazendo o dele o critério que deve se ter mais atenção. A complexidade dos seletores cresce de acordo com a necessidade de regras que não contam com os atributos \texttt{id} ou \texttt{class} do HTML, devido à dificuldade de se encontrar os atributos desejados dentro do DOM.
@@ -263,7 +271,11 @@ Para execução dos testes foi utilizado doze versões do Jenkins, selecionadas 
 
 %verificar comentários para este parágrafo... 
 
-O projeto do Jenkins disponibiliza um meio de se cadastrar e controlar as tarefas relativas ao desenvolvimento da ferramenta JIRA\footnote{Disponível em \url{https://issues.jenkins-ci.org}}. Utilizando dos filtros disponíveis no JIRA, foi possível identificar as tarefas que tinham alguma relação com os arquivos CSS, tornando possível uma coleta de dados indicadores do período de manutenção do projeto. Devido às características do JIRA, não foi possível a coleta do tempo gasto em cada tarefa, então o indicador escolhido foi a quantidade de defeitos criados a partir da versão sendo testada no momento. %explicar que é a versão sendo testada no momento
+O projeto do Jenkins disponibiliza um meio de se cadastrar e controlar as tarefas relativas ao desenvolvimento da ferramenta JIRA\footnote{Disponível em \url{https://issues.jenkins-ci.org}}. Utilizando dos filtros disponíveis no JIRA, foi possível identificar as tarefas que tinham alguma relação com os arquivos CSS, tornando possível uma coleta de dados indicadores do período de manutenção do projeto. Devido às características do JIRA, não foi possível a coleta do tempo gasto em cada tarefa, então o indicador escolhido foi a quantidade de defeitos criados a partir da versão em teste no momento.
+
+O filtro do JIRA foi configurado utilizando a ferramenta de busca avançada, onde a busca poderia ser feita em forma textual. O filtro foi construído com os filtros disponíveis pelo JIRA, buscamos dentro do projeto Jenkins pelos defeitos que possuíssem a etiqueta 'css' ou a palavra CSS dentro do texto de sua descrição, dessa forma pudemos identificar quais os defeitos do projeto estavam relacionados de alguma forma com CSS, mesmo que tivessem sido encontrados em outro lugar e possuíssem algum detalhe de CSS relacionados.
+
+O alcance dos defeitos foi escolhido a partir de suas datas de criação, os criados a partir da versão em teste até a data de lançamento da versão que seria testada a seguir, no caso da versão mais atual foi feito de sua data de lançamento até o dia em que a pesquisa foi realizada. O filtro foi construído de maneira textual, utilizando a sintaxe do JIRA, e se parece com o seguinte: project = JENKINS AND issuetype = Bug AND (labels = css OR text ~ CSS) AND (createdDate >= "2010/07/31" AND createdDate < "2011/01/22") ORDER BY created ASC. Os resultados dessa busca podem ser vistos no \autoref{quad:quadVersionBugs}.
 
 Com estas informações é possível identificar uma relação entre o valor da métrica e o número de defeitos de cada versão e, a partir disso, averiguar se o valor da métrica proposta para um arquivo CSS (ou conjunto de arquivos) indica o nível de manutenibilidade desse(s) arquivo(s).
 
@@ -271,21 +283,21 @@ Com estas informações é possível identificar uma relação entre o valor da 
 
 A partir do repositório de versões\footnote{Disponível em \url{https://updates.jenkins-ci.org/download/war/}} do Jenkins, selecionou-se algumas de forma a cobrir uma janela de tempo semestral para as avaliações.
 
-Instâncias do Jenkins foram configuradas e executadas localmente para cada versão selecionada e, para cada uma foi executado o \textit{script} de cálculo automatizado da métrica para identificar o valor. Então, o valor encontrado de cada versão foi transcrito para uma planilha, contendo os resultados dos critérios para cada arquivo CSS encontrado pelo \textit{script} e o número de defeitos encontrados pelo filtro do JIRA, entre a data de lançamento da versão sendo testada no momento e a seguinte. %rever essa merda
+Instâncias do Jenkins foram configuradas e executadas localmente para cada versão selecionada e, para cada uma foi executado o \textit{script} de cálculo automatizado da métrica para identificar o valor. Então, o valor encontrado de cada versão foi transcrito para uma planilha, contendo os resultados dos critérios para cada arquivo CSS encontrado pelo \textit{script} e o número de defeitos encontrados pelo filtro do JIRA, entre a data de lançamento da versão sendo testada no momento e a seguinte.
 
 %mostrar visualmente para os macacos que não entendem oq eu to dizendo... todo mundo hauhauhauhauahuaha
 
 O valor da métrica foi então calculado como sendo o somatório dos resultados de todos os critérios de cada arquivo. %O valor total da métrica encontrado para a página \textit{web} é o somatório da métrica de todos os arquivos.
-Para os testes na página principal da aplicação, identificou-se mais de um arquivo que compunham o estilo da página. Durante as análises foram identificados arquivos de uma biblioteca de componentes chamada YUI\footnote{Disponível em \url{http://yuilibrary.com/}} que é formada por arquivos JavaScript e CSS. Os arquivos pertencentes a essa biblioteca influenciam os resultados das métricas e certamente na manutenibilidade do CSS da aplicação.
+Para os testes na página principal da aplicação, identificou-se mais de um arquivo que compunham o estilo da página. Junto a esses arquivos encontrou-se arquivos de uma biblioteca de componentes chamada YUI\footnote{Disponível em \url{http://yuilibrary.com/}} que é formada por arquivos JavaScript e CSS. Os arquivos pertencentes a essa biblioteca influenciam os resultados das métricas e certamente na manutenibilidade do CSS da aplicação.
 
-%colocar uma planilha pra mostrar os números, explicar oq é agregado...
+\input{./05-tabelas/explResultTestes}
 
-Os resultados da métrica para os arquivos da biblioteca YUI foram destoantes em relação aos vistos nos arquivos que realmente foram codificados pela equipe de desenvolvimento. Apesar desta grande diferença de pontuação, foi necessário  analisar o resultado do agregado para construir uma análise da pontuação das folhas de estilo CSS carregadas na tela principal da aplicação, portanto incluindo os arquivos da biblioteca.
+Os resultados da métrica para os arquivos da biblioteca YUI foram destoantes em relação aos vistos nos arquivos que realmente foram codificados pela equipe de desenvolvimento, como pode ser visto na \autoref{tab:explResultTestes}. Apesar desta grande diferença de pontuação, foi necessário  analisar o resultado do agregado para construir uma análise da pontuação das folhas de estilo CSS carregadas na tela principal da aplicação, portanto incluindo os arquivos da biblioteca.
 
 \section{Resultados}
 
 %versões de teste é confuso e ver comentários
-Como as versões de teste foram escolhidas com intervalos semestrais, considerou-se a média delas como o valor da métrica para aquele ano. A partir desta média, foi feita uma análise da evolução do resultado e o número de defeitos abertos durante o ano.
+Como as versões para execução do cálculo da métrica foram escolhidas com intervalos semestrais, considerou-se a média dos resultados como o valor médio para cada ano. Foi feito, então, um cruzamento do valor médio obtido para cada ano com o número de defeitos criados no mesmo ano.
 
 \begin{figure}[!htbp]
 	\centering
@@ -297,7 +309,7 @@ Como as versões de teste foram escolhidas com intervalos semestrais, considerou
 
 Pode-se notar na \autoref{fig:totalXIssue} que o número de defeitos acompanha a progressão da métrica, mas o pico de cadastro de defeitos não se encontra no mesmo intervalo em que há um pico do resultado da métrica. Este comportamento pode ser explicado pelo fato do \textit{layout} da aplicação ter sofrido uma mudança drástica entre as versões 1.549 e 1.574, disponibilizadas respectivamente em Janeiro/2014 (26/01/2014) e Julho/2014 (27/07/2014).
 
-Devido ao valor elevado dos resultados vistos na \autoref{fig:totalXIssue} considerou-se a possibilidade de isolar uma folha de estilo para análise do resultado, partindo do pressuposto que as modificações feitas pela equipe de desenvolvimento são as que impactam e definem a complexidade de manutenção do código. Para tanto foi necessária uma pesquisa no histórico de \textit{commits} dos arquivos CSS do projeto, com intuito de identificar que arquivos CSS haviam sofrido o maior número de alterações ao longo do tempo. Como pode ser visto na \autoref{tab:commits}, o arquivo \texttt{style.css} foi, excepcionalmente, o que sofreu mais \textit{commits}, sendo identificado, assim, como o arquivo de codificação CSS principal do projeto.
+As folhas de estilo da biblioteca YUI representaram a maior porção do resultado total da métrica em grande parte das versões e também apresentou pouca mudança ao longo do tempo. Considerou-se, então, a possibilidade de isolar uma folha de estilo para análise do resultado, partindo do pressuposto que as modificações feitas pela equipe de desenvolvimento são as que impactam e definem a complexidade de manutenção do código. Para tanto foi necessária uma pesquisa no histórico de \textit{commits} dos arquivos CSS do projeto, com intuito de identificar que arquivos CSS haviam sofrido o maior número de alterações ao longo do tempo. Como pode ser visto na \autoref{tab:commits}, o arquivo \texttt{style.css} foi, excepcionalmente, o que sofreu mais \textit{commits}, sendo identificado, assim, como o arquivo de codificação CSS principal do projeto.
 
 \input{./05-tabelas/commits}
 
@@ -313,7 +325,7 @@ A partir dessa identificação, a análise sobre progressão dos resultados e o 
 
 Pode-se notar na \autoref{fig:styleXIssues} que a evolução da métrica foi crescente durante toda a progressão temporal e também um aumento considerável do resultado referente à mudança de \textit{layout} em 2014.
 %explicar melhor o agregado
-O comportamento do resultado da métrica para o arquivo \texttt{style.css} e o agregado é semelhante, o que leva a acreditar que o valor da métrica está relacionado às modificações feitas no projeto. Este comportamento para o arquivo \texttt{style.css} leva à hipótese de que as mudanças na folha de estilo causaram um aumento progressivo no resultado, ou seja, toda nova modificação somou ao valor da métrica.
+O comportamento do resultado da métrica para somente o arquivo \texttt{style.css} e o somatório de todos os arquivos (\autoref{fig:totalXIssue}) é semelhante, o que leva a acreditar que o valor da métrica está relacionado às modificações feitas no projeto. Este comportamento para o arquivo \texttt{style.css} leva à hipótese de que as mudanças na folha de estilo causaram um aumento progressivo no resultado, ou seja, toda nova modificação somou ao valor da métrica.
 
 Essa hipótese põe em questão qual o motivo desta mudança, que deve ser respondida através do estudo da métrica. Sobre quais são os critérios de avaliação que impactam no seu resultado e como esses se comportam. 
 
