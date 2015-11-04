@@ -26,17 +26,17 @@
 \contentsline {section}{\numberline {5.3}Cria\IeC {\c c}\IeC {\~a}o da M\IeC {\'e}trica}{21}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Identifica\IeC {\c c}\IeC {\~a}o dos Crit\IeC {\'e}rios de Avalia\IeC {\c c}\IeC {\~a}o}{22}{subsection.5.3.1}
 \contentsline {subsubsection}{\numberline {5.3.1.1}Seletores Raros}{23}{subsubsection.5.3.1.1}
-\contentsline {subsubsection}{\numberline {5.3.1.2}Agrupamento de elementos}{23}{subsubsection.5.3.1.2}
+\contentsline {subsubsection}{\numberline {5.3.1.2}Agrupamento de elementos}{24}{subsubsection.5.3.1.2}
 \contentsline {subsubsection}{\numberline {5.3.1.3}Seletores Aninhados}{24}{subsubsection.5.3.1.3}
 \contentsline {subsubsection}{\numberline {5.3.1.4}Propriedades Simplificadas}{24}{subsubsection.5.3.1.4}
-\contentsline {subsubsection}{\numberline {5.3.1.5}Pseudo Elementos}{25}{subsubsection.5.3.1.5}
+\contentsline {subsubsection}{\numberline {5.3.1.5}Pseudo Elementos}{24}{subsubsection.5.3.1.5}
 \contentsline {subsubsection}{\numberline {5.3.1.6}Comprimento de Seletores}{25}{subsubsection.5.3.1.6}
-\contentsline {subsubsection}{\numberline {5.3.1.7}\textit {At-rules}}{26}{subsubsection.5.3.1.7}
-\contentsline {subsubsection}{\numberline {5.3.1.8}\textit {Media Queries}}{26}{subsubsection.5.3.1.8}
+\contentsline {subsubsection}{\numberline {5.3.1.7}\textit {At-rules}}{25}{subsubsection.5.3.1.7}
+\contentsline {subsubsection}{\numberline {5.3.1.8}\textit {Media Queries}}{25}{subsubsection.5.3.1.8}
 \contentsline {subsubsection}{\numberline {5.3.1.9}Prefixos}{26}{subsubsection.5.3.1.9}
 \contentsline {subsubsection}{\numberline {5.3.1.10}Cl\IeC {\'a}usula \texttt {:not}}{26}{subsubsection.5.3.1.10}
 \contentsline {subsubsection}{\numberline {5.3.1.11}Complexidade do Seletor}{27}{subsubsection.5.3.1.11}
-\contentsline {subsection}{\numberline {5.3.2}\textit {Script} de Calculo Autom\IeC {\'a}tico da M\IeC {\'e}trica}{27}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}\textit {Script} de C\IeC {\'a}lculo Autom\IeC {\'a}tico da M\IeC {\'e}trica}{27}{subsection.5.3.2}
 \contentsline {chapter}{\chapternumberline {6}Avalia\IeC {\c c}\IeC {\~a}o da M\IeC {\'e}trica}{29}{chapter.6}
 \contentsline {section}{\numberline {6.1}Metodologia de Avalia\IeC {\c c}\IeC {\~a}o}{29}{section.6.1}
 \contentsline {section}{\numberline {6.2}Dados para Teste}{31}{section.6.2}

@@ -118,7 +118,7 @@ Cada respondente identificou em uma escala (1 a 5) a dificuldade de se dar manut
 	\label{fig:graph_scaleMean}
 \end{figure}
 
-É possível notar a proximidade das respostas dos níveis intermediário e avançado, mas ainda assim as médias do nível avançado são ligeiramente maiores que as do nível intermediário. Os pesos de cada critério foi identificado a partir da média ponderada de cada questão, para evitar que o peso de cada resposta fosse completamente dependente das respostas dos respondentes identificados como iniciantes.
+É possível notar a proximidade das respostas dos níveis intermediário e avançado, mas ainda assim as médias do nível avançado são ligeiramente maiores que as do nível intermediário. Os pesos de cada critério foram definidos a partir da média ponderada de cada questão, para evitar que o peso de cada resposta fosse completamente dependente das respostas dos respondentes identificados como iniciantes.
 
 \section{Criação da Métrica}
 	
@@ -137,11 +137,18 @@ Como pode ser visto no \autoref{quad:questionXfunc}, as funcionalidades abordada
 
 A partir dessas funcionalidades foram identificados quais os métodos de avaliação caberiam a cada um deles. Esses métodos foram denominados critérios, que, para o \textit{script} de cálculo, representam um padrão a ser identificado, contado e calculado. Desta forma foram definidos e construídos os critérios listados na \autoref{tab:tabelaPesos}.
 
-Cada um dos critérios criados representa um impacto na qualidade, esse impacto foi definido como sendo o peso do critério avaliado. Dessa forma o \textit{script} avalia a presença ou não de cada critério nas regras definidas na folha de estilo CSS e, então, para cada ocorrência soma-se o peso do critério ao total da métrica. Pode-se considerar como sendo a forma geral o que se define na \autoref{math:criteria}
+Cada um dos critérios criados representa um impacto na qualidade e esse impacto foi definido como sendo o peso do critério avaliado. Dessa forma, o \textit{script} avalia a presença ou não de cada critério nas regras definidas na folha de estilo CSS e, então, para cada ocorrência, soma o valor calculado para o critério ao total da métrica. Pode-se considerar como sendo a forma geral o que se define na \autoref{math:criteria}:
 
 \begin{equation}
 \label{math:criteria}
 	crit\acute{e}rio(regra) \rightarrow \# ocorr\hat{e}ncias * peso
+\end{equation}
+
+O valor encontrado pela métrica será então o somatório dos valores de todos os critérios encontrados. Como pode ser visto na \autoref{math:agregate}:
+
+\begin{equation}
+\label{math:agregate}
+	M\acute{e}trica \leftarrow \displaystyle\sum_{i=1}^{12} crit\acute{e}rio_i(regra)
 \end{equation}
 
 Em seguida foi definido como cada critério impacta na manutenibilidade, explicando em detalhe o funcionamento de cada um.
@@ -149,12 +156,12 @@ Em seguida foi definido como cada critério impacta na manutenibilidade, explica
 \subsubsection{Seletores Raros}
 Os seletores definidos como raros, para este critério, foram identificados a partir da experiência do autor. Os seletores escolhidos foram: o seletor de atributo (\texttt{[attr=value]}); de descendente direto (\texttt{>}); de elementos irmãos (\texttt{\char`~}) e o de primeiro elemento irmão (\texttt{+}). O uso destes seletores nas regras CSS podem dificultar na manutenção, pois podem não ser de fácil entendimento, aumentando a complexidade do código e impactando assim na manutenibilidade.
 
-A participação deste seletor na métrica foi calculada a partir da regra geral, identificando a repetição deste seletor em uma única regra e a frequência ao longo da folha de estilo. Nos testes executados este seletor teve pouca participação na métrica, o que corrobora com a premissa de que estes seletores são raramente utilizados.
+A participação destes seletores na métrica foi calculada a partir da regra geral, identificando a repetição deles em uma única regra e a frequência ao longo da folha de estilo. Nos testes executados, estes seletores tiveram pouca participação na métrica, o que corrobora com a premissa de que estes seletores são raramente utilizados.
 
 \subsubsection{Agrupamento de elementos}
-O agrupamento de seletores é identificado por regras que são aplicados a elementos distintos, ela é representada pela separação por virgulas e é muito utilizada pelos desenvolvedores. Para o cálculo desta métrica foi feito, então, uma contagem de seletores separados por virgula para cada regra avaliada, porém, identificou-se que há um limite no impacto que um agrupamento muito extenso pode causar. 
+O agrupamento de seletores é identificado por regras que são aplicadas a elementos distintos. Ele é representado pela separação por vírgulas e é muito utilizado pelos desenvolvedores. Para o cálculo desta métrica, foi feito, então, uma contagem de seletores separados por vírgula para cada regra avaliada, porém, identificou-se que há um limite no impacto que um agrupamento muito extenso pode causar. 
 
-Devido ao limite identificado, foi utilizada uma função que mapeia o valor do critério em função do número de seletores agrupados na regra. Como podemos ver na \autoref{math:groupCriteria}, o limite de seletores agrupados é definido pelo denominador da função arco tangente, parâmetro este que foi ajustado para adequar aos testes executados.
+Devido ao limite identificado, foi utilizada uma função que mapeia o valor do critério em função do número de seletores agrupados na regra. Como pode ser visto na \autoref{math:groupCriteria}, o limite de seletores agrupados é definido pelo denominador da função arco tangente, parâmetro este que foi ajustado para adequar aos testes executados.
 
 \begin{equation}
 \label{math:groupCriteria}
@@ -162,12 +169,12 @@ Devido ao limite identificado, foi utilizada uma função que mapeia o valor do 
 \end{equation}
 
 \subsubsection{Seletores Aninhados}
-Este critério foi desenvolvido para avaliar a profundidade dos seletores. Para tanto, foi necessária a contagem de espaços em branco entre seletores simples, este tipo de aninhamento pode ocorrer em várias combinações de seletores, \textit{e.g.}, durante o agrupamento de seletores pode ocorrer um seletor aninhado.
+Este critério foi desenvolvido para avaliar a profundidade dos seletores. Para tanto, foi necessária a contagem de espaços em branco entre seletores simples. Esse tipo de aninhamento pode ocorrer em várias combinações de seletores, \textit{e.g.}, durante o agrupamento de seletores pode ocorrer um seletor aninhado.
 
 Para o cálculo de impacto deste seletor também foi utilizada a \autoref{math:groupCriteria}, considerando-se que existe um limite de impacto para a profundidade de um seletor. Após o cálculo individual de cada seletor, foi feita a soma de ocorrências durante a folha de estilo.
 
 \subsubsection{Propriedades Simplificadas}
-A simplificação das propriedades CSS são um atalho, que permitem que o desenvolvedor aplique todos os possíveis atributos a uma propriedade sem ter que declarar todos. Como podemos ver no exemplo da \autoref{fig:shorthand}, não há uma sequência lógica fácil de se identificar para a declaração dos valores dessas propriedades, o que pode dificultar na manutenção desse tipo de regra.
+A simplificação das propriedades CSS são um atalho, que permitem que o desenvolvedor aplique todos os possíveis atributos a uma propriedade sem ter que declarar todos. Como pode ser visto no exemplo da \autoref{fig:shorthand}, não há uma sequência lógica fácil de se identificar para a declaração dos valores dessas propriedades, o que pode dificultar na manutenção desse tipo de regra.
 
 \begin{figure}[!htb]
 	\centering
@@ -177,15 +184,15 @@ A simplificação das propriedades CSS são um atalho, que permitem que o desenv
 	\label{fig:shorthand}
 \end{figure}
 
-Para calcular este critério foi identificadas as propriedades que possuíam valores atribuídos separados por espaço. Para cada propriedade contou-se o número de ocorrências e somou-se ao final. Seguindo o mesmo cálculo da \autoref{math:criteria}.
+Para calcular este critério foi identificadas as propriedades que possuíam valores atribuídos separados por espaço. Para cada propriedade, contou-se o número de ocorrências e somou-se ao final, seguindo o mesmo cálculo da \autoref{math:criteria}.
 
 \subsubsection{Pseudo Elementos}
-Os pseudo elementos podem ser utilizados para acessar propriedades especiais dos elementos HTML. Para este critério foram considerados os pseudo elementos e as pseudo classes em um único critério, uma vez que obtiveram a mesma média de dificuldade. Das pseudo classes foram excluídos a cláusula \texttt{not} e os seletores de localidade, que receberam um critério de avaliação separado.
+Os pseudo elementos podem ser utilizados para acessar propriedades especiais dos elementos HTML. Para este critério, foram considerados os pseudo elementos e as pseudo classes em um único critério, uma vez que obtiveram a mesma média de dificuldade. Das pseudo classes foram excluídos a cláusula \texttt{not} e os seletores de localidade, que receberam um critério de avaliação separado.
 
-O cálculo foi feito então de acordo com a ocorrência de pseudo elementos e pseudo classes presentes no seletor das regras, novamente avaliando em qualquer situação que esses possam aparecer. A participação deste critério é então medido como a frequência de ocorrências durante a folha de estilo.
+O cálculo foi feito, então, de acordo com a ocorrência de pseudo elementos e pseudo classes presentes no seletor das regras, novamente avaliando em qualquer situação que esses possam aparecer. A participação deste critério é medida como a frequência de ocorrências durante a folha de estilo.
 
 \subsubsection{Comprimento de Seletores}
-Para o cálculo do critério de comprimento dos seletores levou-se em consideração um valor de ativação, \textit{i.e.}, a partir de dado número de caracteres o seletor terá um valor de manutenibilidade. Para este valor de ativação utilizou-se dos dados levantados pela pesquisa feita por \citeonline{McPherson:2014}, em que são expostos alguns dados sobre a utilização do CSS na Internet. Nessa pesquisa, é apresentada uma distribuição do comprimento do seletor em caracteres. 
+Para o cálculo do critério de comprimento dos seletores, levou-se em consideração um valor de ativação, \textit{i.e.}, a partir de dado número de caracteres o seletor terá um valor de manutenibilidade. Para este valor de ativação utilizou-se dos dados levantados pela pesquisa feita por \citeonline{McPherson:2014}, em que são expostos alguns dados sobre a utilização do CSS na Internet. Nessa pesquisa, é apresentada uma distribuição do comprimento do seletor em caracteres. 
 
 A distribuição na \autoref{fig:distributionLength}, mostra que a moda dos comprimentos encontrados pela pesquisa é em torno de 20 caracteres. A decisão tomada para o valor de ativação do critério foi então definida como 35 caracteres, um valor maior que a moda e que possui uma fatia expressiva na distribuição apresentada.
 
@@ -195,7 +202,7 @@ A distribuição na \autoref{fig:distributionLength}, mostra que a moda dos comp
 	\centering
 	\caption{Distribuição de tamanho dos seletores}
 	\includegraphics[width=0.8\textwidth]{./04-figuras/dist_selectorL}
-	\fonte{\citeonline{McPherson:2014}}
+	\fonte{Traduzido de \citeonline{McPherson:2014}}
 	\label{fig:distributionLength}
 \end{figure}
 
@@ -203,11 +210,9 @@ A distribuição na \autoref{fig:distributionLength}, mostra que a moda dos comp
 Este critério avaliou as \textit{At-rules}, denominadas assim por serem regras precedidas pelo símbolo @ (arroba). Esse critério foi calculado utilizando-se a \autoref{math:criteria}, contando o número de repetições ao longo da folha de estilo. As \textit{At-rules} podem definir uma série de atributos (\textit{e.g.} \texttt{charset}, \texttt{import}, \texttt{namespace}, etc.), que dão suporte à importação de arquivos externos ou o poder de controle condicional, como no caso do \texttt{@media}.
 
 \subsubsection{\textit{Media Queries}}
-A \textit{At-rule} \texttt{@media} é um caso especial do CSS, uma declaração que permite ao desenvolvedor implementar uma regra condicionada ao argumento chamado \textit{media querie}. As \textit{media queries} são condicionantes que avaliam aspectos da janela de renderização do HTML, ou informações do dispositivo no qual o HTML está sendo renderizado. As \textit{media queries} adicionam um nível a mais de complexidade no código CSS e tem ganhado espaço nas folhas de estilo devido à necessidade de estilos responsivos paras as páginas \textit{web}. 
+A \textit{At-rule} \texttt{@media} é um caso especial do CSS: uma declaração que permite ao desenvolvedor implementar uma regra condicionada ao argumento chamado \textit{media query}. As \textit{media queries} são condicionantes que avaliam aspectos da janela de renderização do HTML, ou informações do dispositivo no qual o HTML está sendo renderizado. As \textit{media query} adicionam um nível a mais de complexidade no código CSS e têm ganhado espaço nas folhas de estilo devido à necessidade de estilos responsivos paras as páginas \textit{web}. 
 
-As regras \texttt{@media} podem conter várias regras CSS condicionadas a suas \textit{media queries}, o que torna a avaliação mais complexa. Neste trabalho foi feito uma análise do número de \textit{media queries} presentes em cada arquivo CSS, cada uma avaliada como o peso determinado a elas na \autoref{tab:tabelaPesos} e somadas ao valor final da métrica.
-
-Durante os testes no Jenkins, não foram encontradas \textit{media queries} muito complexas e elas só estavam presentes a partir da versão que exibia a preocupação com a estilização responsiva da aplicação. As regras eram relativamente simples e não houve grande participação para o resultado final dos testes.
+As regras \texttt{@media} podem conter várias regras CSS condicionadas a suas \textit{media queries}, o que torna a avaliação mais complexa. Para o calculo desse critério, foi feita uma análise do número de \textit{media queries} presentes no arquivo CSS, cada uma avaliada como o peso determinado a elas na \autoref{tab:tabelaPesos} e somadas ao valor final da métrica.
 
 \subsubsection{Prefixos}
 Os prefixos são utilizados para explicitar como a máquina de renderização do navegador irá interpretar uma propriedade CSS. Apenas algumas propriedades têm a necessidade de se utilizar esses prefixos. Mas quando utilizados, eles resultam em uma repetição de propriedade, o que implica numa dificuldade de leitura e manutenção do código maior.
@@ -222,7 +227,7 @@ Essa inversão lógica pode causar um aumento na complexidade e deve ser, portan
 Esse critério calcula o número de ocorrências da cláusula \texttt{:not}, utilizando a forma geral e somando ao resultado final da métrica.
 
 \subsubsection{Complexidade do Seletor}
-Esse critério foi calculado de forma diferente, ele identifica uma combinação de seletores e calcula, a partir da presença dos símbolos \texttt{+}, \texttt{\char`~} e do identificador de propriedades \texttt{[attr=value]}, o valor da contribuição do critério como sendo o peso na \autoref{tab:tabelaPesos} potencializado pela quantidade de vezes que estes elementos aparecem.
+Este critério foi calculado de forma diferente: ele identifica uma combinação de seletores e calcula, a partir da presença dos símbolos \texttt{+}, \texttt{\char`~} e do identificador de propriedades \texttt{[attr=value]}, o valor da contribuição do critério como sendo o peso na \autoref{tab:tabelaPesos} potencializado pela quantidade de vezes que estes elementos aparecem.
 
 \begin{equation}
 \label{math:complexity}
@@ -231,9 +236,9 @@ Esse critério foi calculado de forma diferente, ele identifica uma combinação
 
 Como pode ser visto na \autoref{math:complexity}, o critério de complexidade tem crescimento exponencial, fazendo o dele o critério que deve se ter mais atenção. A complexidade dos seletores cresce de acordo com a necessidade de regras que não contam com os atributos \texttt{id} ou \texttt{class} do HTML, devido à dificuldade de se encontrar os atributos desejados dentro do DOM.
 
-\subsection{\textit{Script} de Calculo Automático da Métrica}
+\subsection{\textit{Script} de Cálculo Automático da Métrica}
 
-Para fazer o cálculo da métrica de maneira automatizada, foi criado um \textit{script} que lê, a partir do DOM, as regras aplicadas sobre o HTML renderizado no navegador. Uma vez que o \textit{script} é executado no navegador, a versão de implementação do ECMAScript do navegador. Neste trabalho foi utilizado a versão 6 do ECMAScript, utilizando de algumas funções do JavaScript que não estão disponíveis em todos os navegadores.
+Para fazer o cálculo da métrica de maneira automatizada, foi criado um \textit{script} que lê, a partir do DOM, as regras aplicadas sobre o HTML renderizado no navegador. Uma vez que o \textit{script} é executado no navegador, a versão de implementação do ECMAScript do navegador deve ser levada em conta. Neste trabalho, foi utilizada a versão 6 do ECMAScript, utilizando de algumas funções do JavaScript que não estão disponíveis em todos os navegadores.
 
 Foram necessários alguns testes do \textit{script} para ajustes dos pesos e eles foram executados em várias páginas da \textit{web}.
 
@@ -265,7 +270,7 @@ O Jenkins\footnote{Disponível em \url{https://jenkins-ci.org/}}, uma aplicaçã
 
 \section{Metodologia de Avaliação}
 
-Para execução dos testes foi utilizado doze versões do Jenkins, selecionadas entre as que estão disponibilizadas para \textit{download} na página do projeto, em intervalos semestrais, para obter dados históricos da aplicação. Essas versões foram escolhidas entre 2010 até a versão mais atual, tendo essa escolha sido feita devido à disponibilidade e possibilidade de identificar em qual ponto no tempo elas foram construídas, conforme exibido no \autoref{tab:versionTabs}.
+Para execução dos testes, foram utilizadas doze versões do Jenkins, selecionadas entre as que estão disponibilizadas para \textit{download} na página do projeto, em intervalos semestrais, para obter dados históricos da aplicação. Essas versões foram escolhidas entre 2010 até a versão mais atual, tendo essa escolha sido feita devido à disponibilidade e possibilidade de identificar em qual ponto no tempo elas foram construídas, conforme exibido no \autoref{quad:quadVersionBugs}.
 
 \input{./06-quadros/versionTab}
 
@@ -273,17 +278,17 @@ Para execução dos testes foi utilizado doze versões do Jenkins, selecionadas 
 
 O projeto do Jenkins disponibiliza um meio de se cadastrar e controlar as tarefas relativas ao desenvolvimento da ferramenta JIRA\footnote{Disponível em \url{https://issues.jenkins-ci.org}}. Utilizando dos filtros disponíveis no JIRA, foi possível identificar as tarefas que tinham alguma relação com os arquivos CSS, tornando possível uma coleta de dados indicadores do período de manutenção do projeto. Devido às características do JIRA, não foi possível a coleta do tempo gasto em cada tarefa, então o indicador escolhido foi a quantidade de defeitos criados a partir da versão em teste no momento.
 
-O filtro do JIRA foi configurado utilizando a ferramenta de busca avançada, onde a busca poderia ser feita em forma textual. O filtro foi construído com os filtros disponíveis pelo JIRA, buscamos dentro do projeto Jenkins pelos defeitos que possuíssem a etiqueta 'css' ou a palavra CSS dentro do texto de sua descrição, dessa forma pudemos identificar quais os defeitos do projeto estavam relacionados de alguma forma com CSS, mesmo que tivessem sido encontrados em outro lugar e possuíssem algum detalhe de CSS relacionados.
+O filtro do JIRA foi configurado utilizando a ferramenta de busca avançada, onde a busca poderia ser feita em forma textual. O filtro foi construído com os filtros disponíveis pelo JIRA, buscando dentro do projeto Jenkins pelos defeitos que possuíssem a etiqueta 'css' ou a palavra CSS dentro do texto de sua descrição. Dessa forma, foi possível identificar quais os defeitos do projeto estavam relacionados de alguma forma com CSS, mesmo que tivessem sido encontrados em outro lugar e possuíssem algum detalhe de CSS relacionados.
 
-O alcance dos defeitos foi escolhido a partir de suas datas de criação, os criados a partir da versão em teste até a data de lançamento da versão que seria testada a seguir, no caso da versão mais atual foi feito de sua data de lançamento até o dia em que a pesquisa foi realizada. O filtro foi construído de maneira textual, utilizando a sintaxe do JIRA, e se parece com o seguinte: project = JENKINS AND issuetype = Bug AND (labels = css OR text ~ CSS) AND (createdDate >= "2010/07/31" AND createdDate < "2011/01/22") ORDER BY created ASC. Os resultados dessa busca podem ser vistos no \autoref{quad:quadVersionBugs}.
+O alcance dos defeitos foi escolhido a partir de suas datas de criação: os criados a partir da versão em teste até a data de lançamento da versão que seria testada a seguir, no caso da versão mais atual foi feito de sua data de lançamento até o dia em que a pesquisa foi realizada. O filtro foi construído de maneira textual, utilizando a sintaxe do JIRA, e se parece com o seguinte: project = JENKINS AND issuetype = Bug AND (labels = css OR text ~ CSS) AND (createdDate >= "2010/07/31" AND createdDate < "2011/01/22") ORDER BY created ASC. Os resultados dessa busca podem ser vistos no \autoref{quad:quadVersionBugs}.
 
-Com estas informações é possível identificar uma relação entre o valor da métrica e o número de defeitos de cada versão e, a partir disso, averiguar se o valor da métrica proposta para um arquivo CSS (ou conjunto de arquivos) indica o nível de manutenibilidade desse(s) arquivo(s).
+Com estas informações, é possível identificar uma relação entre o valor da métrica e o número de defeitos de cada versão e, a partir disso, averiguar se o valor da métrica proposta para um arquivo CSS (ou conjunto de arquivos) indica o nível de manutenibilidade desse(s) arquivo(s).
 
 \section{Dados para Teste}
 
 A partir do repositório de versões\footnote{Disponível em \url{https://updates.jenkins-ci.org/download/war/}} do Jenkins, selecionou-se algumas de forma a cobrir uma janela de tempo semestral para as avaliações.
 
-Instâncias do Jenkins foram configuradas e executadas localmente para cada versão selecionada e, para cada uma foi executado o \textit{script} de cálculo automatizado da métrica para identificar o valor. Então, o valor encontrado de cada versão foi transcrito para uma planilha, contendo os resultados dos critérios para cada arquivo CSS encontrado pelo \textit{script} e o número de defeitos encontrados pelo filtro do JIRA, entre a data de lançamento da versão sendo testada no momento e a seguinte.
+Instâncias do Jenkins foram configuradas e executadas localmente para cada versão selecionada e, para cada uma, foi executado o \textit{script} de cálculo automatizado da métrica para identificar o valor. Então, o valor encontrado de cada versão foi transcrito para uma planilha, contendo os resultados dos critérios para cada arquivo CSS encontrado pelo \textit{script} e o número de defeitos encontrados pelo filtro do JIRA, entre a data de lançamento da versão sendo testada no momento e a seguinte.
 
 %mostrar visualmente para os macacos que não entendem oq eu to dizendo... todo mundo hauhauhauhauahuaha
 
@@ -309,7 +314,7 @@ Como as versões para execução do cálculo da métrica foram escolhidas com in
 
 Pode-se notar na \autoref{fig:totalXIssue} que o número de defeitos acompanha a progressão da métrica, mas o pico de cadastro de defeitos não se encontra no mesmo intervalo em que há um pico do resultado da métrica. Este comportamento pode ser explicado pelo fato do \textit{layout} da aplicação ter sofrido uma mudança drástica entre as versões 1.549 e 1.574, disponibilizadas respectivamente em Janeiro/2014 (26/01/2014) e Julho/2014 (27/07/2014).
 
-As folhas de estilo da biblioteca YUI representaram a maior porção do resultado total da métrica em grande parte das versões e também apresentou pouca mudança ao longo do tempo. Considerou-se, então, a possibilidade de isolar uma folha de estilo para análise do resultado, partindo do pressuposto que as modificações feitas pela equipe de desenvolvimento são as que impactam e definem a complexidade de manutenção do código. Para tanto foi necessária uma pesquisa no histórico de \textit{commits} dos arquivos CSS do projeto, com intuito de identificar que arquivos CSS haviam sofrido o maior número de alterações ao longo do tempo. Como pode ser visto na \autoref{tab:commits}, o arquivo \texttt{style.css} foi, excepcionalmente, o que sofreu mais \textit{commits}, sendo identificado, assim, como o arquivo de codificação CSS principal do projeto.
+As folhas de estilo da biblioteca YUI representaram a maior porção do resultado total da métrica em grande parte das versões e também apresentou pouca mudança ao longo do tempo. Considerou-se, então, a possibilidade de isolar uma folha de estilo para análise do resultado, partindo do pressuposto que as modificações feitas pela equipe de desenvolvimento são as que impactam e definem a complexidade de manutenção do código. Para tanto, foi necessária uma pesquisa no histórico de \textit{commits} dos arquivos CSS do projeto, com intuito de identificar que arquivos CSS haviam sofrido o maior número de alterações ao longo do tempo. Como pode ser visto na \autoref{tab:commits}, o arquivo \texttt{style.css} foi, excepcionalmente, o que sofreu mais \textit{commits}, sendo identificado, assim, como o arquivo de codificação CSS principal do projeto.
 
 \input{./05-tabelas/commits}
 
@@ -327,7 +332,7 @@ Pode-se notar na \autoref{fig:styleXIssues} que a evolução da métrica foi cre
 %explicar melhor o agregado
 O comportamento do resultado da métrica para somente o arquivo \texttt{style.css} e o somatório de todos os arquivos (\autoref{fig:totalXIssue}) é semelhante, o que leva a acreditar que o valor da métrica está relacionado às modificações feitas no projeto. Este comportamento para o arquivo \texttt{style.css} leva à hipótese de que as mudanças na folha de estilo causaram um aumento progressivo no resultado, ou seja, toda nova modificação somou ao valor da métrica.
 
-Essa hipótese põe em questão qual o motivo desta mudança, que deve ser respondida através do estudo da métrica. Sobre quais são os critérios de avaliação que impactam no seu resultado e como esses se comportam. 
+Essa hipótese põe em questão qual o motivo desta mudança, que deve ser respondida através do estudo da métrica, sobre quais são os critérios de avaliação que impactam no seu resultado e como esses se comportam. 
 
 \section{Apreciação da Métrica}
 
@@ -343,7 +348,7 @@ Com o objetivo de avaliar a contribuição de cada critério no resultado final 
 	\label{fig:compos_crit}
 \end{figure}
 
-O aumento da distribuição dos critérios de avaliação no resultado da métrica, pode ser interpretado como um aumento na complexidade do código.  Através da \autoref{fig:compos_crit}, nota-se que o perfil de complexidade foi se alterando com a evolução do código, o que pode ser explicado pelo aumento da contribuição ou o surgimento de outros critérios que antes não estavam presentes na avaliação da métrica.
+O aumento da distribuição dos critérios de avaliação no resultado da métrica, pode ser interpretado como um aumento na complexidade do código. Por meio da \autoref{fig:compos_crit}, nota-se que o perfil de complexidade foi se alterando com a evolução do código, o que pode ser explicado pelo aumento da contribuição ou o surgimento de outros critérios que antes não estavam presentes na avaliação da métrica.
 
 Esse aumento de complexidade do código CSS pode ser um agente causador de efeitos colaterais que, por sua vez, podem causar um aumento considerável no número de defeitos no estilo de uma página \textit{web}. Esse fato pode explicar o aumento gradativo dos números de defeitos criados acompanhando o resultado da métrica, visto na \autoref{fig:styleXIssues}.
 
