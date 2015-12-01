@@ -1,7 +1,7 @@
 \changetocdepth {4}
 \select@language {brazil}
 \contentsline {chapter}{\chapternumberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Justificativa}{2}{section.1.1}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}
 \contentsline {chapter}{\chapternumberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}HTML}{3}{section.2.1}
@@ -14,39 +14,37 @@
 \contentsline {section}{\numberline {3.2}Qualidade de C\IeC {\'o}digo CSS}{11}{section.3.2}
 \contentsline {chapter}{\chapternumberline {4}Metodologia}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Question\IeC {\'a}rio}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Proposta da M\IeC {\'e}trica}{13}{section.4.2}
+\contentsline {section}{\numberline {4.2}Proposta da M\IeC {\'e}trica}{14}{section.4.2}
 \contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o dos Resultados}{14}{section.4.3}
 \contentsline {chapter}{\chapternumberline {5}Desenvolvimento}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Construindo o Question\IeC {\'a}rio}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Resultados do Question\IeC {\'a}rio}{16}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}N\IeC {\'\i }vel de Profici\IeC {\^e}ncia}{17}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Vis\IeC {\~a}o Geral}{17}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Quest\IeC {\~o}es Explorat\IeC {\'o}rias}{18}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}C\IeC {\'a}lculo dos Pesos}{20}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Cria\IeC {\c c}\IeC {\~a}o da M\IeC {\'e}trica}{21}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Identifica\IeC {\c c}\IeC {\~a}o dos Crit\IeC {\'e}rios de Avalia\IeC {\c c}\IeC {\~a}o}{22}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Seletores Raros}{23}{subsubsection.5.3.1.1}
-\contentsline {subsubsection}{\numberline {5.3.1.2}Agrupamento de elementos}{24}{subsubsection.5.3.1.2}
-\contentsline {subsubsection}{\numberline {5.3.1.3}Seletores Aninhados}{24}{subsubsection.5.3.1.3}
-\contentsline {subsubsection}{\numberline {5.3.1.4}Propriedades Simplificadas}{24}{subsubsection.5.3.1.4}
-\contentsline {subsubsection}{\numberline {5.3.1.5}Pseudo Elementos}{24}{subsubsection.5.3.1.5}
-\contentsline {subsubsection}{\numberline {5.3.1.6}Comprimento de Seletores}{25}{subsubsection.5.3.1.6}
-\contentsline {subsubsection}{\numberline {5.3.1.7}\textit {At-rules}}{25}{subsubsection.5.3.1.7}
-\contentsline {subsubsection}{\numberline {5.3.1.8}\textit {Media Queries}}{25}{subsubsection.5.3.1.8}
-\contentsline {subsubsection}{\numberline {5.3.1.9}Prefixos}{26}{subsubsection.5.3.1.9}
-\contentsline {subsubsection}{\numberline {5.3.1.10}Cl\IeC {\'a}usula \texttt {:not}}{26}{subsubsection.5.3.1.10}
-\contentsline {subsubsection}{\numberline {5.3.1.11}Complexidade do Seletor}{27}{subsubsection.5.3.1.11}
-\contentsline {subsection}{\numberline {5.3.2}\textit {Script} de C\IeC {\'a}lculo Autom\IeC {\'a}tico da M\IeC {\'e}trica}{27}{subsection.5.3.2}
-\contentsline {chapter}{\chapternumberline {6}Avalia\IeC {\c c}\IeC {\~a}o da M\IeC {\'e}trica}{29}{chapter.6}
-\contentsline {section}{\numberline {6.1}Metodologia de Avalia\IeC {\c c}\IeC {\~a}o}{29}{section.6.1}
-\contentsline {section}{\numberline {6.2}Dados para Teste}{31}{section.6.2}
-\contentsline {section}{\numberline {6.3}Resultados}{32}{section.6.3}
-\contentsline {section}{\numberline {6.4}Aprecia\IeC {\c c}\IeC {\~a}o da M\IeC {\'e}trica}{34}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Conclus\IeC {\~a}o}{36}{chapter.7}
-\contentsline {section}{\numberline {7.1}Contribui\IeC {\c c}\IeC {\~o}es}{37}{section.7.1}
-\contentsline {section}{\numberline {7.2}Trabalhos Futuros}{37}{section.7.2}
-\contentsline {chapter}{Refer\^encias}{39}{section*.8}
+\contentsline {section}{\numberline {5.1}Question\IeC {\'a}rio}{15}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Resultado do Question\IeC {\'a}rio}{17}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Quest\IeC {\~o}es Explorat\IeC {\'o}rias}{20}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}C\IeC {\'a}lculo dos Pesos}{21}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}M\IeC {\'e}trica}{22}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Identifica\IeC {\c c}\IeC {\~a}o dos Crit\IeC {\'e}rios de Avalia\IeC {\c c}\IeC {\~a}o}{22}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Seletores Raros}{23}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Agrupamento de elementos}{24}{subsubsection.5.2.1.2}
+\contentsline {subsubsection}{\numberline {5.2.1.3}Seletores Aninhados}{24}{subsubsection.5.2.1.3}
+\contentsline {subsubsection}{\numberline {5.2.1.4}Propriedades Simplificadas}{24}{subsubsection.5.2.1.4}
+\contentsline {subsubsection}{\numberline {5.2.1.5}Pseudo Elementos}{25}{subsubsection.5.2.1.5}
+\contentsline {subsubsection}{\numberline {5.2.1.6}Comprimento de Seletores}{25}{subsubsection.5.2.1.6}
+\contentsline {subsubsection}{\numberline {5.2.1.7}\textit {At-rules}}{26}{subsubsection.5.2.1.7}
+\contentsline {subsubsection}{\numberline {5.2.1.8}\textit {Media Queries}}{26}{subsubsection.5.2.1.8}
+\contentsline {subsubsection}{\numberline {5.2.1.9}Prefixos}{27}{subsubsection.5.2.1.9}
+\contentsline {subsubsection}{\numberline {5.2.1.10}Cl\IeC {\'a}usula \texttt {:not}}{27}{subsubsection.5.2.1.10}
+\contentsline {subsubsection}{\numberline {5.2.1.11}Complexidade do Seletor}{27}{subsubsection.5.2.1.11}
+\contentsline {subsection}{\numberline {5.2.2}\textit {Script} de C\IeC {\'a}lculo Autom\IeC {\'a}tico da M\IeC {\'e}trica}{27}{subsection.5.2.2}
+\contentsline {chapter}{\chapternumberline {6}Avalia\IeC {\c c}\IeC {\~a}o da M\IeC {\'e}trica}{30}{chapter.6}
+\contentsline {section}{\numberline {6.1}Metodologia de Avalia\IeC {\c c}\IeC {\~a}o}{30}{section.6.1}
+\contentsline {section}{\numberline {6.2}Dados para Teste}{32}{section.6.2}
+\contentsline {section}{\numberline {6.3}Resultados}{33}{section.6.3}
+\contentsline {section}{\numberline {6.4}Aprecia\IeC {\c c}\IeC {\~a}o da M\IeC {\'e}trica}{35}{section.6.4}
+\contentsline {chapter}{\chapternumberline {7}Conclus\IeC {\~a}o}{37}{chapter.7}
+\contentsline {section}{\numberline {7.1}Contribui\IeC {\c c}\IeC {\~o}es}{38}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabalhos Futuros}{38}{section.7.2}
+\contentsline {chapter}{Refer\^encias}{40}{section*.8}
 \vspace {\cftbeforepartskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{41}{section*.9}
-\contentsline {appendix}{\chapternumberline {A}Question\IeC {\'a}rio}{42}{appendix.A}
+\contentsline {part}{Ap\^endices}{42}{section*.9}
+\contentsline {appendix}{\chapternumberline {A}Question\IeC {\'a}rio}{43}{appendix.A}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.26)  4 NOV 2015 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.26)  1 DEC 2015 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1270,7 +1270,7 @@ Package microtype Info: Loading generic settings for font family
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
 ) [9])
 \openout2 = `./02-elementos-textuais/introducao.aux'.
 
@@ -1293,14 +1293,14 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 
 
 (./02-elementos-textuais/fund-teorica.tex
-<./04-figuras/html_simples.pdf, id=270, 711.65875pt x 374.39874pt>
+<./04-figuras/html_simples.pdf, id=266, 711.65875pt x 374.39874pt>
 File: ./04-figuras/html_simples.pdf Graphic file (type pdf)
 
 <use ./04-figuras/html_simples.pdf>
 Package pdftex.def Info: ./04-figuras/html_simples.pdf used on input line 19.
 (pdftex.def)             Requested size: 455.0pt x 239.36871pt.
 
-<./04-figuras/tag_element_attr_marked.pdf, id=271, 1111.15125pt x 219.82124pt>
+<./04-figuras/tag_element_attr_marked.pdf, id=267, 1111.15125pt x 219.82124pt>
 File: ./04-figuras/tag_element_attr_marked.pdf Graphic file (type pdf)
 
 <use ./04-figuras/tag_element_attr_marked.pdf>
@@ -1318,7 +1318,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.35 
       <./04-figuras/html_simples.pdf>]
-<./04-figuras/style_script.pdf, id=289, 736.52643pt x 306.61566pt>
+<./04-figuras/style_script.pdf, id=285, 736.52643pt x 306.61566pt>
 File: ./04-figuras/style_script.pdf Graphic file (type pdf)
 
 <use ./04-figuras/style_script.pdf>
@@ -1341,7 +1341,7 @@ l.52
 
 pdfTeX warning: pdflatex.exe (file ./04-figuras/style_script.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
->] <./04-figuras/DOMsnippet.pdf, id=310, 254.9525pt x 411.5375pt>
+>] <./04-figuras/DOMsnippet.pdf, id=306, 254.9525pt x 411.5375pt>
 File: ./04-figuras/DOMsnippet.pdf Graphic file (type pdf)
 
 <use ./04-figuras/DOMsnippet.pdf>
@@ -1355,7 +1355,7 @@ Package pdftex.def Info: ./04-figuras/DOMsnippet.pdf used on input line 56.
 l.69 C
       omo pode ser visualizado na \autoref{fig:cssExample}, uma folha de est...
  <./04-figuras/DOMsnippet.pdf>]
-<./04-figuras/css_example_marked.pdf, id=332, 493.845pt x 531.9875pt>
+<./04-figuras/css_example_marked.pdf, id=328, 493.845pt x 531.9875pt>
 File: ./04-figuras/css_example_marked.pdf Graphic file (type pdf)
 
 <use ./04-figuras/css_example_marked.pdf>
@@ -1389,7 +1389,7 @@ l.86 \end{equation}
 
 
 (./02-elementos-textuais/resultados.tex
-<./04-figuras/questionario_q13.pdf, id=451, 785.29604pt x 199.1693pt>
+<./04-figuras/questionario_q13.pdf, id=449, 785.29604pt x 199.1693pt>
 File: ./04-figuras/questionario_q13.pdf Graphic file (type pdf)
 
 <use ./04-figuras/questionario_q13.pdf>
@@ -1407,63 +1407,55 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.28 A
        dificuldade atribuída por cada pessoa a um determinado conjunto de r...
- <./04-figuras/questionario_q13.pdf>] [16]
-(./06-quadros/quaclassificacaorespostas.tex)
-<./04-figuras/questionario_q2.pdf, id=474, 1043.9pt x 734.17145pt>
+ <./04-figuras/questionario_q13.pdf>]
+(./06-quadros/quaclassificacaorespostas.tex) [16]
+<./04-figuras/questionario_q2.pdf, id=472, 1043.9pt x 734.17145pt>
 File: ./04-figuras/questionario_q2.pdf Graphic file (type pdf)
 
 <use ./04-figuras/questionario_q2.pdf>
-Package pdftex.def Info: ./04-figuras/questionario_q2.pdf used on input line 68
+Package pdftex.def Info: ./04-figuras/questionario_q2.pdf used on input line 64
 .
 (pdftex.def)             Requested size: 455.0pt x 320.00053pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{quadro.5.
+1}) has been already used, duplicate ignored
 
-<./04-figuras/questionario_q3.pdf, id=478, 835.48752pt x 787.46062pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.74 
+     ] <./04-figuras/questionario_q3.pdf, id=481, 835.48752pt x 787.46062pt>
 File: ./04-figuras/questionario_q3.pdf Graphic file (type pdf)
 
 <use ./04-figuras/questionario_q3.pdf>
 Package pdftex.def Info: ./04-figuras/questionario_q3.pdf used on input line 80
 .
 (pdftex.def)             Requested size: 455.0pt x 428.85114pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{quadro.5.
-1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.83 \end{figure}
-                 ]
-<./04-figuras/questionario_q9.pdf, id=486, 500.62032pt x 136.25906pt>
-File: ./04-figuras/questionario_q9.pdf Graphic file (type pdf)
-
-<use ./04-figuras/questionario_q9.pdf>
-Package pdftex.def Info: ./04-figuras/questionario_q9.pdf used on input line 90
-.
-(pdftex.def)             Requested size: 455.0pt x 123.8483pt.
  [18pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.101 F
-       oi questionado quais são os pontos críticos que podem dificultar a ...
- <./04-figuras/questionario_q2.pdf>]
+l.84 
+      <./04-figuras/questionario_q2.pdf>]
+<./04-figuras/questionario_q9.pdf, id=495, 500.62032pt x 136.25906pt>
+File: ./04-figuras/questionario_q9.pdf Graphic file (type pdf)
 
-LaTeX Warning: Text page 19 contains only floats.
-
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.101 F
-       oi questionado quais são os pontos críticos que podem dificultar a ...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9}) 
-has been already used, duplicate ignored
+<use ./04-figuras/questionario_q9.pdf>
+Package pdftex.def Info: ./04-figuras/questionario_q9.pdf used on input line 88
+.
+(pdftex.def)             Requested size: 455.0pt x 123.8483pt.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.101 F
-       oi questionado quais são os pontos críticos que podem dificultar a ...
- <./04-figuras/questionario_q3.pdf> <./04-figuras/questionario_q9.pdf
+l.96 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.96 
+      <./04-figuras/questionario_q3.pdf> <./04-figuras/questionario_q9.pdf
 
 pdfTeX warning: pdflatex.exe (file ./04-figuras/questionario_q9.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
@@ -1477,46 +1469,46 @@ Overfull \hbox (16.30043pt too wide) in paragraph at lines 5--18
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.112 
-      ] <./04-figuras/graph_scaleMean.pdf, id=520, 427.8384pt x 304.9794pt>
+l.106 
+      ] <./04-figuras/graph_scaleMean.pdf, id=518, 427.8384pt x 304.9794pt>
 File: ./04-figuras/graph_scaleMean.pdf Graphic file (type pdf)
 
 <use ./04-figuras/graph_scaleMean.pdf>
 Package pdftex.def Info: ./04-figuras/graph_scaleMean.pdf used on input line 11
-6.
+2.
 (pdftex.def)             Requested size: 455.0pt x 324.35626pt.
  [21pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.126 
+l.122 
        <./04-figuras/graph_scaleMean.pdf>] (./05-tabelas/tabpesos.tex)
 (./06-quadros/questionXfunc.tex) [22pdfTeX warning (ext4): destination with the
  same identifier (name{table.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.148 
+l.137 
       ] [23pdfTeX warning (ext4): destination with the same identifier (name{qu
 adro.5.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.163 
-      ] <./04-figuras/shorthand_prop.pdf, id=554, 707.325pt x 157.36357pt>
+l.156 
+      ] <./04-figuras/shorthand_prop.pdf, id=555, 707.325pt x 157.36357pt>
 File: ./04-figuras/shorthand_prop.pdf Graphic file (type pdf)
 
 <use ./04-figuras/shorthand_prop.pdf>
-Package pdftex.def Info: ./04-figuras/shorthand_prop.pdf used on input line 182
+Package pdftex.def Info: ./04-figuras/shorthand_prop.pdf used on input line 180
 .
 (pdftex.def)             Requested size: 455.0pt x 101.22618pt.
  [24]
-<./04-figuras/dist_selectorL.pdf, id=564, 796.67719pt x 483.69688pt>
+<./04-figuras/dist_selectorL.pdf, id=565, 796.67719pt x 483.69688pt>
 File: ./04-figuras/dist_selectorL.pdf Graphic file (type pdf)
 
 <use ./04-figuras/dist_selectorL.pdf>
-Package pdftex.def Info: ./04-figuras/dist_selectorL.pdf used on input line 204
+Package pdftex.def Info: ./04-figuras/dist_selectorL.pdf used on input line 202
 .
 (pdftex.def)             Requested size: 364.00139pt x 221.00499pt.
  [25pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
@@ -1524,116 +1516,117 @@ Package pdftex.def Info: ./04-figuras/dist_selectorL.pdf used on input line 204
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.214 
+l.209 
        <./04-figuras/shorthand_prop.pdf>] [26pdfTeX warning (ext4): destination
  with the same identifier (name{figure.5.12}) has been already used, duplicate 
 ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.226 
-       <./04-figuras/dist_selectorL.pdf>]
-<./04-figuras/calculator.pdf, id=605, 598.05476pt x 358.37631pt>
+l.217 
+       <./04-figuras/dist_selectorL.pdf>] [27]
+<./04-figuras/calculator.pdf, id=612, 598.05476pt x 358.37631pt>
 File: ./04-figuras/calculator.pdf Graphic file (type pdf)
 
 <use ./04-figuras/calculator.pdf>
-Package pdftex.def Info: ./04-figuras/calculator.pdf used on input line 248.
+Package pdftex.def Info: ./04-figuras/calculator.pdf used on input line 246.
 (pdftex.def)             Requested size: 455.0pt x 272.65865pt.
- [27] [28pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.5.13}) has been already used, duplicate ignored
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.259 \chapter
-              {Avaliação da Métrica} <./04-figuras/calculator.pdf>]
-<./04-figuras/code_freq_graph.pdf, id=644, 1283.24329pt x 760.92754pt>
+l.256 
+       <./04-figuras/calculator.pdf>] [29]
+<./04-figuras/code_freq_graph.pdf, id=649, 1283.24329pt x 760.92754pt>
 File: ./04-figuras/code_freq_graph.pdf Graphic file (type pdf)
 
 <use ./04-figuras/code_freq_graph.pdf>
 Package pdftex.def Info: ./04-figuras/code_freq_graph.pdf used on input line 26
-6.
+4.
 (pdftex.def)             Requested size: 455.0pt x 269.80025pt.
- (./06-quadros/versionTab.tex) [29
+ (./06-quadros/versionTab.tex) [30
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.14})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.280 
-       <./04-figuras/code_freq_graph.pdf>] [30pdfTeX warning (ext4): destinatio
+l.278 
+       <./04-figuras/code_freq_graph.pdf>] [31pdfTeX warning (ext4): destinatio
 n with the same identifier (name{quadro.6.4}) has been already used, duplicate 
 ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.291 I
-       nstâncias do Jenkins foram configuradas e executadas localmente para...
-] (./05-tabelas/explResultTestes.tex
+l.285 \section
+              {Dados para Teste}] (./05-tabelas/explResultTestes.tex
 LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 6.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9.60004> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 7.
-) [31pdfTeX warning (ext4): destination with the same identifier (name{table.6.
+) [32pdfTeX warning (ext4): destination with the same identifier (name{table.6.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.306 
-      ] <./04-figuras/total_issues.pdf, id=679, 1656.40572pt x 1023.1049pt>
+l.304 
+      ] <./04-figuras/total_issues.pdf, id=685, 1656.40572pt x 1023.1049pt>
 File: ./04-figuras/total_issues.pdf Graphic file (type pdf)
 
 <use ./04-figuras/total_issues.pdf>
 Package pdftex.def Info: ./04-figuras/total_issues.pdf used on input line 310.
 (pdftex.def)             Requested size: 455.0pt x 281.03468pt.
- (./05-tabelas/commits.tex) [32pdfTeX warning (ext4): destination with the same
+ (./05-tabelas/commits.tex) [33pdfTeX warning (ext4): destination with the same
  identifier (name{figure.6.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.322 
+l.320 
        <./04-figuras/total_issues.pdf>]
-<./04-figuras/style_issues.pdf, id=692, 1273.55804pt x 788.54597pt>
+<./04-figuras/style_issues.pdf, id=699, 1273.55804pt x 788.54597pt>
 File: ./04-figuras/style_issues.pdf Graphic file (type pdf)
 
 <use ./04-figuras/style_issues.pdf>
 Package pdftex.def Info: ./04-figuras/style_issues.pdf used on input line 326.
 (pdftex.def)             Requested size: 409.49722pt x 253.54309pt.
- [33pdfTeX warning (ext4): destination with the same identifier (name{table.6.3
+ [34pdfTeX warning (ext4): destination with the same identifier (name{table.6.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.336 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-6.16}) has been already used, duplicate ignored
+l.333 E
+       ssa hipótese põe em questão qual o motivo desta mudança, que deve...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.16})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.336 
-       <./04-figuras/style_issues.pdf>]
-<./04-figuras/composition_criteria.pdf, id=707, 1574.44351pt x 972.47961pt>
+l.333 E
+       ssa hipótese põe em questão qual o motivo desta mudança, que deve...
+ <./04-figuras/style_issues.pdf>]
+<./04-figuras/composition_criteria.pdf, id=712, 1574.44351pt x 972.47961pt>
 File: ./04-figuras/composition_criteria.pdf Graphic file (type pdf)
 
 <use ./04-figuras/composition_criteria.pdf>
 Package pdftex.def Info: ./04-figuras/composition_criteria.pdf used on input li
-ne 346.
+ne 344.
 (pdftex.def)             Requested size: 409.49722pt x 252.92776pt.
-) [34pdfTeX warning (ext4): destination with the same identifier (name{figure.6
-.17}) has been already used, duplicate ignored
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.103 ...clude{./02-elementos-textuais/resultados}
-                                                              % Resultados <./0
-4-figuras/composition_criteria.pdf>] [35]
+l.353 O
+       s resultados obtidos nos testes demonstram um aumento de complexidade...
+ <./04-figuras/composition_criteria.pdf>]) [36]
 \openout2 = `./02-elementos-textuais/conclusao.aux'.
 
 
-(./02-elementos-textuais/conclusao.tex [36
+(./02-elementos-textuais/conclusao.tex [37
 
 
 
-] [37]) [38]
+] [38]) [39]
 \openout2 = `./03-elementos-pos-textuais/referencias.aux'.
 
 
@@ -1655,20 +1648,20 @@ Underfull \hbox (badness 2452) in paragraph at lines 61--61
 bu-lary and as-so-ci-a-ted APIs for
  []
 
-[39
+[40
 
 
 
-])) [40]
+])) [41]
 \openout2 = `./03-elementos-pos-textuais/apendices.aux'.
 
- (./03-elementos-pos-textuais/apendices.tex [41
+ (./03-elementos-pos-textuais/apendices.tex [42
 
 
 
 
 ]
-<./08-arquivospdf/questionario.pdf, id=817, 597.23125pt x 845.1575pt>
+<./08-arquivospdf/questionario.pdf, id=823, 597.23125pt x 845.1575pt>
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
 <use ./08-arquivospdf/questionario.pdf>
@@ -1682,7 +1675,7 @@ Package pdftex.def Info: ./08-arquivospdf/questionario.pdf used on input line 9
 .
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<./08-arquivospdf/questionario.pdf, id=820, page=1, 597.23125pt x 845.1575pt>
+<./08-arquivospdf/questionario.pdf, id=826, page=1, 597.23125pt x 845.1575pt>
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
 <use ./08-arquivospdf/questionario.pdf, page 1>
@@ -1695,7 +1688,7 @@ File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page1 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [42
+ [43
 
 ]
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
@@ -1714,130 +1707,130 @@ File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
 <use ./08-arquivospdf/questionario.pdf, page 1>
 Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page1 used on input
- line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [43 <./08-arquivospdf/questionario.pdf>]
-<./08-arquivospdf/questionario.pdf, id=848, page=2, 597.23125pt x 845.1575pt>
-File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
-
-<use ./08-arquivospdf/questionario.pdf, page 2>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page2 used on input
- line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
-
-<use ./08-arquivospdf/questionario.pdf, page 2>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page2 used on input
- line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
-
-<use ./08-arquivospdf/questionario.pdf, page 2>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page2 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [44 <./08-arquivospdf/questionario.pdf>]
-<./08-arquivospdf/questionario.pdf, id=880, page=3, 597.23125pt x 845.1575pt>
+<./08-arquivospdf/questionario.pdf, id=855, page=2, 597.23125pt x 845.1575pt>
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 3>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page3 used on input
+<use ./08-arquivospdf/questionario.pdf, page 2>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page2 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 3>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page3 used on input
+<use ./08-arquivospdf/questionario.pdf, page 2>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page2 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 3>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page3 used on input
+<use ./08-arquivospdf/questionario.pdf, page 2>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page2 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [45 <./08-arquivospdf/questionario.pdf>]
-<./08-arquivospdf/questionario.pdf, id=894, page=4, 597.23125pt x 845.1575pt>
+<./08-arquivospdf/questionario.pdf, id=887, page=3, 597.23125pt x 845.1575pt>
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 4>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page4 used on input
+<use ./08-arquivospdf/questionario.pdf, page 3>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page3 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 4>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page4 used on input
+<use ./08-arquivospdf/questionario.pdf, page 3>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page3 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 4>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page4 used on input
+<use ./08-arquivospdf/questionario.pdf, page 3>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page3 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [46 <./08-arquivospdf/questionario.pdf>]
-<./08-arquivospdf/questionario.pdf, id=899, page=5, 597.23125pt x 845.1575pt>
+<./08-arquivospdf/questionario.pdf, id=900, page=4, 597.23125pt x 845.1575pt>
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 5>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page5 used on input
+<use ./08-arquivospdf/questionario.pdf, page 4>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page4 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 5>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page5 used on input
+<use ./08-arquivospdf/questionario.pdf, page 4>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page4 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 5>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page5 used on input
+<use ./08-arquivospdf/questionario.pdf, page 4>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page4 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [47 <./08-arquivospdf/questionario.pdf>]
-<./08-arquivospdf/questionario.pdf, id=904, page=6, 597.23125pt x 845.1575pt>
+<./08-arquivospdf/questionario.pdf, id=905, page=5, 597.23125pt x 845.1575pt>
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 6>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page6 used on input
+<use ./08-arquivospdf/questionario.pdf, page 5>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page5 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 6>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page6 used on input
+<use ./08-arquivospdf/questionario.pdf, page 5>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page5 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 6>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page6 used on input
+<use ./08-arquivospdf/questionario.pdf, page 5>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page5 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [48 <./08-arquivospdf/questionario.pdf>]
-<./08-arquivospdf/questionario.pdf, id=909, page=7, 597.23125pt x 845.1575pt>
+<./08-arquivospdf/questionario.pdf, id=910, page=6, 597.23125pt x 845.1575pt>
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 7>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page7 used on input
+<use ./08-arquivospdf/questionario.pdf, page 6>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page6 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 7>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page7 used on input
+<use ./08-arquivospdf/questionario.pdf, page 6>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page6 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
-<use ./08-arquivospdf/questionario.pdf, page 7>
-Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page7 used on input
+<use ./08-arquivospdf/questionario.pdf, page 6>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page6 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [49 <./08-arquivospdf/questionario.pdf>]
-<./08-arquivospdf/questionario.pdf, id=914, page=8, 597.23125pt x 845.1575pt>
+<./08-arquivospdf/questionario.pdf, id=915, page=7, 597.23125pt x 845.1575pt>
+File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
+
+<use ./08-arquivospdf/questionario.pdf, page 7>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page7 used on input
+ line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
+
+<use ./08-arquivospdf/questionario.pdf, page 7>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page7 used on input
+ line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
+
+<use ./08-arquivospdf/questionario.pdf, page 7>
+Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page7 used on input
+ line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [50 <./08-arquivospdf/questionario.pdf>]
+<./08-arquivospdf/questionario.pdf, id=920, page=8, 597.23125pt x 845.1575pt>
 File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 
 <use ./08-arquivospdf/questionario.pdf, page 8>
@@ -1856,7 +1849,7 @@ File: ./08-arquivospdf/questionario.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./08-arquivospdf/questionario.pdf, page8 used on input
  line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [50 <./08-arquivospdf/questionario.pdf>])
+ [51 <./08-arquivospdf/questionario.pdf>])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -1890,7 +1883,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: AA124078888421D98947333E3263117B;2443.
+(rerunfilecheck)             Checksum: 3A4DD28883EF038D2CA9BEAB1ECFD84E;2492.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1898,11 +1891,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
  ) 
 Here is how much of TeX's memory you used:
- 17018 strings out of 493091
- 253495 string characters out of 6138531
- 461544 words of memory out of 5000000
- 19620 multiletter control sequences out of 15000+600000
- 95421 words of font info for 276 fonts, out of 8000000 for 9000
+ 17024 strings out of 493091
+ 253552 string characters out of 6138531
+ 461820 words of memory out of 5000000
+ 19619 multiletter control sequences out of 15000+600000
+ 95987 words of font info for 281 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,18n,48p,2465b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2015/texm
@@ -1915,10 +1908,10 @@ cmr8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on main.pdf (60 pages, 3062359 bytes).
+Output written on main.pdf (61 pages, 3064152 bytes).
 PDF statistics:
- 1165 PDF objects out of 1200 (max. 8388607)
+ 1166 PDF objects out of 1200 (max. 8388607)
  990 compressed objects within 10 object streams
  186 named destinations out of 1000 (max. 500000)
- 45650 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 45634 words of extra memory for PDF output out of 51595 (max. 10000000)
 

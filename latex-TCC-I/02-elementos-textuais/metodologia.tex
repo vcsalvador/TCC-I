@@ -4,9 +4,11 @@
 
 \chapter{Metodologia}
 
-O primeiro passo da execução do trabalho consistiu na conceituação de manutenibilidade em código CSS. Esse objetivo foi alcançado por meio de referências bibliográficas e de uma pesquisa do tipo \textit{survey} aplicada a desenvolvedores que escrevem código CSS em seu dia a dia, com níveis de experiência variados. Essa pesquisa pretendeu identificar as propriedades da linguagem e as situações mais comuns que dificultam, ou facilitam, a manutenção de código CSS.
+O primeiro passo da execução do trabalho consistiu na conceituação de qualidade do código CSS. Esse objetivo foi alcançado por meio de referências bibliográficas e de uma pesquisa do tipo \textit{survey} aplicada a desenvolvedores que escrevem código CSS em seu dia a dia, com níveis de experiência variados. 
 
-A partir dos resultados do questionário, foram identificados os critérios de avaliação que impactam na qualidade do código CSS. Com a análise e os resultados obtidos para os critérios, de acordo com as hipóteses levantadas pelo autor, foram determinados os pesos de cada critério, para a execução dos testes individuais das folhas de estilo. Nesta etapa, foi obtido um resultado numérico representando o cálculo dos pesos para os critérios encontrados no código CSS.
+Essa abordagem foi escolhida pelo fato de não haver, na literatura, uma definição canônica do que é qualidade de código CSS. Para isso foi construído um questionário, com o intuito de identificar os parâmetros de qualidade a partir da experiência dos desenvolvedores.
+
+A partir dos resultados do questionário, foram identificados os critérios de avaliação que impactam na manutenibilidade do código CSS. Com a análise e os resultados obtidos para os critérios, de acordo com as hipóteses levantadas pelo autor, foram determinados os pesos de cada critério, para a execução dos testes individuais das folhas de estilo. Nesta etapa, foi obtido um resultado numérico representando o cálculo dos pesos para os critérios encontrados no código CSS.
 
 % Tem que recomeçar essa frase e explicar que automatizado foi o teste, a avaliação foi na unha, na raça e no sangue
 A partir dos valores encontrados nos testes, foram identificadas as relações entre o índice proposto e a quantidade de falhas identificadas em sistemas \textit{web} de código aberto. Utilizando uma base de projetos de \textit{software} de código aberto, foi feita uma análise e a referência cruzada, entre o valor obtido pela métrica do código CSS e o número de problemas reportados no projeto relacionados a alterações em código CSS.
@@ -15,7 +17,7 @@ A partir dos valores encontrados nos testes, foram identificadas as relações e
 
 A pesquisa \textit{survey} é uma forma de obtenção de dados ou informações sobre características, ações ou opiniões de um determinado conjunto de pessoas, indicado como representante de uma população-alvo, por meio de um instrumento de pesquisa, normalmente um questionário \cite{Freitas2000}. 
 
-O interesse de uma pesquisa desse tipo é produzir descrições quantitativas de uma população. No caso deste trabalho, o objetivo é identificar, de forma quantitativa, as características identificadas pelos desenvolvedores como sendo as que classificam a qualidade do código CSS. Para tanto, foi aplicado um questionário exploratório, com o objetivo de identificar os conceitos do CSS consideradas centrais para a associação de qualidade do código.
+O interesse de uma pesquisa desse tipo é produzir descrições quantitativas de uma população. No caso deste trabalho, o objetivo é identificar, de forma quantitativa, as características identificadas pelos desenvolvedores como sendo as que classificam a qualidade do código CSS. Para tanto, foi aplicado um questionário exploratório, com o objetivo de identificar os conceitos do CSS considerados centrais para a associação de qualidade do código.
 
 \section{Proposta da Métrica}
 
@@ -25,4 +27,4 @@ As métricas de qualidade de código são indicadores numéricos baseados em car
 
 A partir da métrica proposta, foi desenvolvida uma ferramenta automática de cálculo da métrica. O programa lê um arquivo CSS, identifica as regras definidas e, a partir da definição proposta, calcula o valor obtido por este arquivo. Além do arquivo CSS, o arquivo HTML que o inclui também foi considerado para o cálculo.
 
-Com os valores da métrica calculada, foi testada sua aderência a um projeto de código aberto, utilizando como indicador de manutenibilidade o número de defeitos cadastrado na ferramenta de controle de tarefas do mesmo. Utilizando de versões antigas, fez-se um histórico de modificação da métrica e o número de defeitos cadastrados, com o objetivo de avaliar o comportamento do indicador de manutenibilidade com os resultados obtidos no projeto ao longo do tempo.
+Com os valores da métrica calculada, foi testada sua aderência a um projeto de código aberto, utilizando como indicador de manutenibilidade o número de defeitos cadastrado na ferramenta de controle de tarefas do mesmo. Utilizando de versões antigas, fez-se um histórico de modificação da métrica e o número de defeitos cadastrados, relacionados com CSS e o layout da página, com o objetivo de avaliar o comportamento do indicador de manutenibilidade com os resultados obtidos no projeto ao longo do tempo.

@@ -2,7 +2,7 @@
 
 A partir de uma análise sobre qualidade de \textit{software}, métricas de qualidade e fundamentos teóricos do funcionamento do CSS, construiu-se uma pesquisa exploratória, em forma de um questionário, para identificação dos aspectos mais relevantes no processo de manutenção de uma folha de estilo e das características do código fonte que estão relacionadas a sua qualidade.
 
-\section{Construindo o Questionário}
+\section{Questionário}
 Elaborou-se o questionário com os seguintes objetivos:
 
 \begin{itemize}
@@ -11,7 +11,7 @@ Elaborou-se o questionário com os seguintes objetivos:
 	\item Identificar aspectos mais custosos para manutenção;	
 \end{itemize}
 
-A partir da coleta das respostas, pôde-se analisar os pesos de cada aspecto de qualidade do código CSS em função de sua manutenibilidade. Identificando as ocasiões em que se encontram maior ocorrência de efeitos colaterais, técnicas de organização das regras que colaboram para a legibilidade do código CSS e quais as características da linguagem que impactam, negativa ou positivamente, na sua manutenibilidade, com o objetivo de determinar os critérios que irão compor a métrica proposta.
+A partir da coleta das respostas, pôde-se analisar os pesos de cada aspecto de qualidade do código CSS em função de sua manutenibilidade. Identificando as ocasiões em que se encontram maior ocorrência de efeitos colaterais, técnicas de organização das regras que colaboram para a legibilidade do código CSS e quais as características da linguagem que impactam, negativa ou positivamente, na sua manutenibilidade. O objetivo dessa análise foi determinar os critérios que irão compor a métrica proposta.
 %Refazer a frase
 %Identificando as maiores ocorrências de efeitos colaterais, quais são as técnicas para manutenção da legibilidade mais utilizadas e quais são os aspectos de organização do código mais relevantes.
 
@@ -27,10 +27,6 @@ Viu-se necessária a avaliação da complexidade de alguns aspectos da linguagem
 
 A dificuldade atribuída por cada pessoa a um determinado conjunto de regras e propriedades, é subjetiva e depende fortemente da experiência do indivíduo. Portanto, construiu-se o questionário com perguntas visando a classificação do respondente de acordo com o seu nível de conhecimento. A partir, dessa classificação foi possível ponderar as respostas de acordo com o nível de proficiência dos respondentes.
 
-\section{Resultados do Questionário}
-
-O questionário (\autoref{chap:apendiceA}) somou um total de 27 respostas. Este número de respostas pode ser atribuído ao alcance dos meios de divulgação, ou seja, não se fez uso de um canal de comunicação de uso da comunidade de desenvolvedores CSS. Mesmo com um pequeno número de respostas, pôde-se executar uma análise a partir dos resultados da pesquisa. 
-
 Durante os estudos para construção do questionário foram levantas as seguintes hipóteses:
 
 \begin{itemize}
@@ -43,9 +39,7 @@ Durante os estudos para construção do questionário foram levantas as seguinte
 	\item \textbf{(h6)} Regras que não são comumente utilizadas na construção de código CSS podem dificultar a manutenção.
 \end{itemize}
 
-O questionário teve, então, o intuito de validar essas hipóteses, de modo a confirmá-las ou refutá-las, através de uma série de questões exploratórias, para identificar os aspectos mais abstratos de qualidade, e questões específicas, para identificar os aspectos estruturais da linguagem que representam maior dificuldade no período de manutenção. Para identificar a relevância das respostas do questionário, os respondentes foram agrupados por nível de proficiência.
-
-\subsection{Nível de Proficiência}
+O questionário teve, então, o intuito de validar essas hipóteses, de modo a confirmá-las ou refutá-las, através de uma série de questões exploratórias. Para identificar os aspectos mais abstratos de qualidade, e questões específicas, para identificar os aspectos estruturais da linguagem que representam maior dificuldade no período de manutenção. Para identificar a relevância das respostas do questionário, os respondentes foram agrupados por nível de proficiência.
 
 A primeira questão do questionário (\autoref{chap:apendiceA}) foi desenvolvida com o intuito de classificar os conhecimentos de cada respondente, para assim determinar o seu nível de proficiência. Essa classificação permitiu que os pesos definidos por cada respondente fosse ponderado no resultado final do questionário.
 
@@ -53,10 +47,12 @@ Para esta classificação, utilizou-se os critérios apresentados no \autoref{qu
 
 \input{./06-quadros/quaclassificacaorespostas}
 
-Cada critério recebeu um peso de acordo com sua categoria, sendo 1, 2 e 3 os valores para iniciante, intermediário e avançado, respectivamente. Um respondente foi considerado iniciante se somasse 12 ou menos em suas respostas, intermediário para o respondente que somasse de 13 a 20, e avançado caso suas respostas somassem 21 ou mais. 
+Cada critério recebeu um peso de acordo com sua categoria, sendo 1, 2 e 3 os valores para iniciante, intermediário e avançado, respectivamente. Um respondente foi considerado iniciante se somasse 12 ou menos em suas respostas, intermediário para o respondente que somasse de 13 a 20, e avançado caso suas respostas somassem 21 ou mais. Os respondentes classificados como iniciantes somaram 33,33\% do total, 18,52\% respondentes foram classificados como intermediários e 48,15\% avançados.
+
+O questionário (\autoref{chap:apendiceA}) foi executado em meio digital, no período de 21 de junho de 2015 à 29 de julho de 2015. Sendo divulgado em empresas de desenvolvimento de conhecimento do autor, Facebook, Google+ e discentes da instituição de ensino, CEFET-MG. No total ele obteve 27 respondentes. Este número de respostas pode ser atribuído ao alcance dos meios de divulgação, ou seja, não se fez uso de um canal de comunicação de uso da comunidade de desenvolvedores CSS. Mesmo com um pequeno número de respostas, pôde-se executar uma análise a partir dos resultados da pesquisa. 
 %Dessa forma não seria necessário que o respondente tivesse conhecimento sobre todas as regras para ser considerado avançado e também impede que o seja somente por conhecer as regras avançadas. 
 
-\subsection{Visão Geral}
+\subsection{Resultado do Questionário}
 
 As respostas para o questionário formaram um conjunto de dados capaz de validar as hipóteses levantadas, não de forma definitiva, mas com dados suficientes para construção da métrica.
 
@@ -64,7 +60,7 @@ As questões propostas para identificar os aspectos de qualidade do código CSS 
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Resultado da questão 2 do questionário \autoref{chap:apendiceA}.}
+	\caption{Questão 2: Estruturação do HTML que interferem na qualidade do CSS (\autoref{chap:apendiceA}).}
 	\includegraphics[width=1\textwidth]{./04-figuras/questionario_q2}
 	\fonte{Próprio autor}
 	\label{fig:questionario_q2}
@@ -74,25 +70,25 @@ Essas respostas corroboram com a hipótese h3, mostrando que a boa estruturaçã
 
 Na questão exposta na \autoref{fig:questionario_q3}, pode-se notar os aspectos do CSS que interferem na qualidade do código. Nota-se aqui que não houve unanimidade para esta questão, porém percebe-se uma maior pontuação nas questões que têm impacto na legibilidade do código, \textit{e.g.} organização em seções e modularidade do código.
 
-\begin{figure}[!htb]
+Na \autoref{fig:questionario_q9}, é possível verificar que o maior número de ocorrências de efeitos colaterais, para os respondentes, está na fase de manutenção do código, corroborando com a hipótese h0.
+
+Ainda sobre os efeitos colaterais, foi elaborada uma questão com objetivo de identificar quais são as propriedades do CSS que mais os causam. As respostas foram variadas e por isso não foi possível identificar um padrão a partir desta pesquisa. No entanto, as respostas com elementos semelhantes sempre tinham relação com definição de posicionamento e tamanho dos elementos (e.g.: \texttt{position}, \texttt{margin}, \texttt{padding}, \texttt{display}, \texttt{width}, \texttt{z-index}, \texttt{float}, etc). A partir das respostas obtidas, pode-se identificar os valores de manutenibilidade para os elementos que possuírem características de herança, prioridade e atuação semelhantes.
+
+\begin{figure}[H]
 	\centering
-	\caption{Resultado da questão 3 do questionário \autoref{chap:apendiceA}.}
+	\caption{Questão 3: Aspectos que impactam na qualidade do código CSS (\autoref{chap:apendiceA}).}
 	\includegraphics[width=1\textwidth]{./04-figuras/questionario_q3}
 	\fonte{Próprio autor}
 	\label{fig:questionario_q3}
 \end{figure}
 
-Na \autoref{fig:questionario_q9}, é possível verificar que o maior número de ocorrências de efeitos colaterais, para os respondentes, está na fase de manutenção do código. Esse resultado corrobora com a hipótese h0.
-
-\begin{figure}[!htb]
+\begin{figure}[H]
 	\centering
-	\caption{Resultado da questão 9 do questionário \autoref{chap:apendiceA}.}
+	\caption{Questão 9: Fase de projeto em que ocorrem mais efeitos colaterais (\autoref{chap:apendiceA}).}
 	\includegraphics[width=1\textwidth]{./04-figuras/questionario_q9}
 	\fonte{Próprio autor}
 	\label{fig:questionario_q9}
 \end{figure}
-
-Ainda sobre os efeitos colaterais, foi elaborada uma questão com objetivo de identificar quais são as propriedades do CSS que mais os causam. As respostas foram variadas e por isso não foi possível identificar um padrão a partir desta pesquisa. No entanto, as respostas com elementos semelhantes sempre tinham relação com definição de posicionamento e tamanho dos elementos (e.g.: \texttt{position}, \texttt{margin}, \texttt{padding}, \texttt{display}, \texttt{width}, \texttt{z-index}, \texttt{float}, etc). A partir das respostas obtidas, pode-se identificar os valores de manutenibilidade para os elementos que possuírem características de herança, prioridade e atuação semelhantes.
 
 \subsection{Questões Exploratórias}
 
@@ -120,7 +116,7 @@ Cada respondente identificou em uma escala (1 a 5) a dificuldade de se dar manut
 
 É possível notar a proximidade das respostas dos níveis intermediário e avançado, mas ainda assim as médias do nível avançado são ligeiramente maiores que as do nível intermediário. Os pesos de cada critério foram definidos a partir da média ponderada de cada questão, para evitar que o peso de cada resposta fosse completamente dependente das respostas dos respondentes identificados como iniciantes.
 
-\section{Criação da Métrica}
+\section{Métrica}
 	
 A partir das hipóteses levantadas e dos resultados obtidos no questionário, foram identificados 12 aspectos da linguagem a serem avaliados e, a partir deles, foram elaborados os critérios utilizados para o cálculo da métrica. O peso para cada um dos critérios de avaliação foi, então, definido a partir dos resultados obtidos no questionário, como visto na \autoref{tab:tabelaPesos}. Esses pesos foram utilizados para o cálculo de cada métrica de forma individual, aplicando uma forma de avaliação correspondente a cada um dos critérios.
 
@@ -129,15 +125,15 @@ A partir das hipóteses levantadas e dos resultados obtidos no questionário, fo
 \subsection{Identificação dos Critérios de Avaliação}
   
 %Mostrar e explicar o mapeamento de cada questão de trecho de código com sua respectiva funcionalidade.
-Cada uma das 16 questões teve o objetivo de avaliar um aspecto da linguagem com o intuito de direcionar a escolha dos critérios de avaliação. Portanto fez-se uma mapeamento das funcionalidades abordadas em cada questão e, a partir disso, determinou-se os critérios que seriam avaliados pelo \textit{script} de cálculo da métrica.
+Cada uma das 16 questões teve o objetivo de avaliar um aspecto da linguagem com o intuito de direcionar a escolha dos critérios de avaliação. Portanto fez-se um mapeamento das funcionalidades abordadas em cada questão e, a partir disso, determinou-se os critérios que seriam avaliados pelo \textit{script} de cálculo da métrica.
 
-Como pode ser visto no \autoref{quad:questionXfunc}, as funcionalidades abordadas por cada uma das questões específicas foram definidas pelo próprio autor, de acordo com a sua experiência em codificação CSS, como sendo as funcionalidades que impactam, de alguma forma, na manutenibilidade do código.
+Como pode ser visto no \autoref{quad:questionXfunc}, as funcionalidades abordadas por cada uma das questões específicas foram definidas pelo próprio autor, de acordo com a sua experiência em codificação CSS, como sendo as funcionalidades que impactam, de alguma forma, na manutenibilidade do código. Além de alguns artigos\footnote{Um dos guias mais relevantes na \textit{web} está no site da \textit{Mozilla Developer Network} (MDN). Disponível em \url{https://developer.mozilla.org/en-US/docs/Web/Guide/CSS}} na \textit{web} que tratam de boas práticas no desenvolvimento de código CSS.
 
 \input{./06-quadros/questionXfunc}
 
 A partir dessas funcionalidades foram identificados quais os métodos de avaliação caberiam a cada um deles. Esses métodos foram denominados critérios, que, para o \textit{script} de cálculo, representam um padrão a ser identificado, contado e calculado. Desta forma foram definidos e construídos os critérios listados na \autoref{tab:tabelaPesos}.
 
-Cada um dos critérios criados representa um impacto na qualidade e esse impacto foi definido como sendo o peso do critério avaliado. Dessa forma, o \textit{script} avalia a presença ou não de cada critério nas regras definidas na folha de estilo CSS e, então, para cada ocorrência, soma o valor calculado para o critério ao total da métrica. Pode-se considerar como sendo a forma geral o que se define na \autoref{math:criteria}:
+Cada um dos critérios criados representa um impacto na manutenibilidade e esse impacto foi definido como sendo o peso do critério avaliado. Dessa forma, o \textit{script} avalia a presença ou não de cada critério nas regras definidas na folha de estilo CSS e, então, para cada ocorrência, soma o valor calculado para o critério ao total da métrica. Pode-se considerar como sendo a forma geral o que se define na \autoref{math:criteria}:
 
 \begin{equation}
 \label{math:criteria}
@@ -151,6 +147,8 @@ O valor encontrado pela métrica será então o somatório dos valores de todos 
 	M\acute{e}trica \leftarrow \displaystyle\sum_{i=1}^{12} crit\acute{e}rio_i(regra)
 \end{equation}
 
+Este valor é um indicador do custo de manutenibilidade do código avaliado, o que significa que o resultado é diretamente proporcional ao custo de manutenibilidade.
+
 Em seguida foi definido como cada critério impacta na manutenibilidade, explicando em detalhe o funcionamento de cada um.
 
 \subsubsection{Seletores Raros}
@@ -161,7 +159,7 @@ A participação destes seletores na métrica foi calculada a partir da regra ge
 \subsubsection{Agrupamento de elementos}
 O agrupamento de seletores é identificado por regras que são aplicadas a elementos distintos. Ele é representado pela separação por vírgulas e é muito utilizado pelos desenvolvedores. Para o cálculo desta métrica, foi feito, então, uma contagem de seletores separados por vírgula para cada regra avaliada, porém, identificou-se que há um limite no impacto que um agrupamento muito extenso pode causar. 
 
-Devido ao limite identificado, foi utilizada uma função que mapeia o valor do critério em função do número de seletores agrupados na regra. Como pode ser visto na \autoref{math:groupCriteria}, o limite de seletores agrupados é definido pelo denominador da função arco tangente, parâmetro este que foi ajustado para adequar aos testes executados.
+Devido ao limite identificado, foi utilizada uma função que mapeia o valor do critério em função do número de seletores agrupados na regra. Como pode ser visto na \autoref{math:groupCriteria}, o limite de seletores agrupados é definido pelo denominador da função arco tangente, parâmetro este que foi ajustado para adequar aos testes executados. O valor do limite de saturação foi escolhido a partir da experiência do autor.
 
 \begin{equation}
 \label{math:groupCriteria}
@@ -184,7 +182,7 @@ A simplificação das propriedades CSS são um atalho, que permitem que o desenv
 	\label{fig:shorthand}
 \end{figure}
 
-Para calcular este critério foi identificadas as propriedades que possuíam valores atribuídos separados por espaço. Para cada propriedade, contou-se o número de ocorrências e somou-se ao final, seguindo o mesmo cálculo da \autoref{math:criteria}.
+Para calcular este critério foram identificadas as propriedades que possuíam valores atribuídos separados por espaço. Para cada propriedade, contou-se o número de ocorrências e somou-se ao final, seguindo o mesmo cálculo da \autoref{math:criteria}.
 
 \subsubsection{Pseudo Elementos}
 Os pseudo elementos podem ser utilizados para acessar propriedades especiais dos elementos HTML. Para este critério, foram considerados os pseudo elementos e as pseudo classes em um único critério, uma vez que obtiveram a mesma média de dificuldade. Das pseudo classes foram excluídos a cláusula \texttt{not} e os seletores de localidade, que receberam um critério de avaliação separado.
@@ -215,7 +213,7 @@ A \textit{At-rule} \texttt{@media} é um caso especial do CSS: uma declaração 
 As regras \texttt{@media} podem conter várias regras CSS condicionadas a suas \textit{media queries}, o que torna a avaliação mais complexa. Para o calculo desse critério, foi feita uma análise do número de \textit{media queries} presentes no arquivo CSS, cada uma avaliada como o peso determinado a elas na \autoref{tab:tabelaPesos} e somadas ao valor final da métrica.
 
 \subsubsection{Prefixos}
-Os prefixos são utilizados para explicitar como a máquina de renderização do navegador irá interpretar uma propriedade CSS. Apenas algumas propriedades têm a necessidade de se utilizar esses prefixos. Mas quando utilizados, eles resultam em uma repetição de propriedade, o que implica numa dificuldade de leitura e manutenção do código maior.
+Os prefixos são utilizados para explicitar como a máquina de renderização do navegador irá interpretar uma propriedade CSS. Apenas algumas propriedades têm a necessidade de se utilizar esses prefixos. Mas quando utilizados, eles resultam em uma repetição de propriedade, o que implica na dificuldade de leitura e manutenção do código maior.
 
 Esse critério fica, então, responsável por identificar o número de repetições destes prefixos e somar o peso de cada uma delas ao resultado final da métrica.
 
@@ -252,13 +250,13 @@ Foram necessários alguns testes do \textit{script} para ajustes dos pesos e ele
 
 O \textit{script} executa os cálculos de cada um dos critérios para cada folha de estilo renderizada, iterando sobre as regras CSS da folha de estilo. Dessa forma, uma mesma regra será avaliada sobre todos os critérios determinados, uma vez que as regras podem se encaixar em mais de um critério. Ao final da execução do \textit{script} é obtido o resultado total de cada critério em cada folha de estilo, o que permite uma análise da contribuição dos critérios para o resultado final da métrica.
 
-Na \autoref{fig:calculatorTest}, pode-se visualizar a estrutura do resultado de uma execução do \textit{script}. O código fonte desse \textit{script} está disponível em um repositório no serviço gratuito de hospedagem de código aberto GitHub\footnote{Disponível em \url{https://github.com/vcsalvador/jsTestRun}.}. O objetivo final deste trabalho é gerar um \textit{bookmarklet}\footnote{Pequena aplicação construída em JavaScript para ser executada a partir do atalho de favoritos no navegador.\url{https://en.wikipedia.org/wiki/Bookmarklet}} que exiba as informações de qualidade do código CSS presente na página \textit{web}.
+Na \autoref{fig:calculatorTest}, pode-se visualizar a estrutura do resultado de uma execução do \textit{script}. O código fonte desse \textit{script} está disponível em um repositório no serviço gratuito de hospedagem de código aberto GitHub\footnote{Disponível em \url{https://github.com/vcsalvador/jsTestRun}.}. O objetivo final deste trabalho é gerar um \textit{bookmarklet}\footnote{Pequena aplicação construída em JavaScript para ser executada a partir do atalho de favoritos no navegador.\url{https://en.wikipedia.org/wiki/Bookmarklet}} que exiba as informações de manutenibilidade do código CSS presente na página \textit{web}.
 
 Com o \textit{script} para cálculo da métrica pronto e ajustado, fez-se a escolha de roteiro de testes. Para determinar qual seria a melhor forma de avaliar os resultados do \textit{script}, foi necessário escolher um projeto em que o estilo da página fosse codificado em arquivos CSS, eliminando a possibilidade de aplicar os testes em projetos que utilizem preprocessadores\footnote{Linguagens de programação intermediárias que geram código CSS, \textit{e.g.} Sass, Less, Stylus, etc.} CSS. Além desta limitação, deveria ser possível analisar um outro indicador de manutenibilidade de código, como tempo de evolução, número de defeitos ou algum índice de retrabalho.
 
 \chapter{Avaliação da Métrica}
 
-O Jenkins\footnote{Disponível em \url{https://jenkins-ci.org/}}, uma aplicação de integração contínua de código aberto, foi escolhido como objeto de estudo para avaliação da métrica por atender a todas as limitações identificadas. Ele é um projeto maduro, largamente utilizado e com uma comunidade de desenvolvimento ativa. Pode-se ver na \autoref{fig:codeFreqGraph} a quantidade de adições e exclusões de linha de código por semana, desde o ano de 2007. Ele também foi escolhido como objeto de estudo por utilizar somente código CSS para a construção de suas folhas de estilo.
+O Jenkins\footnote{Disponível em \url{https://jenkins-ci.org/}}, uma aplicação de integração contínua de código aberto, foi escolhido como objeto de estudo para avaliação da métrica por atender a todas os requisitos identificados. Ele é um projeto maduro, largamente utilizado e com uma comunidade de desenvolvimento ativa. Pode-se ver na \autoref{fig:codeFreqGraph} a quantidade de adições e exclusões de linha de código por semana, desde o ano de 2007. Ele também foi escolhido como objeto de estudo por utilizar somente código CSS para a construção de suas folhas de estilo.
 
 \begin{figure}[!htb]
 	\centering
@@ -280,13 +278,13 @@ O projeto do Jenkins disponibiliza um meio de se cadastrar e controlar as tarefa
 
 O filtro do JIRA foi configurado utilizando a ferramenta de busca avançada, onde a busca poderia ser feita em forma textual. O filtro foi construído com os filtros disponíveis pelo JIRA, buscando dentro do projeto Jenkins pelos defeitos que possuíssem a etiqueta 'css' ou a palavra CSS dentro do texto de sua descrição. Dessa forma, foi possível identificar quais os defeitos do projeto estavam relacionados de alguma forma com CSS, mesmo que tivessem sido encontrados em outro lugar e possuíssem algum detalhe de CSS relacionados.
 
-O alcance dos defeitos foi escolhido a partir de suas datas de criação: os criados a partir da versão em teste até a data de lançamento da versão que seria testada a seguir, no caso da versão mais atual foi feito de sua data de lançamento até o dia em que a pesquisa foi realizada. O filtro foi construído de maneira textual, utilizando a sintaxe do JIRA, e se parece com o seguinte: project = JENKINS AND issuetype = Bug AND (labels = css OR text ~ CSS) AND (createdDate >= "2010/07/31" AND createdDate < "2011/01/22") ORDER BY created ASC. Os resultados dessa busca podem ser vistos no \autoref{quad:quadVersionBugs}.
+O alcance dos defeitos foi escolhido a partir de suas datas de criação: os criados a partir da versão em teste até a data de lançamento da versão que seria testada a seguir, no caso da versão mais atual foi feito de sua data de lançamento até o dia em que a pesquisa foi realizada. O filtro foi construído de maneira textual, utilizando a sintaxe do JIRA, e se parece com o seguinte: project = JENKINS AND issuetype = Bug AND (labels = css OR text \char`~ CSS) AND (createdDate >= "2010/07/31" AND createdDate < "2011/01/22") ORDER BY created ASC. Os resultados dessa busca podem ser vistos no \autoref{quad:quadVersionBugs}.
 
 Com estas informações, é possível identificar uma relação entre o valor da métrica e o número de defeitos de cada versão e, a partir disso, averiguar se o valor da métrica proposta para um arquivo CSS (ou conjunto de arquivos) indica o nível de manutenibilidade desse(s) arquivo(s).
 
 \section{Dados para Teste}
 
-A partir do repositório de versões\footnote{Disponível em \url{https://updates.jenkins-ci.org/download/war/}} do Jenkins, selecionou-se algumas de forma a cobrir uma janela de tempo semestral para as avaliações.
+A partir do repositório de versões\footnote{Disponível em \url{https://updates.jenkins-ci.org/download/war/}} do Jenkins, selecionou-se algumas delas de forma a cobrir uma janela de tempo semestral para as avaliações.
 
 Instâncias do Jenkins foram configuradas e executadas localmente para cada versão selecionada e, para cada uma, foi executado o \textit{script} de cálculo automatizado da métrica para identificar o valor. Então, o valor encontrado de cada versão foi transcrito para uma planilha, contendo os resultados dos critérios para cada arquivo CSS encontrado pelo \textit{script} e o número de defeitos encontrados pelo filtro do JIRA, entre a data de lançamento da versão sendo testada no momento e a seguinte.
 
@@ -295,14 +293,16 @@ Instâncias do Jenkins foram configuradas e executadas localmente para cada vers
 O valor da métrica foi então calculado como sendo o somatório dos resultados de todos os critérios de cada arquivo. %O valor total da métrica encontrado para a página \textit{web} é o somatório da métrica de todos os arquivos.
 Para os testes na página principal da aplicação, identificou-se mais de um arquivo que compunham o estilo da página. Junto a esses arquivos encontrou-se arquivos de uma biblioteca de componentes chamada YUI\footnote{Disponível em \url{http://yuilibrary.com/}} que é formada por arquivos JavaScript e CSS. Os arquivos pertencentes a essa biblioteca influenciam os resultados das métricas e certamente na manutenibilidade do CSS da aplicação.
 
-\input{./05-tabelas/explResultTestes}
+Os resultados da métrica para os arquivos da biblioteca YUI foram destoantes em relação aos vistos nos arquivos que realmente foram codificados pela equipe de desenvolvimento, como pode ser visto na \autoref{tab:explResultTestes}. Apesar desta grande diferença de pontuação, foi necessário  analisar o resultado da agregado para construir uma análise da pontuação das folhas de estilo CSS carregadas na tela principal da aplicação, portanto incluindo os arquivos da biblioteca.
 
-Os resultados da métrica para os arquivos da biblioteca YUI foram destoantes em relação aos vistos nos arquivos que realmente foram codificados pela equipe de desenvolvimento, como pode ser visto na \autoref{tab:explResultTestes}. Apesar desta grande diferença de pontuação, foi necessário  analisar o resultado do agregado para construir uma análise da pontuação das folhas de estilo CSS carregadas na tela principal da aplicação, portanto incluindo os arquivos da biblioteca.
+\input{./05-tabelas/explResultTestes}
 
 \section{Resultados}
 
 %versões de teste é confuso e ver comentários
 Como as versões para execução do cálculo da métrica foram escolhidas com intervalos semestrais, considerou-se a média dos resultados como o valor médio para cada ano. Foi feito, então, um cruzamento do valor médio obtido para cada ano com o número de defeitos criados no mesmo ano.
+
+Pode-se notar na \autoref{fig:totalXIssue} que o número de defeitos acompanha a progressão da métrica, mas o pico de cadastro de defeitos não se encontra no mesmo intervalo em que há um pico do resultado da métrica. Este comportamento pode ser explicado pelo fato do \textit{layout} da aplicação ter sofrido uma mudança drástica entre as versões 1.549 e 1.574, disponibilizadas respectivamente em Janeiro/2014 (26/01/2014) e Julho/2014 (27/07/2014).
 
 \begin{figure}[!htbp]
 	\centering
@@ -312,13 +312,13 @@ Como as versões para execução do cálculo da métrica foram escolhidas com in
 	\label{fig:totalXIssue}
 \end{figure}
 
-Pode-se notar na \autoref{fig:totalXIssue} que o número de defeitos acompanha a progressão da métrica, mas o pico de cadastro de defeitos não se encontra no mesmo intervalo em que há um pico do resultado da métrica. Este comportamento pode ser explicado pelo fato do \textit{layout} da aplicação ter sofrido uma mudança drástica entre as versões 1.549 e 1.574, disponibilizadas respectivamente em Janeiro/2014 (26/01/2014) e Julho/2014 (27/07/2014).
-
 As folhas de estilo da biblioteca YUI representaram a maior porção do resultado total da métrica em grande parte das versões e também apresentou pouca mudança ao longo do tempo. Considerou-se, então, a possibilidade de isolar uma folha de estilo para análise do resultado, partindo do pressuposto que as modificações feitas pela equipe de desenvolvimento são as que impactam e definem a complexidade de manutenção do código. Para tanto, foi necessária uma pesquisa no histórico de \textit{commits} dos arquivos CSS do projeto, com intuito de identificar que arquivos CSS haviam sofrido o maior número de alterações ao longo do tempo. Como pode ser visto na \autoref{tab:commits}, o arquivo \texttt{style.css} foi, excepcionalmente, o que sofreu mais \textit{commits}, sendo identificado, assim, como o arquivo de codificação CSS principal do projeto.
 
 \input{./05-tabelas/commits}
 
 A partir dessa identificação, a análise sobre progressão dos resultados e o número de defeitos criados foi refeita considerando somente o arquivo \texttt{style.css}, com o intuito de determinar o impacto das modificações feitas na folha de estilo principal do projeto sobre o número de defeitos.
+
+Pode-se notar na \autoref{fig:styleXIssues} que a evolução da métrica foi crescente durante toda a progressão temporal e também um aumento considerável do resultado referente à mudança de \textit{layout} em 2014.
 
 \begin{figure}[!htb]
 	\centering
@@ -328,8 +328,6 @@ A partir dessa identificação, a análise sobre progressão dos resultados e o 
 	\label{fig:styleXIssues}
 \end{figure}
 
-Pode-se notar na \autoref{fig:styleXIssues} que a evolução da métrica foi crescente durante toda a progressão temporal e também um aumento considerável do resultado referente à mudança de \textit{layout} em 2014.
-%explicar melhor o agregado
 O comportamento do resultado da métrica para somente o arquivo \texttt{style.css} e o somatório de todos os arquivos (\autoref{fig:totalXIssue}) é semelhante, o que leva a acreditar que o valor da métrica está relacionado às modificações feitas no projeto. Este comportamento para o arquivo \texttt{style.css} leva à hipótese de que as mudanças na folha de estilo causaram um aumento progressivo no resultado, ou seja, toda nova modificação somou ao valor da métrica.
 
 Essa hipótese põe em questão qual o motivo desta mudança, que deve ser respondida através do estudo da métrica, sobre quais são os critérios de avaliação que impactam no seu resultado e como esses se comportam. 
@@ -352,4 +350,4 @@ O aumento da distribuição dos critérios de avaliação no resultado da métri
 
 Esse aumento de complexidade do código CSS pode ser um agente causador de efeitos colaterais que, por sua vez, podem causar um aumento considerável no número de defeitos no estilo de uma página \textit{web}. Esse fato pode explicar o aumento gradativo dos números de defeitos criados acompanhando o resultado da métrica, visto na \autoref{fig:styleXIssues}.
 
-Os resultados obtidos nos testes demonstram um aumento de complexidade do código ao longo do tempo, sendo que essa complexidade impacta no número de defeitos encontrados. Porém, os resultados obtidos não são determinantes, por falta de uma base de comparação. Pode-se concluir, então, que a métrica apresentada é um passo importante em direção à definição de qualidade de código CSS e pode ser usada como base de comparação para investigações mais profundas de outras aplicações.
+Os resultados obtidos nos testes demonstram um aumento de complexidade do código ao longo do tempo, sendo que essa complexidade impacta no número de defeitos encontrados. Porém, os resultados obtidos não são determinantes, por falta de uma base de comparação. Pode-se concluir, então, que a métrica apresentada é um passo importante em direção à definição de manutenibilidade de código CSS e pode ser usada como base de comparação para investigações mais profundas de outras aplicações.
